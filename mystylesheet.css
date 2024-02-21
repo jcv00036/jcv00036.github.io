@@ -105,3 +105,10 @@ ul.navBar ul li a:hover{
 #noBulletList{
     list-style: none;
 }
+#class{
+    color:maroon;
+    font-weight: bold;
+}
+#namespace{
+    color:cyan;
+}
