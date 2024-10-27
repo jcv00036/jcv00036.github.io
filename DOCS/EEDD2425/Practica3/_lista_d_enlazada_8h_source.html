@@ -1,0 +1,478 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Práctica 1-b: Archivo de código fuente C:/Users/juego/Documents/GitHub/EEDD_P/Practica3/ListaDEnlazada.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Práctica 1-b<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Práctica realizada por Juan Carrasco Vico y Gregorio Torres Herrera</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_lista_d_enlazada_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ListaDEnlazada.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef PRACTICA2_LISTADENLAZADA_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define PRACTICA2_LISTADENLAZADA_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada.html">   16</a></span><span class="keyword">class </span><a class="code hl_class" href="class_lista_d_enlazada.html">ListaDEnlazada</a> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">class </span>Nodo {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <a class="code hl_class" href="class_a_v_l.html">T</a> dato;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        Nodo *ant, *sig;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        Nodo(<a class="code hl_class" href="class_a_v_l.html">T</a> &amp;<a class="code hl_class" href="class_a_v_l.html">aDato</a>, Nodo *<a class="code hl_class" href="class_a_v_l.html">aAnt</a>, Nodo *<a class="code hl_class" href="class_a_v_l.html">aSig</a>) :</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                dato(<a class="code hl_class" href="class_a_v_l.html">aDato</a>), ant(<a class="code hl_class" href="class_a_v_l.html">aAnt</a>), sig(<a class="code hl_class" href="class_a_v_l.html">aSig</a>) {}</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    };</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    Nodo *cabecera, *cola;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">int</span> tamLista = 0;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="};">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada_1_1_iterador.html">   38</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_lista_d_enlazada_1_1_iterador.html">Iterador</a> {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        Nodo *nodo;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keyword">friend</span> <a class="code hl_class" href="class_a_v_l.html">ListaDEnlazada&lt;T&gt;</a>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada_1_1_iterador.html#abaf268b0baa8c666002db6fb4d48089b">   43</a></span>        <a class="code hl_function" href="class_lista_d_enlazada_1_1_iterador.html#abaf268b0baa8c666002db6fb4d48089b">Iterador</a>(Nodo *<a class="code hl_class" href="class_a_v_l.html">aNodo</a>) : nodo(<a class="code hl_class" href="class_a_v_l.html">aNodo</a>) {}</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada_1_1_iterador.html#a3977c4cb6c538a0ecf02f35f14cc6e35">   45</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_lista_d_enlazada_1_1_iterador.html#a3977c4cb6c538a0ecf02f35f14cc6e35">hayAnterior</a>() { <span class="keywordflow">return</span> nodo != <span class="keyword">nullptr</span>; }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada_1_1_iterador.html#aaec3e1cef914cdf68fecb6d62d679748">   47</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_lista_d_enlazada_1_1_iterador.html#aaec3e1cef914cdf68fecb6d62d679748">haySiguiente</a>() { <span class="keywordflow">return</span> nodo != <span class="keyword">nullptr</span>; }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada_1_1_iterador.html#af1291fa2ab84f2c1a45cfca6bf1b70cc">   49</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_lista_d_enlazada_1_1_iterador.html#af1291fa2ab84f2c1a45cfca6bf1b70cc">anterior</a>() { nodo = nodo-&gt;ant; }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada_1_1_iterador.html#a5867e0ec48c7d423095c82d9cfca8c19">   51</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_lista_d_enlazada_1_1_iterador.html#a5867e0ec48c7d423095c82d9cfca8c19">siguiente</a>() { nodo = nodo-&gt;sig; }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada_1_1_iterador.html#ade638e7cdef13fdaa15eb92e115acffb">   53</a></span>        <a class="code hl_class" href="class_a_v_l.html">T</a> &amp;<a class="code hl_function" href="class_lista_d_enlazada_1_1_iterador.html#ade638e7cdef13fdaa15eb92e115acffb">dato</a>() { <span class="keywordflow">return</span> nodo-&gt;dato; }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    };</div>
+</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="comment">//&lt;editor-fold desc=&quot;Constructores y destructor&quot;&gt;</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada.html#af995b60f12d5ba10616a9d75f4e4c730">   62</a></span>    <a class="code hl_function" href="class_lista_d_enlazada.html#af995b60f12d5ba10616a9d75f4e4c730">ListaDEnlazada</a>() : cabecera(<a class="code hl_class" href="class_a_v_l.html">nullptr</a>), cola(<a class="code hl_class" href="class_a_v_l.html">nullptr</a>), tamLista(0) {}</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada.html#a8997b9dc17fe7da671714067e0a3d27a">   67</a></span>    <a class="code hl_function" href="class_lista_d_enlazada.html#a8997b9dc17fe7da671714067e0a3d27a">~ListaDEnlazada</a>();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada.html#a4215e5080740406f2d2814a60c518adc">   74</a></span>    <a class="code hl_function" href="class_lista_d_enlazada.html#a4215e5080740406f2d2814a60c518adc">ListaDEnlazada</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_lista_d_enlazada.html">ListaDEnlazada</a> &amp;<a class="code hl_class" href="class_a_v_l.html">orig</a>);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="comment">//&lt;/editor-fold&gt;</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="comment">//&lt;editor-fold desc=&quot;Operadores&quot;&gt;</span></div>
+<div class="foldopen" id="foldopen00083" data-start="{" data-end="}">
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada.html#a38077eb8f77398183cc5dba7edbec31f">   83</a></span>    <a class="code hl_class" href="class_lista_d_enlazada.html">ListaDEnlazada</a> &amp;<a class="code hl_function" href="class_lista_d_enlazada.html#a38077eb8f77398183cc5dba7edbec31f">operator=</a>(<a class="code hl_class" href="class_lista_d_enlazada.html">ListaDEnlazada</a> &amp;<a class="code hl_class" href="class_a_v_l.html">orig</a>);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="foldopen" id="foldopen00093" data-start="{" data-end="}">
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada.html#a315a449d6d95289bbabb81f06254cc22">   93</a></span>    <a class="code hl_class" href="class_a_v_l.html">ListaDEnlazada&lt;T&gt;</a> <a class="code hl_function" href="class_lista_d_enlazada.html#a315a449d6d95289bbabb81f06254cc22">operator+</a>(<a class="code hl_class" href="class_lista_d_enlazada.html">ListaDEnlazada</a> &amp;<a class="code hl_class" href="class_a_v_l.html">listaSiguiente</a>);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="comment">//&lt;/editor-fold&gt;</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada.html#a82dca5ea01a6920451b131a3c0642c8c">   99</a></span>    <a class="code hl_class" href="class_lista_d_enlazada_1_1_iterador.html">Iterador</a> <a class="code hl_function" href="class_lista_d_enlazada.html#a82dca5ea01a6920451b131a3c0642c8c">iteradorInicio</a>() { <span class="keywordflow">return</span> <a class="code hl_class" href="class_lista_d_enlazada_1_1_iterador.html">Iterador</a>(cabecera); }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada.html#a867c088889857d51a8ef62cbc428672f">  104</a></span>    <a class="code hl_class" href="class_lista_d_enlazada_1_1_iterador.html">Iterador</a> <a class="code hl_function" href="class_lista_d_enlazada.html#a867c088889857d51a8ef62cbc428672f">iteradorFinal</a>() { <span class="keywordflow">return</span> <a class="code hl_class" href="class_lista_d_enlazada_1_1_iterador.html">Iterador</a>(cola); }</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="comment">//&lt;editor-fold desc=&quot;Métodos de inserción&quot;&gt;</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="foldopen" id="foldopen00113" data-start="{" data-end="}">
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada.html#a2f3429e2889ed1edc5ac59c21f97b24f">  113</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_lista_d_enlazada.html#a2f3429e2889ed1edc5ac59c21f97b24f">insertaInicio</a>(<a class="code hl_class" href="class_a_v_l.html">T</a> &amp;dato);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="foldopen" id="foldopen00120" data-start="{" data-end="}">
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada.html#a69a2e2336a7f5627e9f7a4ac1dc22a99">  120</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_lista_d_enlazada.html#a69a2e2336a7f5627e9f7a4ac1dc22a99">insertaFin</a>(<a class="code hl_class" href="class_a_v_l.html">T</a> &amp;dato);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="foldopen" id="foldopen00128" data-start="{" data-end="}">
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada.html#ad7116da3100a2539425d7b42f2efdac3">  128</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_lista_d_enlazada.html#ad7116da3100a2539425d7b42f2efdac3">inserta</a>(Iterador &amp;<a class="code hl_class" href="class_a_v_l.html">i</a>, <a class="code hl_class" href="class_a_v_l.html">T</a> &amp;dato);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="comment">//&lt;/editor-fold&gt;</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="comment">//&lt;editor-fold desc=&quot;Métodos de borrado&quot;&gt;</span></div>
+<div class="foldopen" id="foldopen00138" data-start="{" data-end="}">
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada.html#a6ea45e7901f460689b8fa3c7a51bee74">  138</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_lista_d_enlazada.html#a6ea45e7901f460689b8fa3c7a51bee74">borraInicio</a>();</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="foldopen" id="foldopen00145" data-start="{" data-end="}">
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada.html#aabd50a06785602ac207b0d2ac3d2b976">  145</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_lista_d_enlazada.html#aabd50a06785602ac207b0d2ac3d2b976">borraFinal</a>();</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="foldopen" id="foldopen00153" data-start="{" data-end="}">
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada.html#a7d89f86d9df2371523e17b7873dcfff7">  153</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_lista_d_enlazada.html#a7d89f86d9df2371523e17b7873dcfff7">borra</a>(Iterador &amp;<a class="code hl_class" href="class_a_v_l.html">i</a>);</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="comment">//&lt;/editor-fold&gt;</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    <span class="comment">//&lt;editor-fold desc=&quot;Métodos observadores&quot;&gt;</span></div>
+<div class="foldopen" id="foldopen00162" data-start="{" data-end="}">
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada.html#af8d6ae5d40b2cb1e0d5ddb4f8ac47bdf">  162</a></span>    <a class="code hl_class" href="class_a_v_l.html">T</a> &amp;<a class="code hl_function" href="class_lista_d_enlazada.html#af8d6ae5d40b2cb1e0d5ddb4f8ac47bdf">inicio</a>();</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="foldopen" id="foldopen00169" data-start="{" data-end="}">
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada.html#ad7c9436113733769989655317caf23b3">  169</a></span>    <a class="code hl_class" href="class_a_v_l.html">T</a> &amp;<a class="code hl_function" href="class_lista_d_enlazada.html#ad7c9436113733769989655317caf23b3">fin</a>();</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada.html#ab0f418e5848f34b10374b32023d5f760">  174</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_lista_d_enlazada.html#ab0f418e5848f34b10374b32023d5f760">tam</a>() { <span class="keywordflow">return</span> tamLista; }</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <span class="comment">//&lt;/editor-fold&gt;</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="foldopen" id="foldopen00185" data-start="{" data-end="}">
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada.html#aad241fec1cef350325d5021026cac483">  185</a></span>    <a class="code hl_class" href="class_a_v_l.html">ListaDEnlazada&lt;T&gt;</a> <a class="code hl_function" href="class_lista_d_enlazada.html#aad241fec1cef350325d5021026cac483">concatenar</a>(<a class="code hl_class" href="class_lista_d_enlazada.html">ListaDEnlazada</a> &amp;<a class="code hl_class" href="class_a_v_l.html">listaSiguiente</a>);</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>};</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="comment">//&lt;editor-fold desc=&quot;Constructores y destructor&quot;&gt;</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00190" data-start="{" data-end="}">
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada.html#a8997b9dc17fe7da671714067e0a3d27a">  190</a></span><a class="code hl_function" href="class_lista_d_enlazada.html#a8997b9dc17fe7da671714067e0a3d27a">ListaDEnlazada&lt;T&gt;::~ListaDEnlazada</a>() {</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <span class="keywordflow">if</span> (cabecera) {                         <span class="comment">//Si cabecera == nullptr, cola == nullptr y la lista está vacía, así que no</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>                                            <span class="comment">// hay que borrar nada</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        Nodo* <a class="code hl_class" href="class_a_v_l.html">i</a> = cabecera;                 <span class="comment">//Puntero que va a controlar la destrucción de la lista</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        <span class="keywordflow">while</span> (<a class="code hl_class" href="class_a_v_l.html">i</a> != cola) {                 <span class="comment">//Borramos posición por posición</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>            <a class="code hl_class" href="class_a_v_l.html">i</a> = <a class="code hl_class" href="class_a_v_l.html">i</a>-&gt;sig;</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>            <span class="keyword">delete</span> <a class="code hl_class" href="class_a_v_l.html">i</a>-&gt;ant;</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        }</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        <span class="keyword">delete</span> <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">i</a>;                           <span class="comment">//A estas alturas el puntero apunta a cola, así que borramos el contenido</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    }</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    cabecera = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    cola = <span class="keyword">nullptr</span>;                         <span class="comment">//Limpiamos la basura</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    tamLista = 0;</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>}</div>
+</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00206" data-start="{" data-end="}">
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada.html#a4215e5080740406f2d2814a60c518adc">  206</a></span><a class="code hl_function" href="class_lista_d_enlazada.html#af995b60f12d5ba10616a9d75f4e4c730">ListaDEnlazada&lt;T&gt;::ListaDEnlazada</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_lista_d_enlazada.html">ListaDEnlazada</a> &amp;<a class="code hl_class" href="class_a_v_l.html">orig</a>) : tamLista(0) {</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    Nodo *<a class="code hl_class" href="class_a_v_l.html">i</a>;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    cabecera = cola = 0;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    <a class="code hl_class" href="class_a_v_l.html">i</a> = <a class="code hl_class" href="class_a_v_l.html">orig</a>.cabecera;</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    <span class="keywordflow">while</span> (<a class="code hl_class" href="class_a_v_l.html">i</a> != 0){</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        <a class="code hl_function" href="class_lista_d_enlazada.html#a69a2e2336a7f5627e9f7a4ac1dc22a99">insertaFin</a>(<a class="code hl_class" href="class_a_v_l.html">i</a>-&gt;dato);</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        <a class="code hl_class" href="class_a_v_l.html">i</a> = <a class="code hl_class" href="class_a_v_l.html">i</a>-&gt;sig;</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    }</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>}</div>
+</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="comment">//&lt;/editor-fold&gt;</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00219" data-start="{" data-end="}">
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada.html#a38077eb8f77398183cc5dba7edbec31f">  219</a></span><a class="code hl_class" href="class_a_v_l.html">ListaDEnlazada&lt;T&gt;</a> &amp;<a class="code hl_function" href="class_lista_d_enlazada.html#a38077eb8f77398183cc5dba7edbec31f">ListaDEnlazada&lt;T&gt;::operator=</a>(<a class="code hl_class" href="class_lista_d_enlazada.html">ListaDEnlazada</a> &amp;<a class="code hl_class" href="class_a_v_l.html">orig</a>) {</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;<a class="code hl_class" href="class_a_v_l.html">orig</a>) {</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        <span class="comment">//Primero borramos los contenidos de la lista, si lo hay</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        <span class="keywordflow">if</span> (cabecera != <span class="keyword">nullptr</span>) {                          <span class="comment">//Si cabecera == nullptr, cola == nullptr y la lista está</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>                                                            <span class="comment">//vacía, así que no hay que borrar nada</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>            Nodo *<a class="code hl_class" href="class_a_v_l.html">i</a> = cabecera;                             <span class="comment">//&lt;Puntero que va a controlar la destrucción de la lista</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>            <span class="keywordflow">while</span> (<a class="code hl_class" href="class_a_v_l.html">i</a> != cola) {                             <span class="comment">//Borramos posición por posición</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>                <a class="code hl_class" href="class_a_v_l.html">i</a> = <a class="code hl_class" href="class_a_v_l.html">i</a>-&gt;sig;</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>                <span class="keyword">delete</span> <a class="code hl_class" href="class_a_v_l.html">i</a>-&gt;ant;</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            }</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>            <span class="keyword">delete</span> <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">i</a>;                                       <span class="comment">//A estas alturas el puntero apunta a cola, así que borramos el contenido</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>        }</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        cabecera = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        cola = <span class="keyword">nullptr</span>;                                     <span class="comment">//Limpiamos la basura</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        tamLista = 0;                                       <span class="comment">//Volvemos a poner el tamaño a 0</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        <span class="comment">//Ahora, añadimos los Nodos de la lista orig</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        <span class="keywordflow">if</span> (<a class="code hl_class" href="class_a_v_l.html">orig</a>.tam() != 0) {</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>            *cabecera = <span class="keyword">new</span> Nodo(*<a class="code hl_class" href="class_a_v_l.html">orig</a>.cabecera, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>);     <span class="comment">//Introducimos el Nodo cabecera</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>            ++tamLista;</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>            Nodo *<a class="code hl_class" href="class_a_v_l.html">i</a> = cabecera, <a class="code hl_class" href="class_a_v_l.html">j</a> = <a class="code hl_class" href="class_a_v_l.html">orig</a>.cabecera;                      <span class="comment">//Estos punteros a Nodo controlarán la construcción</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>            <span class="keywordflow">while</span> (<a class="code hl_class" href="class_a_v_l.html">j</a> != <a class="code hl_class" href="class_a_v_l.html">orig</a>.cola) {                                    <span class="comment">//Construimos posición a posición</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>                <a class="code hl_class" href="class_a_v_l.html">i</a>-&gt;sig = <span class="keyword">new</span> Nodo(*<a class="code hl_class" href="class_a_v_l.html">j</a>-&gt;sig, <a class="code hl_class" href="class_a_v_l.html">i</a>, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>                <a class="code hl_class" href="class_a_v_l.html">i</a> = <a class="code hl_class" href="class_a_v_l.html">i</a>-&gt;sig;</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>                <a class="code hl_class" href="class_a_v_l.html">j</a> = <a class="code hl_class" href="class_a_v_l.html">j</a>-&gt;sig;</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>                ++tamLista;</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>            }</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>            cola = <a class="code hl_class" href="class_a_v_l.html">i</a>-&gt;sig = <span class="keyword">new</span> Nodo(*<a class="code hl_class" href="class_a_v_l.html">orig</a>.cola, <a class="code hl_class" href="class_a_v_l.html">i</a>, <span class="keyword">nullptr</span>);           <span class="comment">//A estas alturas, j apunta a la cola de orig, así</span></div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>                                                                        <span class="comment">//que acabo la construcción con la asignación de la</span></div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>                                                                        <span class="comment">// cola</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>            ++tamLista;</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        }</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    }</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>}</div>
+</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00257" data-start="{" data-end="}">
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada.html#a315a449d6d95289bbabb81f06254cc22">  257</a></span><a class="code hl_class" href="class_a_v_l.html">ListaDEnlazada&lt;T&gt;</a> <a class="code hl_function" href="class_lista_d_enlazada.html#a315a449d6d95289bbabb81f06254cc22">ListaDEnlazada&lt;T&gt;::operator+</a>(<a class="code hl_class" href="class_lista_d_enlazada.html">ListaDEnlazada</a> &amp;<a class="code hl_class" href="class_a_v_l.html">listaSiguiente</a>) {</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    <span class="keywordflow">if</span> (tamLista == 0) {                                             <span class="comment">//Si la lista actual tiene tamaño 0, podemos devolver listaSiguiente</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">listaSiguiente</a>;</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_class" href="class_a_v_l.html">listaSiguiente</a>.tam() == 0) {                          <span class="comment">//Si listaSiguiente tiene tamaño 0, podemos devolver la lista actual</span></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    }</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    <a class="code hl_class" href="class_a_v_l.html">ListaDEnlazada&lt;T&gt;</a> <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">aux</a>(*<span class="keyword">this</span>);                                    <span class="comment">//Copio la lista actual</span></div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>    Nodo *<a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">i</a>(<a class="code hl_class" href="class_a_v_l.html">aux</a>.cola), <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">j</a>(<a class="code hl_class" href="class_a_v_l.html">listaSiguiente</a>.cabecera);                   <span class="comment">//Creo un puntero a Nodo apuntando a la cola, a partir de ahí</span></div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>                                                                     <span class="comment">// copiaremos la listaSiguiente en aux utilizando el puntero j</span></div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    <span class="keywordflow">while</span> (<a class="code hl_class" href="class_a_v_l.html">j</a> != <a class="code hl_class" href="class_a_v_l.html">listaSiguiente</a>.cola) {                               <span class="comment">//El siguiente Nodo será el Nodo apuntado por j</span></div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        <a class="code hl_class" href="class_a_v_l.html">i</a>-&gt;sig = <span class="keyword">new</span> Nodo(*<a class="code hl_class" href="class_a_v_l.html">j</a>-&gt;sig, <a class="code hl_class" href="class_a_v_l.html">i</a>, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        <a class="code hl_class" href="class_a_v_l.html">i</a> = <a class="code hl_class" href="class_a_v_l.html">i</a>-&gt;sig;</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        <a class="code hl_class" href="class_a_v_l.html">j</a> = <a class="code hl_class" href="class_a_v_l.html">j</a>-&gt;sig;</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        ++tamLista;</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    }</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    <a class="code hl_class" href="class_a_v_l.html">aux</a>.cola = <a class="code hl_class" href="class_a_v_l.html">i</a>-&gt;sig = <span class="keyword">new</span> Nodo(*<a class="code hl_class" href="class_a_v_l.html">j</a>, <a class="code hl_class" href="class_a_v_l.html">i</a>, <span class="keyword">nullptr</span>);       <span class="comment">//La cola será igual al último elemento de listaSiguiente</span></div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">aux</a>;</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>}</div>
+</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00278" data-start="{" data-end="}">
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada.html#a2f3429e2889ed1edc5ac59c21f97b24f">  278</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_lista_d_enlazada.html#a2f3429e2889ed1edc5ac59c21f97b24f">ListaDEnlazada&lt;T&gt;::insertaInicio</a>(<a class="code hl_class" href="class_a_v_l.html">T</a> &amp;dato) {</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    <span class="keywordflow">if</span> (cabecera == <span class="keyword">nullptr</span>) {                                               <span class="comment">//Si la cabecera == nullptr, la lista está vacía y</span></div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        cabecera = <span class="keyword">new</span> Nodo(dato, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>);            <span class="comment">//hay que insertar directamente sobre la cabecera,</span></div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        cola = cabecera;                                                     <span class="comment">//cola = cabecera porque solo habría un elemento</span></div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>        cabecera-&gt;ant = <span class="keyword">new</span> Nodo(dato, <span class="keyword">nullptr</span>, cabecera);      <span class="comment">//En otro caso se hace una inserción normal</span></div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        cabecera = cabecera-&gt;ant;</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    }</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    ++tamLista;</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>}</div>
+</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span> </div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00290" data-start="{" data-end="}">
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada.html#a69a2e2336a7f5627e9f7a4ac1dc22a99">  290</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_lista_d_enlazada.html#a69a2e2336a7f5627e9f7a4ac1dc22a99">ListaDEnlazada&lt;T&gt;::insertaFin</a>(<a class="code hl_class" href="class_a_v_l.html">T</a> &amp;dato) {                                <span class="comment">//Es el mismo proceso que la inserción al principio</span></div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    <span class="comment">//pero con punteros a cola</span></div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    <span class="keywordflow">if</span> (cabecera == <span class="keyword">nullptr</span>) {                                               <span class="comment">//Aquí es indiferente insertar por la cola o por la</span></div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>        cabecera = <span class="keyword">new</span> Nodo(dato, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>);            <span class="comment">//cabecera porque van a acabar siendo iguales</span></div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>        cola = cabecera;</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        cola-&gt;sig = <span class="keyword">new</span> Nodo(dato, cola, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>        cola = cola-&gt;sig;</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    }</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    ++tamLista;</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>}</div>
+</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span> </div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00303" data-start="{" data-end="}">
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada.html#ad7116da3100a2539425d7b42f2efdac3">  303</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_lista_d_enlazada.html#ad7116da3100a2539425d7b42f2efdac3">ListaDEnlazada&lt;T&gt;::inserta</a>(<a class="code hl_class" href="class_lista_d_enlazada_1_1_iterador.html">Iterador</a> &amp;<a class="code hl_class" href="class_a_v_l.html">i</a>, <a class="code hl_class" href="class_a_v_l.html">T</a> &amp;dato) {</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    <span class="keywordflow">if</span> (<a class="code hl_class" href="class_a_v_l.html">i</a>.nodo == cabecera || <a class="code hl_class" href="class_a_v_l.html">i</a>.nodo == <span class="keyword">nullptr</span>) insertaInicio(dato);    <span class="comment">//Si se está intentando insertar desde la</span></div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>                                                                            <span class="comment">//posición de cabecera, insertar al inicio, lo</span></div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>                                                                            <span class="comment">//mismo si el nodo es nullptr (la lista estaría vacía)</span></div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>        Nodo *<a class="code hl_class" href="class_a_v_l.html">j</a> = <a class="code hl_class" href="class_a_v_l.html">i</a>.nodo-&gt;ant;                                           <span class="comment">//j será el objeto anterior a i antes de la inserción</span></div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>        Nodo *<a class="code hl_class" href="class_a_v_l.html">aux</a> = <span class="keyword">new</span> Nodo(dato, <a class="code hl_class" href="class_a_v_l.html">j</a>, <a class="code hl_class" href="class_a_v_l.html">i</a>.nodo);</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>        <span class="comment">//Ahora, colocamos en esa posición anterior el nuevo dato</span></div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>        <a class="code hl_class" href="class_a_v_l.html">j</a>-&gt;sig = <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">aux</a>;                                               <span class="comment">//Y reconectamos el nodo j a i-&gt;ant, donde hemos insertado el dato</span></div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>        <a class="code hl_class" href="class_a_v_l.html">i</a>.nodo-&gt;ant = <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">aux</a>;</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>        ++tamLista;</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    }</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>}</div>
+</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span> </div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00318" data-start="{" data-end="}">
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada.html#a6ea45e7901f460689b8fa3c7a51bee74">  318</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_lista_d_enlazada.html#a6ea45e7901f460689b8fa3c7a51bee74">ListaDEnlazada&lt;T&gt;::borraInicio</a>() {</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>    <span class="keywordflow">if</span> (cabecera == <span class="keyword">nullptr</span>) <span class="keywordflow">throw</span> <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">std::domain_error</a>(<span class="stringliteral">&quot;[ListaDEnlazada&lt;T&gt;::borraInicio] No hay elementos en la ListaDEnlazada&quot;</span>);</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    <span class="keywordflow">if</span> (cabecera !=</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>        cola) {                     <span class="comment">//Si la cabecera y la cola son diferentes, entonces hay más de 1 elemento</span></div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>        cabecera = cabecera-&gt;sig;       <span class="comment">//Desplazamos la cabecera</span></div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>        <span class="keyword">delete</span> cabecera-&gt;ant;           <span class="comment">//Borramos el contenido que había en la anterior cabecera</span></div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    } <span class="keywordflow">else</span> {                                  <span class="comment">//Si, en cambio, son iguales, hay solo un elemento y por lo tanto:</span></div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>        <span class="keyword">delete</span> cabecera;                    <span class="comment">//Borramos el contenido de la cabecera</span></div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>        cabecera = cola = <span class="keyword">nullptr</span>;          <span class="comment">//Dejamos los dos punteros apuntando a 0 para indicar que la lista queda</span></div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>        <span class="comment">//vacía y para que no quede basura en ellos</span></div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>    }</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    --tamLista;</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>}</div>
+</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span> </div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00333" data-start="{" data-end="}">
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada.html#aabd50a06785602ac207b0d2ac3d2b976">  333</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_lista_d_enlazada.html#aabd50a06785602ac207b0d2ac3d2b976">ListaDEnlazada&lt;T&gt;::borraFinal</a>() {</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    <span class="keywordflow">if</span> (cola) {</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>        tamLista--;</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>        Nodo *<a class="code hl_class" href="class_a_v_l.html">borrado</a> = cola;</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>        cola = cola-&gt;ant;</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>        <span class="keyword">delete</span> <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">borrado</a>;</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>        <span class="keywordflow">if</span> (cola != 0)</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>            cola-&gt;sig = 0;</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>            cabecera = 0;</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>    }</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>}</div>
+</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span> </div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00347" data-start="{" data-end="}">
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada.html#a7d89f86d9df2371523e17b7873dcfff7">  347</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_lista_d_enlazada.html#a7d89f86d9df2371523e17b7873dcfff7">ListaDEnlazada&lt;T&gt;::borra</a>(<a class="code hl_class" href="class_lista_d_enlazada_1_1_iterador.html">Iterador</a> &amp;<a class="code hl_class" href="class_a_v_l.html">i</a>) {</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>    <span class="keywordflow">if</span> (cabecera == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>        <span class="keywordflow">throw</span> <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">std::domain_error</a>(<span class="stringliteral">&quot;[ListaDEnlazada&lt;T&gt;::borraFinal] No hay elementos en la ListaDEnlazada&quot;</span>);</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>    <span class="keywordflow">if</span> (cabecera != cola) {                     <span class="comment">//Si la cabecera y la cola son diferentes, entonces hay más de 1 elemento</span></div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>        <span class="keywordflow">if</span> (<a class="code hl_class" href="class_a_v_l.html">i</a>.nodo == cabecera) borraInicio();  <span class="comment">//Si el iterador apunta a la cabecera o a la cola, llamamos las funciones</span></div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_class" href="class_a_v_l.html">i</a>.nodo == cola) borraFinal();       <span class="comment">//correspondientes para no tener que programar más casos</span></div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>            <a class="code hl_class" href="class_a_v_l.html">i</a>.nodo-&gt;ant-&gt;sig=<a class="code hl_class" href="class_a_v_l.html">i</a>.nodo-&gt;sig;</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>            <a class="code hl_class" href="class_a_v_l.html">i</a>.nodo-&gt;sig-&gt;ant=<a class="code hl_class" href="class_a_v_l.html">i</a>.nodo-&gt;ant;                     <span class="comment">//y eliminamos el que queda en medio (el que queríamos borrar)</span></div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>            <span class="keyword">delete</span> <a class="code hl_class" href="class_a_v_l.html">i</a>.nodo;</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>            --tamLista;</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>        }</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>    } <span class="keywordflow">else</span> {                                    <span class="comment">//Si, en cambio, son iguales, hay solo un elemento y por lo tanto:</span></div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>        borraFinal();                           <span class="comment">//borramos, por ejemplo, por el final y dejamos la lista vacía</span></div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>    }</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>}</div>
+</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span> </div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00365" data-start="{" data-end="}">
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada.html#af8d6ae5d40b2cb1e0d5ddb4f8ac47bdf">  365</a></span><a class="code hl_class" href="class_a_v_l.html">T</a> &amp;<a class="code hl_function" href="class_lista_d_enlazada.html#af8d6ae5d40b2cb1e0d5ddb4f8ac47bdf">ListaDEnlazada&lt;T&gt;::inicio</a>() {</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>    <span class="keywordflow">if</span> (cabecera == <span class="keyword">nullptr</span>) <span class="keywordflow">throw</span> <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">std::domain_error</a>(<span class="stringliteral">&quot;[ListaDEnlazada&lt;T&gt;::inicio] La lista está vacía&quot;</span>);</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>    <span class="keywordflow">return</span> cabecera-&gt;dato;</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>}</div>
+</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span> </div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00371" data-start="{" data-end="}">
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada.html#ad7c9436113733769989655317caf23b3">  371</a></span><a class="code hl_class" href="class_a_v_l.html">T</a> &amp;<a class="code hl_function" href="class_lista_d_enlazada.html#ad7c9436113733769989655317caf23b3">ListaDEnlazada&lt;T&gt;::fin</a>() {</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>    <span class="keywordflow">if</span> (cola == <span class="keyword">nullptr</span>) <span class="keywordflow">throw</span> <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">std::domain_error</a>(<span class="stringliteral">&quot;[ListaDEnlazada&lt;T&gt;::fin] La lista está vacía&quot;</span>);</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>    <span class="keywordflow">return</span> cola-&gt;dato;</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>}</div>
+</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span> </div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00377" data-start="{" data-end="}">
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno"><a class="line" href="class_lista_d_enlazada.html#aad241fec1cef350325d5021026cac483">  377</a></span><a class="code hl_class" href="class_a_v_l.html">ListaDEnlazada&lt;T&gt;</a> <a class="code hl_function" href="class_lista_d_enlazada.html#aad241fec1cef350325d5021026cac483">ListaDEnlazada&lt;T&gt;::concatenar</a>(<a class="code hl_class" href="class_lista_d_enlazada.html">ListaDEnlazada</a> &amp;<a class="code hl_class" href="class_a_v_l.html">listaSiguiente</a>) {</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span> + <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">listaSiguiente</a>;</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>}</div>
+</div>
+</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span> </div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span><span class="preprocessor">#endif </span><span class="comment">//PRACTICA2_LISTADENLAZADA_H</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ttc" id="aclass_a_v_l_html"><div class="ttname"><a href="class_a_v_l.html">AVL</a></div><div class="ttdef"><b>Definition</b> AVL.h:6</div></div>
+<div class="ttc" id="aclass_a_v_l_html_aa5d8d7a3a8edfc399277cd29b10795ea"><div class="ttname"><a href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">AVL::AVL</a></div><div class="ttdeci">AVL()</div><div class="ttdoc">Constructor por defecto.</div><div class="ttdef"><b>Definition</b> AVL.h:98</div></div>
+<div class="ttc" id="aclass_lista_d_enlazada_1_1_iterador_html"><div class="ttname"><a href="class_lista_d_enlazada_1_1_iterador.html">ListaDEnlazada::Iterador</a></div><div class="ttdoc">Encapsula los punteros de los Nodos de una ListaDEnlazada.</div><div class="ttdef"><b>Definition</b> ListaDEnlazada.h:38</div></div>
+<div class="ttc" id="aclass_lista_d_enlazada_1_1_iterador_html_a3977c4cb6c538a0ecf02f35f14cc6e35"><div class="ttname"><a href="class_lista_d_enlazada_1_1_iterador.html#a3977c4cb6c538a0ecf02f35f14cc6e35">ListaDEnlazada::Iterador::hayAnterior</a></div><div class="ttdeci">bool hayAnterior()</div><div class="ttdef"><b>Definition</b> ListaDEnlazada.h:45</div></div>
+<div class="ttc" id="aclass_lista_d_enlazada_1_1_iterador_html_a5867e0ec48c7d423095c82d9cfca8c19"><div class="ttname"><a href="class_lista_d_enlazada_1_1_iterador.html#a5867e0ec48c7d423095c82d9cfca8c19">ListaDEnlazada::Iterador::siguiente</a></div><div class="ttdeci">void siguiente()</div><div class="ttdef"><b>Definition</b> ListaDEnlazada.h:51</div></div>
+<div class="ttc" id="aclass_lista_d_enlazada_1_1_iterador_html_aaec3e1cef914cdf68fecb6d62d679748"><div class="ttname"><a href="class_lista_d_enlazada_1_1_iterador.html#aaec3e1cef914cdf68fecb6d62d679748">ListaDEnlazada::Iterador::haySiguiente</a></div><div class="ttdeci">bool haySiguiente()</div><div class="ttdef"><b>Definition</b> ListaDEnlazada.h:47</div></div>
+<div class="ttc" id="aclass_lista_d_enlazada_1_1_iterador_html_abaf268b0baa8c666002db6fb4d48089b"><div class="ttname"><a href="class_lista_d_enlazada_1_1_iterador.html#abaf268b0baa8c666002db6fb4d48089b">ListaDEnlazada::Iterador::Iterador</a></div><div class="ttdeci">Iterador(Nodo *aNodo)</div><div class="ttdef"><b>Definition</b> ListaDEnlazada.h:43</div></div>
+<div class="ttc" id="aclass_lista_d_enlazada_1_1_iterador_html_ade638e7cdef13fdaa15eb92e115acffb"><div class="ttname"><a href="class_lista_d_enlazada_1_1_iterador.html#ade638e7cdef13fdaa15eb92e115acffb">ListaDEnlazada::Iterador::dato</a></div><div class="ttdeci">T &amp; dato()</div><div class="ttdef"><b>Definition</b> ListaDEnlazada.h:53</div></div>
+<div class="ttc" id="aclass_lista_d_enlazada_1_1_iterador_html_af1291fa2ab84f2c1a45cfca6bf1b70cc"><div class="ttname"><a href="class_lista_d_enlazada_1_1_iterador.html#af1291fa2ab84f2c1a45cfca6bf1b70cc">ListaDEnlazada::Iterador::anterior</a></div><div class="ttdeci">void anterior()</div><div class="ttdef"><b>Definition</b> ListaDEnlazada.h:49</div></div>
+<div class="ttc" id="aclass_lista_d_enlazada_html"><div class="ttname"><a href="class_lista_d_enlazada.html">ListaDEnlazada</a></div><div class="ttdoc">Estructura de datos que contiene una serie de Nodos enlazados con el anterior y el siguiente.</div><div class="ttdef"><b>Definition</b> ListaDEnlazada.h:16</div></div>
+<div class="ttc" id="aclass_lista_d_enlazada_html_a2f3429e2889ed1edc5ac59c21f97b24f"><div class="ttname"><a href="class_lista_d_enlazada.html#a2f3429e2889ed1edc5ac59c21f97b24f">ListaDEnlazada::insertaInicio</a></div><div class="ttdeci">void insertaInicio(T &amp;dato)</div><div class="ttdoc">Insertar un dato en la posición inicial de la ListaDEnlazada.</div><div class="ttdef"><b>Definition</b> ListaDEnlazada.h:278</div></div>
+<div class="ttc" id="aclass_lista_d_enlazada_html_a315a449d6d95289bbabb81f06254cc22"><div class="ttname"><a href="class_lista_d_enlazada.html#a315a449d6d95289bbabb81f06254cc22">ListaDEnlazada::operator+</a></div><div class="ttdeci">ListaDEnlazada&lt; T &gt; operator+(ListaDEnlazada &amp;listaSiguiente)</div><div class="ttdoc">Operador de concatencación.</div><div class="ttdef"><b>Definition</b> ListaDEnlazada.h:257</div></div>
+<div class="ttc" id="aclass_lista_d_enlazada_html_a38077eb8f77398183cc5dba7edbec31f"><div class="ttname"><a href="class_lista_d_enlazada.html#a38077eb8f77398183cc5dba7edbec31f">ListaDEnlazada::operator=</a></div><div class="ttdeci">ListaDEnlazada &amp; operator=(ListaDEnlazada &amp;orig)</div><div class="ttdoc">Operador de asignación.</div><div class="ttdef"><b>Definition</b> ListaDEnlazada.h:219</div></div>
+<div class="ttc" id="aclass_lista_d_enlazada_html_a4215e5080740406f2d2814a60c518adc"><div class="ttname"><a href="class_lista_d_enlazada.html#a4215e5080740406f2d2814a60c518adc">ListaDEnlazada::ListaDEnlazada</a></div><div class="ttdeci">ListaDEnlazada(const ListaDEnlazada &amp;orig)</div><div class="ttdoc">Constructor de copia.</div><div class="ttdef"><b>Definition</b> ListaDEnlazada.h:206</div></div>
+<div class="ttc" id="aclass_lista_d_enlazada_html_a69a2e2336a7f5627e9f7a4ac1dc22a99"><div class="ttname"><a href="class_lista_d_enlazada.html#a69a2e2336a7f5627e9f7a4ac1dc22a99">ListaDEnlazada::insertaFin</a></div><div class="ttdeci">void insertaFin(T &amp;dato)</div><div class="ttdoc">Insertar un dato en la posición final de la ListaDEnlazada.</div><div class="ttdef"><b>Definition</b> ListaDEnlazada.h:290</div></div>
+<div class="ttc" id="aclass_lista_d_enlazada_html_a6ea45e7901f460689b8fa3c7a51bee74"><div class="ttname"><a href="class_lista_d_enlazada.html#a6ea45e7901f460689b8fa3c7a51bee74">ListaDEnlazada::borraInicio</a></div><div class="ttdeci">void borraInicio()</div><div class="ttdoc">Borra los datos en posición de cabecera.</div><div class="ttdef"><b>Definition</b> ListaDEnlazada.h:318</div></div>
+<div class="ttc" id="aclass_lista_d_enlazada_html_a7d89f86d9df2371523e17b7873dcfff7"><div class="ttname"><a href="class_lista_d_enlazada.html#a7d89f86d9df2371523e17b7873dcfff7">ListaDEnlazada::borra</a></div><div class="ttdeci">void borra(Iterador &amp;i)</div><div class="ttdoc">Borra los datos en la posición apuntada por i.</div><div class="ttdef"><b>Definition</b> ListaDEnlazada.h:347</div></div>
+<div class="ttc" id="aclass_lista_d_enlazada_html_a82dca5ea01a6920451b131a3c0642c8c"><div class="ttname"><a href="class_lista_d_enlazada.html#a82dca5ea01a6920451b131a3c0642c8c">ListaDEnlazada::iteradorInicio</a></div><div class="ttdeci">Iterador iteradorInicio()</div><div class="ttdef"><b>Definition</b> ListaDEnlazada.h:99</div></div>
+<div class="ttc" id="aclass_lista_d_enlazada_html_a867c088889857d51a8ef62cbc428672f"><div class="ttname"><a href="class_lista_d_enlazada.html#a867c088889857d51a8ef62cbc428672f">ListaDEnlazada::iteradorFinal</a></div><div class="ttdeci">Iterador iteradorFinal()</div><div class="ttdef"><b>Definition</b> ListaDEnlazada.h:104</div></div>
+<div class="ttc" id="aclass_lista_d_enlazada_html_a8997b9dc17fe7da671714067e0a3d27a"><div class="ttname"><a href="class_lista_d_enlazada.html#a8997b9dc17fe7da671714067e0a3d27a">ListaDEnlazada::~ListaDEnlazada</a></div><div class="ttdeci">~ListaDEnlazada()</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition</b> ListaDEnlazada.h:190</div></div>
+<div class="ttc" id="aclass_lista_d_enlazada_html_aabd50a06785602ac207b0d2ac3d2b976"><div class="ttname"><a href="class_lista_d_enlazada.html#aabd50a06785602ac207b0d2ac3d2b976">ListaDEnlazada::borraFinal</a></div><div class="ttdeci">void borraFinal()</div><div class="ttdoc">Borra los datos en posición de cola.</div><div class="ttdef"><b>Definition</b> ListaDEnlazada.h:333</div></div>
+<div class="ttc" id="aclass_lista_d_enlazada_html_aad241fec1cef350325d5021026cac483"><div class="ttname"><a href="class_lista_d_enlazada.html#aad241fec1cef350325d5021026cac483">ListaDEnlazada::concatenar</a></div><div class="ttdeci">ListaDEnlazada&lt; T &gt; concatenar(ListaDEnlazada &amp;listaSiguiente)</div><div class="ttdoc">Concatena dos ListasDEnlazada.</div><div class="ttdef"><b>Definition</b> ListaDEnlazada.h:377</div></div>
+<div class="ttc" id="aclass_lista_d_enlazada_html_ab0f418e5848f34b10374b32023d5f760"><div class="ttname"><a href="class_lista_d_enlazada.html#ab0f418e5848f34b10374b32023d5f760">ListaDEnlazada::tam</a></div><div class="ttdeci">int tam()</div><div class="ttdef"><b>Definition</b> ListaDEnlazada.h:174</div></div>
+<div class="ttc" id="aclass_lista_d_enlazada_html_ad7116da3100a2539425d7b42f2efdac3"><div class="ttname"><a href="class_lista_d_enlazada.html#ad7116da3100a2539425d7b42f2efdac3">ListaDEnlazada::inserta</a></div><div class="ttdeci">void inserta(Iterador &amp;i, T &amp;dato)</div><div class="ttdoc">Insertar un dato en una posición dada.</div><div class="ttdef"><b>Definition</b> ListaDEnlazada.h:303</div></div>
+<div class="ttc" id="aclass_lista_d_enlazada_html_ad7c9436113733769989655317caf23b3"><div class="ttname"><a href="class_lista_d_enlazada.html#ad7c9436113733769989655317caf23b3">ListaDEnlazada::fin</a></div><div class="ttdeci">T &amp; fin()</div><div class="ttdoc">Último elemento de la ListaDEnlazada.</div><div class="ttdef"><b>Definition</b> ListaDEnlazada.h:371</div></div>
+<div class="ttc" id="aclass_lista_d_enlazada_html_af8d6ae5d40b2cb1e0d5ddb4f8ac47bdf"><div class="ttname"><a href="class_lista_d_enlazada.html#af8d6ae5d40b2cb1e0d5ddb4f8ac47bdf">ListaDEnlazada::inicio</a></div><div class="ttdeci">T &amp; inicio()</div><div class="ttdoc">Primer elemento de la ListaDEnlazada.</div><div class="ttdef"><b>Definition</b> ListaDEnlazada.h:365</div></div>
+<div class="ttc" id="aclass_lista_d_enlazada_html_af995b60f12d5ba10616a9d75f4e4c730"><div class="ttname"><a href="class_lista_d_enlazada.html#af995b60f12d5ba10616a9d75f4e4c730">ListaDEnlazada::ListaDEnlazada</a></div><div class="ttdeci">ListaDEnlazada()</div><div class="ttdoc">Constructor por defecto.</div><div class="ttdef"><b>Definition</b> ListaDEnlazada.h:62</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a class="el" href="dir_7e17ac9cf8fba2cb04bc248c85b0ceb7.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_9870a7a8923a86f2e07e11517072980e.html">EEDD_P</a></li><li class="navelem"><a class="el" href="dir_ab84c8ea61596afe59b8f2b4eaca9f36.html">Practica3</a></li><li class="navelem"><b>ListaDEnlazada.h</b></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Práctica 1-b: Archivo de código fuente C:/Users/juego/Documents/GitHub/EEDD_P/Practica3/VDinamico.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Práctica 1-b<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Práctica realizada por Juan Carrasco Vico y Gregorio Torres Herrera</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_v_dinamico_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">VDinamico.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#ifndef INC_01_P1A_VDINAMICO_H</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#define INC_01_P1A_VDINAMICO_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;climits&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_v_dinamico.html">   15</a></span><span class="keyword">class </span><a class="code hl_class" href="class_v_dinamico.html">VDinamico</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="comment">//&lt;editor-fold desc=&quot;Atributos&quot;&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_class" href="class_a_v_l.html">T</a> *_datos = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> _tamal = 0;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> _tamaf = 1;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="comment">//&lt;/editor-fold&gt;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="comment">//&lt;editor-fold desc=&quot;Métodos de funcionamiento interno&quot;&gt;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">int</span> tambase2();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">void</span> actualizarTamFis();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="comment">//&lt;/editor-fold&gt;</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="comment">//&lt;editor-fold desc=&quot;Constructores y destructor&quot;&gt;</span></div>
+<div class="foldopen" id="foldopen00051" data-start="{" data-end="}">
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_v_dinamico.html#af905a96dbf84b7a2e660b73b49e51e8d">   51</a></span>    <a class="code hl_function" href="class_v_dinamico.html#af905a96dbf84b7a2e660b73b49e51e8d">VDinamico</a>();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_v_dinamico.html#a92cabc57f083b2c99de851cdfec3bf8d">   60</a></span>    <a class="code hl_function" href="class_v_dinamico.html#a92cabc57f083b2c99de851cdfec3bf8d">VDinamico</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_class" href="class_a_v_l.html">n</a>);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="class_v_dinamico.html#a24ed9b51b1fd377ac86e41c48f80db8c">   67</a></span>    <a class="code hl_function" href="class_v_dinamico.html#a24ed9b51b1fd377ac86e41c48f80db8c">VDinamico</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_a_v_l.html">VDinamico&lt;T&gt;</a> &amp;<a class="code hl_class" href="class_a_v_l.html">orig</a>);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="foldopen" id="foldopen00078" data-start="{" data-end="}">
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="class_v_dinamico.html#a68e792acc864dffb8f3a1f6512358ebf">   78</a></span>    <a class="code hl_function" href="class_v_dinamico.html#a68e792acc864dffb8f3a1f6512358ebf">VDinamico</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_a_v_l.html">VDinamico&lt;T&gt;</a> &amp;<a class="code hl_class" href="class_a_v_l.html">orig</a>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_class" href="class_a_v_l.html">posInicial</a>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_class" href="class_a_v_l.html">numDatos</a>);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="class_v_dinamico.html#a1ce1d4179dc7df3c608f51de01204ec0">   86</a></span>     <a class="code hl_function" href="class_v_dinamico.html#a1ce1d4179dc7df3c608f51de01204ec0">VDinamico</a>(<a class="code hl_class" href="class_a_v_l.html">T</a> <a class="code hl_class" href="class_a_v_l.html">orig</a>[], <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> tam);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="foldopen" id="foldopen00091" data-start="{" data-end="}">
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="class_v_dinamico.html#a811145b1f245e6dbda131423adee940f">   91</a></span>    <a class="code hl_function" href="class_v_dinamico.html#a811145b1f245e6dbda131423adee940f">~VDinamico</a>();</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="comment">//&lt;/editor-fold&gt;</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="comment">//&lt;editor-fold desc=&quot;Sobrecarga de Operadores&quot;&gt;</span></div>
+<div class="foldopen" id="foldopen00101" data-start="{" data-end="}">
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="class_v_dinamico.html#a4369a37a57921f6b8d82d935ae9c921a">  101</a></span>    <a class="code hl_class" href="class_a_v_l.html">VDinamico&lt;T&gt;</a> &amp;<a class="code hl_function" href="class_v_dinamico.html#a4369a37a57921f6b8d82d935ae9c921a">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_a_v_l.html">VDinamico&lt;T&gt;</a> &amp;<a class="code hl_class" href="class_a_v_l.html">orig</a>);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="foldopen" id="foldopen00110" data-start="{" data-end="}">
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="class_v_dinamico.html#aa39178bbe1c016557023ba5a42e910f5">  110</a></span>    <a class="code hl_class" href="class_a_v_l.html">T</a> &amp;<a class="code hl_function" href="class_v_dinamico.html#aa39178bbe1c016557023ba5a42e910f5">operator[]</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_class" href="class_a_v_l.html">pos</a>);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="comment">//&lt;/editor-fold&gt;</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="comment">//&lt;editor-fold desc=&quot;Algoritmos de ordenación&quot;&gt;</span></div>
+<div class="foldopen" id="foldopen00118" data-start="{" data-end="}">
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="class_v_dinamico.html#a54a20403d34e84dd29e48be289c4e31c">  118</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_v_dinamico.html#a54a20403d34e84dd29e48be289c4e31c">ordenar</a>();</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="foldopen" id="foldopen00125" data-start="{" data-end="}">
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="class_v_dinamico.html#a618cf9617f1d0286aa34bcbc42163043">  125</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_v_dinamico.html#a618cf9617f1d0286aa34bcbc42163043">ordenar2</a>();</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="comment">//&lt;/editor-fold&gt;</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="comment">//&lt;editor-fold desc=&quot;setters y getters&quot;&gt;</span></div>
+<div class="foldopen" id="foldopen00133" data-start="{" data-end="}">
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="class_v_dinamico.html#a6116f41cab791ccfa3fd98c0d78274ec">  133</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_v_dinamico.html#a6116f41cab791ccfa3fd98c0d78274ec">tamlog</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        <span class="keywordflow">return</span> _tamal;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    }</div>
+</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="comment">//&lt;/editor-fold&gt;</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <span class="comment">//&lt;editor-fold desc=&quot;Insertar, borrar y buscar&quot;&gt;</span></div>
+<div class="foldopen" id="foldopen00148" data-start="{" data-end="}">
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="class_v_dinamico.html#a2e812dda151db4d2a2c88132b155ac00">  148</a></span>    <a class="code hl_class" href="class_a_v_l.html">VDinamico&lt;T&gt;</a>&amp; <a class="code hl_function" href="class_v_dinamico.html#a2e812dda151db4d2a2c88132b155ac00">insertar</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_a_v_l.html">T</a>&amp; dato, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_class" href="class_a_v_l.html">pos</a> = <a class="code hl_class" href="class_a_v_l.html">UINT_MAX</a>);</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="foldopen" id="foldopen00159" data-start="{" data-end="}">
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="class_v_dinamico.html#a44c4a73439f1e5f1275c5a43a93d3964">  159</a></span>    <a class="code hl_class" href="class_a_v_l.html">T</a> <a class="code hl_function" href="class_v_dinamico.html#a44c4a73439f1e5f1275c5a43a93d3964">borrar</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_class" href="class_a_v_l.html">pos</a> = <a class="code hl_class" href="class_a_v_l.html">UINT_MAX</a>);</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="foldopen" id="foldopen00170" data-start="{" data-end="}">
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="class_v_dinamico.html#a662bb0715036b21576aee797be674024">  170</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_v_dinamico.html#a662bb0715036b21576aee797be674024">busquedaBin</a>(<a class="code hl_class" href="class_a_v_l.html">T</a>&amp; dato);</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    <span class="comment">//&lt;/editor-fold&gt;</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>};</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="comment">//&lt;editor-fold desc=&quot;Constructores y destructor&quot;&gt;</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00176" data-start="{" data-end="}">
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="class_v_dinamico.html#af905a96dbf84b7a2e660b73b49e51e8d">  176</a></span><a class="code hl_function" href="class_v_dinamico.html#af905a96dbf84b7a2e660b73b49e51e8d">VDinamico&lt;T&gt;::VDinamico</a>(): <a class="code hl_class" href="class_v_dinamico.html">VDinamico</a>(0) {</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>}</div>
+</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00181" data-start="{" data-end="}">
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno"><a class="line" href="class_v_dinamico.html#a92cabc57f083b2c99de851cdfec3bf8d">  181</a></span><a class="code hl_function" href="class_v_dinamico.html#af905a96dbf84b7a2e660b73b49e51e8d">VDinamico&lt;T&gt;::VDinamico</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_class" href="class_a_v_l.html">n</a>){</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    <span class="keywordflow">if</span> (<a class="code hl_class" href="class_a_v_l.html">n</a> == 0) {</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        _datos = <span class="keyword">new</span> <a class="code hl_class" href="class_a_v_l.html">T</a>[_tamaf];</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        _tamaf = <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">std::pow</a>(2,<a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">std::ceil</a>(<a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">std::log2</a>(<a class="code hl_class" href="class_a_v_l.html">n</a>)));</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        _datos = <span class="keyword">new</span> <a class="code hl_class" href="class_a_v_l.html">T</a>[_tamaf];</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    }</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>}</div>
+</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00191" data-start="{" data-end="}">
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="class_v_dinamico.html#a24ed9b51b1fd377ac86e41c48f80db8c">  191</a></span><a class="code hl_function" href="class_v_dinamico.html#af905a96dbf84b7a2e660b73b49e51e8d">VDinamico&lt;T&gt;::VDinamico</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_a_v_l.html">VDinamico&lt;T&gt;</a> &amp;<a class="code hl_class" href="class_a_v_l.html">orig</a>) : _tamal(<a class="code hl_class" href="class_a_v_l.html">orig</a>._tamal), _tamaf(<a class="code hl_class" href="class_a_v_l.html">orig</a>._tamaf) {</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    _datos = <span class="keyword">new</span> <a class="code hl_class" href="class_a_v_l.html">T</a>[_tamaf];</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_class" href="class_a_v_l.html">i</a> = 0; <a class="code hl_class" href="class_a_v_l.html">i</a> &lt; _tamal; ++<a class="code hl_class" href="class_a_v_l.html">i</a>) {</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        _datos[<a class="code hl_class" href="class_a_v_l.html">i</a>] = <a class="code hl_class" href="class_a_v_l.html">orig</a>._datos[<a class="code hl_class" href="class_a_v_l.html">i</a>];</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    }</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>}</div>
+</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00199" data-start="{" data-end="}">
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="class_v_dinamico.html#a68e792acc864dffb8f3a1f6512358ebf">  199</a></span><a class="code hl_function" href="class_v_dinamico.html#af905a96dbf84b7a2e660b73b49e51e8d">VDinamico&lt;T&gt;::VDinamico</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_a_v_l.html">VDinamico&lt;T&gt;</a> &amp;<a class="code hl_class" href="class_a_v_l.html">orig</a>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_class" href="class_a_v_l.html">posInicial</a>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_class" href="class_a_v_l.html">numDatos</a>) : _tamal(<a class="code hl_class" href="class_a_v_l.html">numDatos</a>) {</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <span class="keywordflow">if</span> (<a class="code hl_class" href="class_a_v_l.html">posInicial</a> + <a class="code hl_class" href="class_a_v_l.html">numDatos</a> &gt; <a class="code hl_class" href="class_a_v_l.html">orig</a>._tamal)</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        <span class="keywordflow">throw</span> <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">std::out_of_range</a>(<span class="stringliteral">&quot;[VDinamico::ConstCopPar] El tamanio a copiar no &quot;</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>                                <span class="stringliteral">&quot;puede ser mayor que el tamanio logico del vector original.&quot;</span>);</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    _datos = <span class="keyword">new</span> <a class="code hl_class" href="class_a_v_l.html">T</a>[tambase2()];</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_class" href="class_a_v_l.html">i</a> = 0; <a class="code hl_class" href="class_a_v_l.html">i</a> &lt; _tamal; ++<a class="code hl_class" href="class_a_v_l.html">i</a>) {</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        _datos[<a class="code hl_class" href="class_a_v_l.html">i</a>] = <a class="code hl_class" href="class_a_v_l.html">orig</a>._datos[<a class="code hl_class" href="class_a_v_l.html">posInicial</a> + <a class="code hl_class" href="class_a_v_l.html">i</a>]; <span class="comment">//posInicial+i para que copie desde la posición inicial hasta el número de datos que se le pide.</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    }</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>}</div>
+</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><a class="code hl_function" href="class_v_dinamico.html#af905a96dbf84b7a2e660b73b49e51e8d">VDinamico&lt;T&gt;::VDinamico</a>(<a class="code hl_class" href="class_a_v_l.html">T</a> *<a class="code hl_class" href="class_a_v_l.html">orig</a>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> tam) : <a class="code hl_class" href="class_v_dinamico.html">VDinamico</a>() {</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_class" href="class_a_v_l.html">i</a> = 0; <a class="code hl_class" href="class_a_v_l.html">i</a> &lt; tam; ++<a class="code hl_class" href="class_a_v_l.html">i</a>) {</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        <a class="code hl_function" href="class_v_dinamico.html#a2e812dda151db4d2a2c88132b155ac00">insertar</a>(<a class="code hl_class" href="class_a_v_l.html">orig</a>[<a class="code hl_class" href="class_a_v_l.html">i</a>]);</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    }</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>}</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00219" data-start="{" data-end="}">
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="class_v_dinamico.html#a811145b1f245e6dbda131423adee940f">  219</a></span><a class="code hl_function" href="class_v_dinamico.html#a811145b1f245e6dbda131423adee940f">VDinamico&lt;T&gt;::~VDinamico</a>() {</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <span class="keyword">delete</span>[] _datos;</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    _datos = <span class="keyword">nullptr</span>; <span class="comment">//Para que no queden restos en la memoria</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>}</div>
+</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="comment">//&lt;/editor-fold&gt;</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="comment">//&lt;editor-fold desc=&quot;Operadores&quot;&gt;</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00227" data-start="{" data-end="}">
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="class_v_dinamico.html#a4369a37a57921f6b8d82d935ae9c921a">  227</a></span><a class="code hl_class" href="class_a_v_l.html">VDinamico&lt;T&gt;</a> &amp;<a class="code hl_function" href="class_v_dinamico.html#a4369a37a57921f6b8d82d935ae9c921a">VDinamico&lt;T&gt;::operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_a_v_l.html">VDinamico&lt;T&gt;</a> &amp;<a class="code hl_class" href="class_a_v_l.html">orig</a>) {</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;<a class="code hl_class" href="class_a_v_l.html">orig</a>) {</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        <span class="comment">//Borrar lo que se tenía para no tener fugas de memoria</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>        <span class="keyword">delete</span>[] _datos;</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        _tamal = <a class="code hl_class" href="class_a_v_l.html">orig</a>._tamal;</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        _datos = <span class="keyword">new</span> <a class="code hl_class" href="class_a_v_l.html">T</a>[tambase2()];</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_class" href="class_a_v_l.html">i</a> = 0; <a class="code hl_class" href="class_a_v_l.html">i</a> &lt; _tamal; ++<a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">i</a>) {</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>            _datos[<a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">i</a>] = <a class="code hl_class" href="class_a_v_l.html">orig</a>._datos[<a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">i</a>];</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        }</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    }</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>}</div>
+</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00243" data-start="{" data-end="}">
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno"><a class="line" href="class_v_dinamico.html#aa39178bbe1c016557023ba5a42e910f5">  243</a></span><a class="code hl_class" href="class_a_v_l.html">T</a> &amp;<a class="code hl_function" href="class_v_dinamico.html#aa39178bbe1c016557023ba5a42e910f5">VDinamico&lt;T&gt;::operator[]</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_class" href="class_a_v_l.html">pos</a>) {</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    <span class="keywordflow">if</span> (<a class="code hl_class" href="class_a_v_l.html">pos &lt; 0 || pos &gt;</a>= _tamal) { <span class="comment">//Aquí es pos &gt;= porque un vector de tamaño 16, no tiene hasta el indice 16, tiene del 0 al 15.</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        <span class="keywordflow">throw</span> <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">std::invalid_argument</a>(<span class="stringliteral">&quot;[VDinamico::operator[]] La posicion a acceder&quot;</span></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>                                    <span class="stringliteral">&quot; no puede ser mayor que el tamanio del vector original&quot;</span>);</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    }</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <span class="keywordflow">return</span> _datos[<a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">pos</a>];</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>}</div>
+</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="comment">//&lt;/editor-fold&gt;</span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="comment">//&lt;editor-fold desc=&quot;Algoritmos de ordenación&quot;&gt;</span></div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00254" data-start="{" data-end="}">
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno"><a class="line" href="class_v_dinamico.html#a54a20403d34e84dd29e48be289c4e31c">  254</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_v_dinamico.html#a54a20403d34e84dd29e48be289c4e31c">VDinamico&lt;T&gt;::ordenar</a>() {</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">std::sort</a>(_datos, _datos + _tamal);</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>}</div>
+</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span><span class="comment">//Ordenar con algoritmo de burbuja</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00260" data-start="{" data-end="}">
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno"><a class="line" href="class_v_dinamico.html#a618cf9617f1d0286aa34bcbc42163043">  260</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_v_dinamico.html#a618cf9617f1d0286aa34bcbc42163043">VDinamico&lt;T&gt;::ordenar2</a>() {</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_class" href="class_a_v_l.html">i</a> = 0; <a class="code hl_class" href="class_a_v_l.html">i</a> &lt; _tamal - 1; <a class="code hl_class" href="class_a_v_l.html">i</a>++) {</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_class" href="class_a_v_l.html">j</a> = 0; <a class="code hl_class" href="class_a_v_l.html">j</a> &lt; _tamal - <a class="code hl_class" href="class_a_v_l.html">i</a> - 1; <a class="code hl_class" href="class_a_v_l.html">j</a>++) {</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>            <span class="keywordflow">if</span> (_datos[<a class="code hl_class" href="class_a_v_l.html">j</a>] &gt; _datos[<a class="code hl_class" href="class_a_v_l.html">j</a> + 1]) {</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>                <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">std::swap</a>(_datos[<a class="code hl_class" href="class_a_v_l.html">j</a>], _datos[<a class="code hl_class" href="class_a_v_l.html">j</a> + 1]);</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>            }</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        }</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    }</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>}</div>
+</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span><span class="comment">//&lt;/editor-fold&gt;</span></div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span><span class="comment">//&lt;editor-fold desc=&quot;Insertar, borrar y buscar&quot;&gt;</span></div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00273" data-start="{" data-end="}">
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno"><a class="line" href="class_v_dinamico.html#a2e812dda151db4d2a2c88132b155ac00">  273</a></span><a class="code hl_class" href="class_a_v_l.html">VDinamico&lt;T&gt;</a>&amp; <a class="code hl_function" href="class_v_dinamico.html#a2e812dda151db4d2a2c88132b155ac00">VDinamico&lt;T&gt;::insertar</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_a_v_l.html">T</a>&amp; dato, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_class" href="class_a_v_l.html">pos</a>) {</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    <span class="keywordflow">if</span>(<a class="code hl_class" href="class_a_v_l.html">pos</a> &gt; _tamal &amp;&amp; <a class="code hl_class" href="class_a_v_l.html">pos</a>!=<a class="code hl_class" href="class_a_v_l.html">UINT_MAX</a>) <span class="keywordflow">throw</span> <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">std::invalid_argument</a>(<span class="stringliteral">&quot;[VDinamico::insertar] La posicion donde se desea&quot;</span></div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>                                                               <span class="stringliteral">&quot; insertar esta fuera del rango.&quot;</span>);</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <span class="comment">//Ampliar el VDinamico si es necesario</span></div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    <span class="keywordflow">if</span>(_tamal+1 &gt; _tamaf){                      <span class="comment">//Comprobamos si el dato que vamos a añadir cabe en el tamaf del vector</span></div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>        actualizarTamFis();</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    }</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span> </div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    <span class="keywordflow">if</span>(<a class="code hl_class" href="class_a_v_l.html">pos</a> == <a class="code hl_class" href="class_a_v_l.html">UINT_MAX</a>){                        <span class="comment">//Si ya se ha alargado el vector o si no hacia falta, comprobamos si se está intentando insertar en la última posición o en medio</span></div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>        _datos[_tamal++] = dato;                <span class="comment">//Se posiciona el dato en la última posición del VDinamico</span></div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    }<span class="keywordflow">else</span>{                                      <span class="comment">//En otro caso:</span></div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> <a class="code hl_class" href="class_a_v_l.html">i</a> = _tamal; <a class="code hl_class" href="class_a_v_l.html">i</a> &gt; <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">pos</a>; <a class="code hl_class" href="class_a_v_l.html">i</a>--){      <span class="comment">//Desde el final hasta la posición</span></div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>            _datos[<a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">i</a>] = _datos[<a class="code hl_class" href="class_a_v_l.html">i</a>-1];            <span class="comment">//Cada dato será igual al anterior</span></div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>            _datos[<a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">pos</a>] = dato;                 <span class="comment">//Para dejarle hueco al dato introducido</span></div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>        }</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>        ++_tamal;</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>    }</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>}</div>
+</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00295" data-start="{" data-end="}">
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno"><a class="line" href="class_v_dinamico.html#a44c4a73439f1e5f1275c5a43a93d3964">  295</a></span><a class="code hl_class" href="class_a_v_l.html">T</a> <a class="code hl_function" href="class_v_dinamico.html#a44c4a73439f1e5f1275c5a43a93d3964">VDinamico&lt;T&gt;::borrar</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_class" href="class_a_v_l.html">pos</a>) {</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>    <span class="keywordflow">if</span>(<a class="code hl_class" href="class_a_v_l.html">pos</a> &gt;= _tamal &amp;&amp; <a class="code hl_class" href="class_a_v_l.html">pos</a>!=<a class="code hl_class" href="class_a_v_l.html">UINT_MAX</a>){</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>        <span class="keywordflow">throw</span> <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">std::invalid_argument</a>(<span class="stringliteral">&quot;[VDinamico::borrar] La posicion donde se desea borrar está fuera del rango.&quot;</span>);</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    }</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    <span class="keywordflow">if</span>(_tamal==0){</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>        <span class="keywordflow">throw</span> <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">std::out_of_range</a>(<span class="stringliteral">&quot;[VDinamico::borrar] El VDinamico se encuentra vacío, no se puede borrar nada.&quot;</span>);</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    }</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span> </div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    <span class="comment">//Reducir el VDinamico si es necesario</span></div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    <span class="keywordflow">if</span>((_tamal-1)*3 &lt; _tamaf){                  <span class="comment">//Comprobamos que sin el dato que vamos a borrar estamos por debajo del tercio del tamaf.</span></div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>        actualizarTamFis();</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    }</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span> </div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    <span class="keywordflow">if</span>(<a class="code hl_class" href="class_a_v_l.html">pos</a> == <a class="code hl_class" href="class_a_v_l.html">UINT_MAX</a>) {                       <span class="comment">//Si ya se ha reducido el vector o si no hacia falta, comprobamos si se está intentando borrar en la última posición o en medio</span></div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>        <a class="code hl_class" href="class_a_v_l.html">T</a> <a class="code hl_class" href="class_a_v_l.html">aux</a> = <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">T</a>(_datos[_tamal-1]);</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>        _datos[_tamal--]= <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">T</a>();                  <span class="comment">//Se elimina el dato en la última posición dándole su valor por defecto</span></div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">aux</a>;                             <span class="comment">//Devuelve una COPIA del dato que hemos eliminado</span></div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>    }<span class="keywordflow">else</span> {                                     <span class="comment">//En otro caso:</span></div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>        <a class="code hl_class" href="class_a_v_l.html">T</a> <a class="code hl_class" href="class_a_v_l.html">aux</a> = <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">T</a>(_datos[<a class="code hl_class" href="class_a_v_l.html">pos</a>]);</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> <a class="code hl_class" href="class_a_v_l.html">i</a> = <a class="code hl_class" href="class_a_v_l.html">pos</a>; <a class="code hl_class" href="class_a_v_l.html">i</a> &lt; _tamal-1; <a class="code hl_class" href="class_a_v_l.html">i</a>++) {   <span class="comment">//Desde la posición hasta el final</span></div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>            _datos[<a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">i</a>] = _datos[<a class="code hl_class" href="class_a_v_l.html">i</a>+1];            <span class="comment">//Cada dato será igual al siguiente</span></div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>        }</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>        _datos[_tamal--]= <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">T</a>();                  <span class="comment">//Se elimina el dato en la última posición dándole su valor por defecto</span></div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">aux</a>;                             <span class="comment">//Devuelve una COPIA del dato que hemos eliminado</span></div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    }</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>}</div>
+</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span> </div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00324" data-start="{" data-end="}">
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno"><a class="line" href="class_v_dinamico.html#a662bb0715036b21576aee797be674024">  324</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="class_v_dinamico.html#a662bb0715036b21576aee797be674024">VDinamico&lt;T&gt;::busquedaBin</a>(<a class="code hl_class" href="class_a_v_l.html">T</a>&amp; dato){</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    <span class="keywordtype">int</span> <a class="code hl_class" href="class_a_v_l.html">inf</a> = 0;</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    <span class="keywordtype">int</span> <a class="code hl_class" href="class_a_v_l.html">sup</a> = _tamal - 1;</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">curIn</a>;</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>    <span class="keywordflow">while</span> (<a class="code hl_class" href="class_a_v_l.html">inf</a> &lt;= <a class="code hl_class" href="class_a_v_l.html">sup</a>) {</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>        <a class="code hl_class" href="class_a_v_l.html">curIn</a> = (<a class="code hl_class" href="class_a_v_l.html">inf</a> + <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">sup</a>) / 2;</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>        <span class="keywordflow">if</span> (_datos[<a class="code hl_class" href="class_a_v_l.html">curIn</a>] == dato) {</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">curIn</a>;</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>        }<span class="keywordflow">else</span> <span class="keywordflow">if</span> (_datos[<a class="code hl_class" href="class_a_v_l.html">curIn</a>] &lt; dato) {</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>            <a class="code hl_class" href="class_a_v_l.html">inf</a> = <a class="code hl_class" href="class_a_v_l.html">curIn</a> + 1;</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>            <a class="code hl_class" href="class_a_v_l.html">sup</a> = <a class="code hl_class" href="class_a_v_l.html">curIn</a> - 1;</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>        }</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    }</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>    <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>}</div>
+</div>
+</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span><span class="comment">//&lt;/editor-fold&gt;</span></div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span> </div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span><span class="comment">//&lt;editor-fold desc=&quot;Métodos privados de funcionamiento interno&quot;&gt;</span></div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span><span class="keywordtype">int</span> <a class="code hl_class" href="class_v_dinamico.html">VDinamico&lt;T&gt;::tambase2</a>() {</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>    _tamaf = <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">std::pow</a>(2,<a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">std::ceil</a>(<a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">log2</a>(_tamal))+(<a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">std::log2</a>(_tamal)-<a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">std::round</a>(<a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">std::log2</a>(_tamal))!=0?0:1));</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>    <span class="comment">//Lo que hacemos aquí es que si el tamal ya es potencia de 2, lo aumentamos porque entendemos que ha llegado al tamaf.</span></div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>    <span class="keywordflow">return</span> _tamaf;</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>}</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span><span class="keywordtype">void</span> <a class="code hl_class" href="class_v_dinamico.html">VDinamico&lt;T&gt;::actualizarTamFis</a>() {</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>    tambase2();                             <span class="comment">//Calculamos el nuevo tamaño físico</span></div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    <a class="code hl_class" href="class_a_v_l.html">T</a>* <a class="code hl_class" href="class_a_v_l.html">vaux</a> = <span class="keyword">new</span> <a class="code hl_class" href="class_a_v_l.html">T</a>[_tamaf];                <span class="comment">//Inicializamos un nuevo vector con el tamaño correspondiente</span></div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_class" href="class_a_v_l.html">i</a> = 0; <a class="code hl_class" href="class_a_v_l.html">i</a> &lt; _tamal; ++<a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">i</a>) {      <span class="comment">//Copiamos el vector de datos al vector auxiliar</span></div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>        <a class="code hl_class" href="class_a_v_l.html">vaux</a>[<a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">i</a>] = _datos[<a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">i</a>];                <span class="comment">//Igualamos el contenido de uno a otro</span></div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>    }</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    <span class="keyword">delete</span> [] _datos;                       <span class="comment">//Eliminamos el vector antiguo</span></div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>    _datos = <a class="code hl_function" href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">vaux</a>;                          <span class="comment">//Apuntamos el vector _datos a el auxiliar ya lleno</span></div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>    <a class="code hl_class" href="class_a_v_l.html">vaux</a> = <span class="keyword">nullptr</span>;                         <span class="comment">//Limpiamos la basura</span></div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>}</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span><span class="comment">//&lt;/editor-fold&gt;</span></div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span> </div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span><span class="preprocessor">#endif </span><span class="comment">//INC_01_P1A_VDINAMICO_H</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ttc" id="aclass_a_v_l_html"><div class="ttname"><a href="class_a_v_l.html">AVL</a></div><div class="ttdef"><b>Definition</b> AVL.h:6</div></div>
+<div class="ttc" id="aclass_a_v_l_html_aa5d8d7a3a8edfc399277cd29b10795ea"><div class="ttname"><a href="class_a_v_l.html#aa5d8d7a3a8edfc399277cd29b10795ea">AVL::AVL</a></div><div class="ttdeci">AVL()</div><div class="ttdoc">Constructor por defecto.</div><div class="ttdef"><b>Definition</b> AVL.h:98</div></div>
+<div class="ttc" id="aclass_v_dinamico_html"><div class="ttname"><a href="class_v_dinamico.html">VDinamico</a></div><div class="ttdef"><b>Definition</b> VDinamico.h:15</div></div>
+<div class="ttc" id="aclass_v_dinamico_html_a1ce1d4179dc7df3c608f51de01204ec0"><div class="ttname"><a href="class_v_dinamico.html#a1ce1d4179dc7df3c608f51de01204ec0">VDinamico::VDinamico</a></div><div class="ttdeci">VDinamico(T orig[], unsigned int tam)</div><div class="ttdoc">Constructor de copia de un vector estático.</div></div>
+<div class="ttc" id="aclass_v_dinamico_html_a24ed9b51b1fd377ac86e41c48f80db8c"><div class="ttname"><a href="class_v_dinamico.html#a24ed9b51b1fd377ac86e41c48f80db8c">VDinamico::VDinamico</a></div><div class="ttdeci">VDinamico(const VDinamico&lt; T &gt; &amp;orig)</div><div class="ttdoc">Constructor de copia.</div><div class="ttdef"><b>Definition</b> VDinamico.h:191</div></div>
+<div class="ttc" id="aclass_v_dinamico_html_a2e812dda151db4d2a2c88132b155ac00"><div class="ttname"><a href="class_v_dinamico.html#a2e812dda151db4d2a2c88132b155ac00">VDinamico::insertar</a></div><div class="ttdeci">VDinamico&lt; T &gt; &amp; insertar(const T &amp;dato, unsigned int pos=UINT_MAX)</div><div class="ttdoc">Inserta un dato en el VDinamico.</div><div class="ttdef"><b>Definition</b> VDinamico.h:273</div></div>
+<div class="ttc" id="aclass_v_dinamico_html_a4369a37a57921f6b8d82d935ae9c921a"><div class="ttname"><a href="class_v_dinamico.html#a4369a37a57921f6b8d82d935ae9c921a">VDinamico::operator=</a></div><div class="ttdeci">VDinamico&lt; T &gt; &amp; operator=(const VDinamico&lt; T &gt; &amp;orig)</div><div class="ttdoc">Operador de asignación.</div><div class="ttdef"><b>Definition</b> VDinamico.h:227</div></div>
+<div class="ttc" id="aclass_v_dinamico_html_a44c4a73439f1e5f1275c5a43a93d3964"><div class="ttname"><a href="class_v_dinamico.html#a44c4a73439f1e5f1275c5a43a93d3964">VDinamico::borrar</a></div><div class="ttdeci">T borrar(unsigned int pos=UINT_MAX)</div><div class="ttdoc">Borra un dato del VDinamico.</div><div class="ttdef"><b>Definition</b> VDinamico.h:295</div></div>
+<div class="ttc" id="aclass_v_dinamico_html_a54a20403d34e84dd29e48be289c4e31c"><div class="ttname"><a href="class_v_dinamico.html#a54a20403d34e84dd29e48be289c4e31c">VDinamico::ordenar</a></div><div class="ttdeci">void ordenar()</div><div class="ttdoc">Ordena el Vdinamico de menor a mayor.</div><div class="ttdef"><b>Definition</b> VDinamico.h:254</div></div>
+<div class="ttc" id="aclass_v_dinamico_html_a6116f41cab791ccfa3fd98c0d78274ec"><div class="ttname"><a href="class_v_dinamico.html#a6116f41cab791ccfa3fd98c0d78274ec">VDinamico::tamlog</a></div><div class="ttdeci">unsigned int tamlog() const</div><div class="ttdoc">Devuelve el tamaño lógico del VDinamico.</div><div class="ttdef"><b>Definition</b> VDinamico.h:133</div></div>
+<div class="ttc" id="aclass_v_dinamico_html_a618cf9617f1d0286aa34bcbc42163043"><div class="ttname"><a href="class_v_dinamico.html#a618cf9617f1d0286aa34bcbc42163043">VDinamico::ordenar2</a></div><div class="ttdeci">void ordenar2()</div><div class="ttdoc">ordena el Vdinamico de menor a mayor</div><div class="ttdef"><b>Definition</b> VDinamico.h:260</div></div>
+<div class="ttc" id="aclass_v_dinamico_html_a662bb0715036b21576aee797be674024"><div class="ttname"><a href="class_v_dinamico.html#a662bb0715036b21576aee797be674024">VDinamico::busquedaBin</a></div><div class="ttdeci">int busquedaBin(T &amp;dato)</div><div class="ttdoc">Busca un dato en el VDinamico.</div><div class="ttdef"><b>Definition</b> VDinamico.h:324</div></div>
+<div class="ttc" id="aclass_v_dinamico_html_a68e792acc864dffb8f3a1f6512358ebf"><div class="ttname"><a href="class_v_dinamico.html#a68e792acc864dffb8f3a1f6512358ebf">VDinamico::VDinamico</a></div><div class="ttdeci">VDinamico(const VDinamico&lt; T &gt; &amp;orig, unsigned int posInicial, unsigned int numDatos)</div><div class="ttdoc">Constructor de copia parcial.</div><div class="ttdef"><b>Definition</b> VDinamico.h:199</div></div>
+<div class="ttc" id="aclass_v_dinamico_html_a811145b1f245e6dbda131423adee940f"><div class="ttname"><a href="class_v_dinamico.html#a811145b1f245e6dbda131423adee940f">VDinamico::~VDinamico</a></div><div class="ttdeci">~VDinamico()</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition</b> VDinamico.h:219</div></div>
+<div class="ttc" id="aclass_v_dinamico_html_a92cabc57f083b2c99de851cdfec3bf8d"><div class="ttname"><a href="class_v_dinamico.html#a92cabc57f083b2c99de851cdfec3bf8d">VDinamico::VDinamico</a></div><div class="ttdeci">VDinamico(unsigned int n)</div><div class="ttdoc">Constructor parametrizado.</div><div class="ttdef"><b>Definition</b> VDinamico.h:181</div></div>
+<div class="ttc" id="aclass_v_dinamico_html_aa39178bbe1c016557023ba5a42e910f5"><div class="ttname"><a href="class_v_dinamico.html#aa39178bbe1c016557023ba5a42e910f5">VDinamico::operator[]</a></div><div class="ttdeci">T &amp; operator[](unsigned int pos)</div><div class="ttdoc">Operador de acceso.</div><div class="ttdef"><b>Definition</b> VDinamico.h:243</div></div>
+<div class="ttc" id="aclass_v_dinamico_html_af905a96dbf84b7a2e660b73b49e51e8d"><div class="ttname"><a href="class_v_dinamico.html#af905a96dbf84b7a2e660b73b49e51e8d">VDinamico::VDinamico</a></div><div class="ttdeci">VDinamico()</div><div class="ttdoc">Constructor por defecto.</div><div class="ttdef"><b>Definition</b> VDinamico.h:176</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a class="el" href="dir_7e17ac9cf8fba2cb04bc248c85b0ceb7.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_9870a7a8923a86f2e07e11517072980e.html">EEDD_P</a></li><li class="navelem"><a class="el" href="dir_ab84c8ea61596afe59b8f2b4eaca9f36.html">Practica3</a></li><li class="navelem"><b>VDinamico.h</b></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>
