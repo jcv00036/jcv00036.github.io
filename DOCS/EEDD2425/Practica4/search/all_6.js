@@ -25,5 +25,5 @@ var searchData=
   ['getorigin_22',['getOrigin',['../class_trayecto.html#a9d204b88bbec6a1c378132a051e82d73',1,'Trayecto']]],
   ['getposicion_23',['getPosicion',['../class_punto_recarga.html#a74ff82573a32868ce543da5d3eaecced',1,'PuntoRecarga']]],
   ['getrent_24',['getRent',['../class_usuario.html#aac7a4a694a4473a36c391e7e6813adc2',1,'Usuario']]],
-  ['gettrayectosfecha_25',['getTrayectosFecha',['../class_usuario.html#a82e9d4ae7bf122e0475971370014d424',1,'Usuario']]]
+  ['gettrayectosfecha_25',['getTrayectosFecha',['../class_usuario.html#a70e1e69fa2aaf48975dde33ccb9dbf68',1,'Usuario']]]
 ];

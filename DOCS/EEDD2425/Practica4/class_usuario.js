@@ -11,7 +11,7 @@ var class_usuario =
     [ "getNombre", "class_usuario.html#a4f27f36d9ba81e6165f36bd3f8d8eee4", null ],
     [ "getNumTrayectos", "class_usuario.html#a9a2e0371496340e7bf26fc9da3d5cb05", null ],
     [ "getRent", "class_usuario.html#aac7a4a694a4473a36c391e7e6813adc2", null ],
-    [ "getTrayectosFecha", "class_usuario.html#a82e9d4ae7bf122e0475971370014d424", null ],
+    [ "getTrayectosFecha", "class_usuario.html#a70e1e69fa2aaf48975dde33ccb9dbf68", null ],
     [ "iniciarTrayecto", "class_usuario.html#a966998fe39afeeb6436a8ffc726806a4", null ],
     [ "setClave", "class_usuario.html#a888808fededeab1d46aca6dac240956c", null ],
     [ "setDireccion", "class_usuario.html#a160109dc3a00e50087a9e7b4b74dd3a6", null ],

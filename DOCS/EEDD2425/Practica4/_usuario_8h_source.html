@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Práctica 4<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">Práctica 4<span id="projectnumber">&#160;1.1</span>
    </div>
    <div id="projectbrief">Práctica realizada por Juan Carrasco Vico y Gregorio Torres Herrera</div>
   </td>
@@ -100,127 +100,129 @@ $(function(){initNavTree('_usuario_8h_source.html',''); initResizable(); });
   <div class="headertitle"><div class="title">Usuario.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef USUARIO_H</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define USUARIO_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;map&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;Coche.h&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;Reanelcar.h&quot;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;Trayecto.h&quot;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">class </span><a class="code hl_class" href="class_reanelcar.html">Reanelcar</a>;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_usuario.html">   12</a></span><span class="keyword">class </span><a class="code hl_class" href="class_usuario.html">Usuario</a> {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="comment">//&lt;editor-fold desc=&quot;Atributos&quot;&gt;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    std::string _nif = <span class="stringliteral">&quot;&quot;</span>, _clave = <span class="stringliteral">&quot;&quot;</span>, _nombre = <span class="stringliteral">&quot;&quot;</span>, _direccion = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> numTrayectos = 0;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_class" href="class_reanelcar.html">Reanelcar</a>* _linkReanel = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <a class="code hl_class" href="class_coche.html">Coche</a>* _rent = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    std::multimap&lt;Fecha,Trayecto&gt; _route;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="comment">//&lt;/editor-fold&gt;</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="comment">//&lt;editor-fold desc=&quot;Constructores y Destructor&quot;&gt;</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_usuario.html#af7d254a5dd3741a36fb76be1ee1e3207">   26</a></span>    <a class="code hl_function" href="class_usuario.html#af7d254a5dd3741a36fb76be1ee1e3207">Usuario</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_function" href="class_usuario.html#af7d254a5dd3741a36fb76be1ee1e3207">Usuario</a>(<span class="keyword">const</span> std::string &amp;nif, <span class="keyword">const</span> std::string &amp;clave, <span class="keyword">const</span> std::string &amp;nombre, <span class="keyword">const</span> std::string &amp;direccion);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="comment">//&lt;/editor-fold&gt;</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="comment">//&lt;editor-fold desc=&quot;Getters &amp; Setters&quot;&gt;</span></div>
-<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_usuario.html#aefa80e335ed6a0c758167335a0910856">   42</a></span>    <span class="keyword">const</span> std::string &amp;<a class="code hl_function" href="class_usuario.html#aefa80e335ed6a0c758167335a0910856">getNif</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordflow">return</span> _nif;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef USUARIO_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define USUARIO_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;Coche.h&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;Reanelcar.h&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;Trayecto.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">class </span><a class="code hl_class" href="class_reanelcar.html">Reanelcar</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_usuario.html">   17</a></span><span class="keyword">class </span><a class="code hl_class" href="class_usuario.html">Usuario</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="comment">//&lt;editor-fold desc=&quot;Atributos&quot;&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    std::string _nif = <span class="stringliteral">&quot;&quot;</span>, _clave = <span class="stringliteral">&quot;&quot;</span>, _nombre = <span class="stringliteral">&quot;&quot;</span>, _direccion = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> numTrayectos = 0;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_class" href="class_reanelcar.html">Reanelcar</a>* _linkReanel = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_class" href="class_coche.html">Coche</a>* _rent = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    std::multimap&lt;Fecha,Trayecto&gt; _route;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="comment">//&lt;/editor-fold&gt;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="comment">//&lt;editor-fold desc=&quot;Constructores y Destructor&quot;&gt;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_usuario.html#af7d254a5dd3741a36fb76be1ee1e3207">   31</a></span>    <a class="code hl_function" href="class_usuario.html#af7d254a5dd3741a36fb76be1ee1e3207">Usuario</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_function" href="class_usuario.html#af7d254a5dd3741a36fb76be1ee1e3207">Usuario</a>(<span class="keyword">const</span> std::string &amp;nif, <span class="keyword">const</span> std::string &amp;clave, <span class="keyword">const</span> std::string &amp;nombre, <span class="keyword">const</span> std::string &amp;direccion);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="comment">//&lt;/editor-fold&gt;</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="comment">//&lt;editor-fold desc=&quot;Getters &amp; Setters&quot;&gt;</span></div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_usuario.html#aefa80e335ed6a0c758167335a0910856">   47</a></span>    <span class="keyword">const</span> std::string &amp;<a class="code hl_function" href="class_usuario.html#aefa80e335ed6a0c758167335a0910856">getNif</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordflow">return</span> _nif;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
 </div>
-<div class="foldopen" id="foldopen00050" data-start="{" data-end="}">
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_usuario.html#a5fca60342f889b8943fc8656edf02469">   50</a></span>    <a class="code hl_class" href="class_usuario.html">Usuario</a>&amp; <a class="code hl_function" href="class_usuario.html#a5fca60342f889b8943fc8656edf02469">setNif</a>(<span class="keyword">const</span> std::string &amp;nif) {</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        _nif = nif;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
+<div class="foldopen" id="foldopen00055" data-start="{" data-end="}">
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_usuario.html#a5fca60342f889b8943fc8656edf02469">   55</a></span>    <a class="code hl_class" href="class_usuario.html">Usuario</a>&amp; <a class="code hl_function" href="class_usuario.html#a5fca60342f889b8943fc8656edf02469">setNif</a>(<span class="keyword">const</span> std::string &amp;nif) {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        _nif = nif;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
 </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="foldopen" id="foldopen00059" data-start="{" data-end="}">
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_usuario.html#ae2701551b6e03b5f5bcffe210bbde448">   59</a></span>    <span class="keyword">const</span> std::string &amp;<a class="code hl_function" href="class_usuario.html#ae2701551b6e03b5f5bcffe210bbde448">getClave</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordflow">return</span> _clave;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_usuario.html#ae2701551b6e03b5f5bcffe210bbde448">   64</a></span>    <span class="keyword">const</span> std::string &amp;<a class="code hl_function" href="class_usuario.html#ae2701551b6e03b5f5bcffe210bbde448">getClave</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordflow">return</span> _clave;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
 </div>
-<div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="class_usuario.html#a888808fededeab1d46aca6dac240956c">   67</a></span>    <a class="code hl_class" href="class_usuario.html">Usuario</a>&amp; <a class="code hl_function" href="class_usuario.html#a888808fededeab1d46aca6dac240956c">setClave</a>(<span class="keyword">const</span> std::string &amp;clave) {</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        _clave = clave;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }</div>
+<div class="foldopen" id="foldopen00072" data-start="{" data-end="}">
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="class_usuario.html#a888808fededeab1d46aca6dac240956c">   72</a></span>    <a class="code hl_class" href="class_usuario.html">Usuario</a>&amp; <a class="code hl_function" href="class_usuario.html#a888808fededeab1d46aca6dac240956c">setClave</a>(<span class="keyword">const</span> std::string &amp;clave) {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        _clave = clave;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    }</div>
 </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="foldopen" id="foldopen00076" data-start="{" data-end="}">
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="class_usuario.html#a4f27f36d9ba81e6165f36bd3f8d8eee4">   76</a></span>    <span class="keyword">const</span> std::string &amp;<a class="code hl_function" href="class_usuario.html#a4f27f36d9ba81e6165f36bd3f8d8eee4">getNombre</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordflow">return</span> _nombre;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="foldopen" id="foldopen00081" data-start="{" data-end="}">
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="class_usuario.html#a4f27f36d9ba81e6165f36bd3f8d8eee4">   81</a></span>    <span class="keyword">const</span> std::string &amp;<a class="code hl_function" href="class_usuario.html#a4f27f36d9ba81e6165f36bd3f8d8eee4">getNombre</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordflow">return</span> _nombre;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    }</div>
 </div>
-<div class="foldopen" id="foldopen00084" data-start="{" data-end="}">
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="class_usuario.html#ad7ce5447474f6d7dea843a420fe5573d">   84</a></span>    <a class="code hl_class" href="class_usuario.html">Usuario</a>&amp; <a class="code hl_function" href="class_usuario.html#ad7ce5447474f6d7dea843a420fe5573d">setNombre</a>(<span class="keyword">const</span> std::string &amp;nombre) {</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        _nombre = nombre;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    }</div>
+<div class="foldopen" id="foldopen00089" data-start="{" data-end="}">
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="class_usuario.html#ad7ce5447474f6d7dea843a420fe5573d">   89</a></span>    <a class="code hl_class" href="class_usuario.html">Usuario</a>&amp; <a class="code hl_function" href="class_usuario.html#ad7ce5447474f6d7dea843a420fe5573d">setNombre</a>(<span class="keyword">const</span> std::string &amp;nombre) {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        _nombre = nombre;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
 </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="foldopen" id="foldopen00093" data-start="{" data-end="}">
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="class_usuario.html#aa3f706601894b8a2e49433162cc556cb">   93</a></span>    <span class="keyword">const</span> std::string &amp;<a class="code hl_function" href="class_usuario.html#aa3f706601894b8a2e49433162cc556cb">getDireccion</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keywordflow">return</span> _direccion;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    }</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="foldopen" id="foldopen00098" data-start="{" data-end="}">
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="class_usuario.html#aa3f706601894b8a2e49433162cc556cb">   98</a></span>    <span class="keyword">const</span> std::string &amp;<a class="code hl_function" href="class_usuario.html#aa3f706601894b8a2e49433162cc556cb">getDireccion</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="keywordflow">return</span> _direccion;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    }</div>
 </div>
-<div class="foldopen" id="foldopen00101" data-start="{" data-end="}">
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="class_usuario.html#a160109dc3a00e50087a9e7b4b74dd3a6">  101</a></span>    <a class="code hl_class" href="class_usuario.html">Usuario</a>&amp; <a class="code hl_function" href="class_usuario.html#a160109dc3a00e50087a9e7b4b74dd3a6">setDireccion</a>(<span class="keyword">const</span> std::string &amp;direccion) {</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        _direccion = direccion;</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    }</div>
+<div class="foldopen" id="foldopen00106" data-start="{" data-end="}">
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="class_usuario.html#a160109dc3a00e50087a9e7b4b74dd3a6">  106</a></span>    <a class="code hl_class" href="class_usuario.html">Usuario</a>&amp; <a class="code hl_function" href="class_usuario.html#a160109dc3a00e50087a9e7b4b74dd3a6">setDireccion</a>(<span class="keyword">const</span> std::string &amp;direccion) {</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        _direccion = direccion;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    }</div>
 </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_usuario.html#a9a2e0371496340e7bf26fc9da3d5cb05">getNumTrayectos</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="foldopen" id="foldopen00116" data-start="{" data-end="}">
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="class_usuario.html#a58e3a5b8c4d5cc6c0dd9751e6db5dd3b">  116</a></span>    <a class="code hl_class" href="class_usuario.html">Usuario</a>&amp; <a class="code hl_function" href="class_usuario.html#a58e3a5b8c4d5cc6c0dd9751e6db5dd3b">setLink</a>(<a class="code hl_class" href="class_reanelcar.html">Reanelcar</a>* linkReanel){</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        _linkReanel = linkReanel;</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_usuario.html#a9a2e0371496340e7bf26fc9da3d5cb05">getNumTrayectos</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="foldopen" id="foldopen00121" data-start="{" data-end="}">
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="class_usuario.html#a58e3a5b8c4d5cc6c0dd9751e6db5dd3b">  121</a></span>    <a class="code hl_class" href="class_usuario.html">Usuario</a>&amp; <a class="code hl_function" href="class_usuario.html#a58e3a5b8c4d5cc6c0dd9751e6db5dd3b">setLink</a>(<a class="code hl_class" href="class_reanelcar.html">Reanelcar</a>* linkReanel){</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        _linkReanel = linkReanel;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    }</div>
 </div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <a class="code hl_class" href="class_usuario.html">Usuario</a>&amp; <a class="code hl_function" href="class_usuario.html#acb1aec725e2c245567c67b18de93ed84">cogeCoche</a>(<a class="code hl_class" href="class_coche.html">Coche</a> *cocheAlquilar);</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="class_usuario.html#aac7a4a694a4473a36c391e7e6813adc2">  131</a></span>    <a class="code hl_class" href="class_coche.html">Coche</a> *<a class="code hl_function" href="class_usuario.html#aac7a4a694a4473a36c391e7e6813adc2">getRent</a>()<span class="keyword"> const</span>{ <span class="keywordflow">return</span> _rent ;}</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    std::multimap&lt;Fecha,Trayecto&gt; <a class="code hl_function" href="class_usuario.html#a82e9d4ae7bf122e0475971370014d424">getTrayectosFecha</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_fecha.html">Fecha</a> &amp;fechaBuscar);</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <span class="comment">//&lt;/editor-fold&gt;</span></div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <a class="code hl_class" href="class_trayecto.html">Trayecto</a>&amp; <a class="code hl_function" href="class_usuario.html#ab1d4f15e4672b8653a4fa5d7cbc9363e">crearTrayecto</a>(<a class="code hl_class" href="class_punto_recarga.html">PuntoRecarga</a>* origen, <a class="code hl_class" href="class_punto_recarga.html">PuntoRecarga</a>* destino, <a class="code hl_class" href="class_fecha.html">Fecha</a> fInicio, <a class="code hl_class" href="class_fecha.html">Fecha</a> fFin);</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <a class="code hl_class" href="class_coche.html">Coche</a>* <a class="code hl_function" href="class_usuario.html#a966998fe39afeeb6436a8ffc726806a4">iniciarTrayecto</a>(<span class="keywordtype">int</span> idPROrigen, <span class="keywordtype">int</span> idPRDestino, <a class="code hl_class" href="class_fecha.html">Fecha</a> fInicio, <a class="code hl_class" href="class_fecha.html">Fecha</a> fFin);</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <a class="code hl_class" href="class_usuario.html">Usuario</a>&amp; <a class="code hl_function" href="class_usuario.html#a671fb4a6c39bc361b9d7baf05f25008e">aparcaCoche</a>(<a class="code hl_class" href="class_coche.html">Coche</a>* coche, <a class="code hl_class" href="class_punto_recarga.html">PuntoRecarga</a>* destino);</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>};</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <a class="code hl_class" href="class_usuario.html">Usuario</a>&amp; <a class="code hl_function" href="class_usuario.html#acb1aec725e2c245567c67b18de93ed84">cogeCoche</a>(<a class="code hl_class" href="class_coche.html">Coche</a> *cocheAlquilar);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="class_usuario.html#aac7a4a694a4473a36c391e7e6813adc2">  136</a></span>    <a class="code hl_class" href="class_coche.html">Coche</a> *<a class="code hl_function" href="class_usuario.html#aac7a4a694a4473a36c391e7e6813adc2">getRent</a>()<span class="keyword"> const</span>{ <span class="keywordflow">return</span> _rent ;}</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    std::vector&lt;Trayecto&gt; <a class="code hl_function" href="class_usuario.html#a70e1e69fa2aaf48975dde33ccb9dbf68">getTrayectosFecha</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_fecha.html">Fecha</a> &amp;fechaBuscar);</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="comment">//std::multimap&lt;Fecha,Trayecto&gt; getTrayectosFecha(const Fecha &amp;fechaBuscar);</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <span class="comment">//&lt;/editor-fold&gt;</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <a class="code hl_class" href="class_trayecto.html">Trayecto</a>&amp; <a class="code hl_function" href="class_usuario.html#ab1d4f15e4672b8653a4fa5d7cbc9363e">crearTrayecto</a>(<a class="code hl_class" href="class_punto_recarga.html">PuntoRecarga</a>* origen, <a class="code hl_class" href="class_punto_recarga.html">PuntoRecarga</a>* destino, <a class="code hl_class" href="class_fecha.html">Fecha</a> fInicio, <a class="code hl_class" href="class_fecha.html">Fecha</a> fFin);</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <a class="code hl_class" href="class_coche.html">Coche</a>* <a class="code hl_function" href="class_usuario.html#a966998fe39afeeb6436a8ffc726806a4">iniciarTrayecto</a>(<span class="keywordtype">int</span> idPROrigen, <span class="keywordtype">int</span> idPRDestino, <a class="code hl_class" href="class_fecha.html">Fecha</a> fInicio, <a class="code hl_class" href="class_fecha.html">Fecha</a> fFin);</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    <a class="code hl_class" href="class_usuario.html">Usuario</a>&amp; <a class="code hl_function" href="class_usuario.html#a671fb4a6c39bc361b9d7baf05f25008e">aparcaCoche</a>(<a class="code hl_class" href="class_coche.html">Coche</a>* coche, <a class="code hl_class" href="class_punto_recarga.html">PuntoRecarga</a>* destino);</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>};</div>
 </div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="preprocessor">#endif </span><span class="comment">//USUARIO_H</span></div>
-<div class="ttc" id="aclass_coche_html"><div class="ttname"><a href="class_coche.html">Coche</a></div><div class="ttdef"><b>Definition</b> Coche.h:13</div></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="preprocessor">#endif </span><span class="comment">//USUARIO_H</span></div>
+<div class="ttc" id="aclass_coche_html"><div class="ttname"><a href="class_coche.html">Coche</a></div><div class="ttdef"><b>Definition</b> Coche.h:14</div></div>
 <div class="ttc" id="aclass_fecha_html"><div class="ttname"><a href="class_fecha.html">Fecha</a></div><div class="ttdoc">Clase sencilla para representar fechas.</div><div class="ttdef"><b>Definition</b> fecha.h:33</div></div>
-<div class="ttc" id="aclass_punto_recarga_html"><div class="ttname"><a href="class_punto_recarga.html">PuntoRecarga</a></div><div class="ttdef"><b>Definition</b> PuntoRecarga.h:25</div></div>
+<div class="ttc" id="aclass_punto_recarga_html"><div class="ttname"><a href="class_punto_recarga.html">PuntoRecarga</a></div><div class="ttdef"><b>Definition</b> PuntoRecarga.h:30</div></div>
 <div class="ttc" id="aclass_reanelcar_html"><div class="ttname"><a href="class_reanelcar.html">Reanelcar</a></div><div class="ttdef"><b>Definition</b> Reanelcar.h:19</div></div>
-<div class="ttc" id="aclass_trayecto_html"><div class="ttname"><a href="class_trayecto.html">Trayecto</a></div><div class="ttdef"><b>Definition</b> Trayecto.h:9</div></div>
-<div class="ttc" id="aclass_usuario_html"><div class="ttname"><a href="class_usuario.html">Usuario</a></div><div class="ttdef"><b>Definition</b> Usuario.h:12</div></div>
-<div class="ttc" id="aclass_usuario_html_a160109dc3a00e50087a9e7b4b74dd3a6"><div class="ttname"><a href="class_usuario.html#a160109dc3a00e50087a9e7b4b74dd3a6">Usuario::setDireccion</a></div><div class="ttdeci">Usuario &amp; setDireccion(const std::string &amp;direccion)</div><div class="ttdoc">Establece la dirección del Usuario.</div><div class="ttdef"><b>Definition</b> Usuario.h:101</div></div>
-<div class="ttc" id="aclass_usuario_html_a4f27f36d9ba81e6165f36bd3f8d8eee4"><div class="ttname"><a href="class_usuario.html#a4f27f36d9ba81e6165f36bd3f8d8eee4">Usuario::getNombre</a></div><div class="ttdeci">const std::string &amp; getNombre() const</div><div class="ttdoc">Devuelve el nombre del Usuario.</div><div class="ttdef"><b>Definition</b> Usuario.h:76</div></div>
-<div class="ttc" id="aclass_usuario_html_a58e3a5b8c4d5cc6c0dd9751e6db5dd3b"><div class="ttname"><a href="class_usuario.html#a58e3a5b8c4d5cc6c0dd9751e6db5dd3b">Usuario::setLink</a></div><div class="ttdeci">Usuario &amp; setLink(Reanelcar *linkReanel)</div><div class="ttdoc">Asigna un enlace a Reanelcar al Usuario.</div><div class="ttdef"><b>Definition</b> Usuario.h:116</div></div>
-<div class="ttc" id="aclass_usuario_html_a5fca60342f889b8943fc8656edf02469"><div class="ttname"><a href="class_usuario.html#a5fca60342f889b8943fc8656edf02469">Usuario::setNif</a></div><div class="ttdeci">Usuario &amp; setNif(const std::string &amp;nif)</div><div class="ttdoc">Establece el NIF del Usuario.</div><div class="ttdef"><b>Definition</b> Usuario.h:50</div></div>
-<div class="ttc" id="aclass_usuario_html_a671fb4a6c39bc361b9d7baf05f25008e"><div class="ttname"><a href="class_usuario.html#a671fb4a6c39bc361b9d7baf05f25008e">Usuario::aparcaCoche</a></div><div class="ttdeci">Usuario &amp; aparcaCoche(Coche *coche, PuntoRecarga *destino)</div><div class="ttdoc">Deja el Coche asociado.</div><div class="ttdef"><b>Definition</b> Usuario.cpp:63</div></div>
-<div class="ttc" id="aclass_usuario_html_a82e9d4ae7bf122e0475971370014d424"><div class="ttname"><a href="class_usuario.html#a82e9d4ae7bf122e0475971370014d424">Usuario::getTrayectosFecha</a></div><div class="ttdeci">std::multimap&lt; Fecha, Trayecto &gt; getTrayectosFecha(const Fecha &amp;fechaBuscar)</div><div class="ttdoc">Devuelve los Trayecto que se realizarán en una Fecha.</div><div class="ttdef"><b>Definition</b> Usuario.cpp:17</div></div>
-<div class="ttc" id="aclass_usuario_html_a888808fededeab1d46aca6dac240956c"><div class="ttname"><a href="class_usuario.html#a888808fededeab1d46aca6dac240956c">Usuario::setClave</a></div><div class="ttdeci">Usuario &amp; setClave(const std::string &amp;clave)</div><div class="ttdoc">Establece la clave del Usuario.</div><div class="ttdef"><b>Definition</b> Usuario.h:67</div></div>
-<div class="ttc" id="aclass_usuario_html_a966998fe39afeeb6436a8ffc726806a4"><div class="ttname"><a href="class_usuario.html#a966998fe39afeeb6436a8ffc726806a4">Usuario::iniciarTrayecto</a></div><div class="ttdeci">Coche * iniciarTrayecto(int idPROrigen, int idPRDestino, Fecha fInicio, Fecha fFin)</div><div class="ttdoc">Le da al Usuario un Coche para realizar un Trayecto.</div><div class="ttdef"><b>Definition</b> Usuario.cpp:42</div></div>
-<div class="ttc" id="aclass_usuario_html_a9a2e0371496340e7bf26fc9da3d5cb05"><div class="ttname"><a href="class_usuario.html#a9a2e0371496340e7bf26fc9da3d5cb05">Usuario::getNumTrayectos</a></div><div class="ttdeci">unsigned int getNumTrayectos() const</div><div class="ttdoc">Devuelve el número de Trayectos realizados por el Usuario.</div><div class="ttdef"><b>Definition</b> Usuario.cpp:72</div></div>
-<div class="ttc" id="aclass_usuario_html_aa3f706601894b8a2e49433162cc556cb"><div class="ttname"><a href="class_usuario.html#aa3f706601894b8a2e49433162cc556cb">Usuario::getDireccion</a></div><div class="ttdeci">const std::string &amp; getDireccion() const</div><div class="ttdoc">Devuelve la dirección del Usuario.</div><div class="ttdef"><b>Definition</b> Usuario.h:93</div></div>
-<div class="ttc" id="aclass_usuario_html_aac7a4a694a4473a36c391e7e6813adc2"><div class="ttname"><a href="class_usuario.html#aac7a4a694a4473a36c391e7e6813adc2">Usuario::getRent</a></div><div class="ttdeci">Coche * getRent() const</div><div class="ttdoc">Devuelve el Coche alquilado por el Usuario.</div><div class="ttdef"><b>Definition</b> Usuario.h:131</div></div>
-<div class="ttc" id="aclass_usuario_html_ab1d4f15e4672b8653a4fa5d7cbc9363e"><div class="ttname"><a href="class_usuario.html#ab1d4f15e4672b8653a4fa5d7cbc9363e">Usuario::crearTrayecto</a></div><div class="ttdeci">Trayecto &amp; crearTrayecto(PuntoRecarga *origen, PuntoRecarga *destino, Fecha fInicio, Fecha fFin)</div><div class="ttdoc">Crea un Trayecto entre origen y destino.</div><div class="ttdef"><b>Definition</b> Usuario.cpp:29</div></div>
+<div class="ttc" id="aclass_trayecto_html"><div class="ttname"><a href="class_trayecto.html">Trayecto</a></div><div class="ttdef"><b>Definition</b> Trayecto.h:14</div></div>
+<div class="ttc" id="aclass_usuario_html"><div class="ttname"><a href="class_usuario.html">Usuario</a></div><div class="ttdef"><b>Definition</b> Usuario.h:17</div></div>
+<div class="ttc" id="aclass_usuario_html_a160109dc3a00e50087a9e7b4b74dd3a6"><div class="ttname"><a href="class_usuario.html#a160109dc3a00e50087a9e7b4b74dd3a6">Usuario::setDireccion</a></div><div class="ttdeci">Usuario &amp; setDireccion(const std::string &amp;direccion)</div><div class="ttdoc">Establece la dirección del Usuario.</div><div class="ttdef"><b>Definition</b> Usuario.h:106</div></div>
+<div class="ttc" id="aclass_usuario_html_a4f27f36d9ba81e6165f36bd3f8d8eee4"><div class="ttname"><a href="class_usuario.html#a4f27f36d9ba81e6165f36bd3f8d8eee4">Usuario::getNombre</a></div><div class="ttdeci">const std::string &amp; getNombre() const</div><div class="ttdoc">Devuelve el nombre del Usuario.</div><div class="ttdef"><b>Definition</b> Usuario.h:81</div></div>
+<div class="ttc" id="aclass_usuario_html_a58e3a5b8c4d5cc6c0dd9751e6db5dd3b"><div class="ttname"><a href="class_usuario.html#a58e3a5b8c4d5cc6c0dd9751e6db5dd3b">Usuario::setLink</a></div><div class="ttdeci">Usuario &amp; setLink(Reanelcar *linkReanel)</div><div class="ttdoc">Asigna un enlace a Reanelcar al Usuario.</div><div class="ttdef"><b>Definition</b> Usuario.h:121</div></div>
+<div class="ttc" id="aclass_usuario_html_a5fca60342f889b8943fc8656edf02469"><div class="ttname"><a href="class_usuario.html#a5fca60342f889b8943fc8656edf02469">Usuario::setNif</a></div><div class="ttdeci">Usuario &amp; setNif(const std::string &amp;nif)</div><div class="ttdoc">Establece el NIF del Usuario.</div><div class="ttdef"><b>Definition</b> Usuario.h:55</div></div>
+<div class="ttc" id="aclass_usuario_html_a671fb4a6c39bc361b9d7baf05f25008e"><div class="ttname"><a href="class_usuario.html#a671fb4a6c39bc361b9d7baf05f25008e">Usuario::aparcaCoche</a></div><div class="ttdeci">Usuario &amp; aparcaCoche(Coche *coche, PuntoRecarga *destino)</div><div class="ttdoc">Deja el Coche asociado.</div><div class="ttdef"><b>Definition</b> Usuario.cpp:75</div></div>
+<div class="ttc" id="aclass_usuario_html_a70e1e69fa2aaf48975dde33ccb9dbf68"><div class="ttname"><a href="class_usuario.html#a70e1e69fa2aaf48975dde33ccb9dbf68">Usuario::getTrayectosFecha</a></div><div class="ttdeci">std::vector&lt; Trayecto &gt; getTrayectosFecha(const Fecha &amp;fechaBuscar)</div><div class="ttdoc">Devuelve los Trayecto que se realizarán en una Fecha.</div><div class="ttdef"><b>Definition</b> Usuario.cpp:29</div></div>
+<div class="ttc" id="aclass_usuario_html_a888808fededeab1d46aca6dac240956c"><div class="ttname"><a href="class_usuario.html#a888808fededeab1d46aca6dac240956c">Usuario::setClave</a></div><div class="ttdeci">Usuario &amp; setClave(const std::string &amp;clave)</div><div class="ttdoc">Establece la clave del Usuario.</div><div class="ttdef"><b>Definition</b> Usuario.h:72</div></div>
+<div class="ttc" id="aclass_usuario_html_a966998fe39afeeb6436a8ffc726806a4"><div class="ttname"><a href="class_usuario.html#a966998fe39afeeb6436a8ffc726806a4">Usuario::iniciarTrayecto</a></div><div class="ttdeci">Coche * iniciarTrayecto(int idPROrigen, int idPRDestino, Fecha fInicio, Fecha fFin)</div><div class="ttdoc">Le da al Usuario un Coche para realizar un Trayecto.</div><div class="ttdef"><b>Definition</b> Usuario.cpp:54</div></div>
+<div class="ttc" id="aclass_usuario_html_a9a2e0371496340e7bf26fc9da3d5cb05"><div class="ttname"><a href="class_usuario.html#a9a2e0371496340e7bf26fc9da3d5cb05">Usuario::getNumTrayectos</a></div><div class="ttdeci">unsigned int getNumTrayectos() const</div><div class="ttdoc">Devuelve el número de Trayectos realizados por el Usuario.</div><div class="ttdef"><b>Definition</b> Usuario.cpp:84</div></div>
+<div class="ttc" id="aclass_usuario_html_aa3f706601894b8a2e49433162cc556cb"><div class="ttname"><a href="class_usuario.html#aa3f706601894b8a2e49433162cc556cb">Usuario::getDireccion</a></div><div class="ttdeci">const std::string &amp; getDireccion() const</div><div class="ttdoc">Devuelve la dirección del Usuario.</div><div class="ttdef"><b>Definition</b> Usuario.h:98</div></div>
+<div class="ttc" id="aclass_usuario_html_aac7a4a694a4473a36c391e7e6813adc2"><div class="ttname"><a href="class_usuario.html#aac7a4a694a4473a36c391e7e6813adc2">Usuario::getRent</a></div><div class="ttdeci">Coche * getRent() const</div><div class="ttdoc">Devuelve el Coche alquilado por el Usuario.</div><div class="ttdef"><b>Definition</b> Usuario.h:136</div></div>
+<div class="ttc" id="aclass_usuario_html_ab1d4f15e4672b8653a4fa5d7cbc9363e"><div class="ttname"><a href="class_usuario.html#ab1d4f15e4672b8653a4fa5d7cbc9363e">Usuario::crearTrayecto</a></div><div class="ttdeci">Trayecto &amp; crearTrayecto(PuntoRecarga *origen, PuntoRecarga *destino, Fecha fInicio, Fecha fFin)</div><div class="ttdoc">Crea un Trayecto entre origen y destino.</div><div class="ttdef"><b>Definition</b> Usuario.cpp:41</div></div>
 <div class="ttc" id="aclass_usuario_html_acb1aec725e2c245567c67b18de93ed84"><div class="ttname"><a href="class_usuario.html#acb1aec725e2c245567c67b18de93ed84">Usuario::cogeCoche</a></div><div class="ttdeci">Usuario &amp; cogeCoche(Coche *cocheAlquilar)</div><div class="ttdoc">Asigna un Coche al Usuario.</div><div class="ttdef"><b>Definition</b> Usuario.cpp:11</div></div>
-<div class="ttc" id="aclass_usuario_html_ad7ce5447474f6d7dea843a420fe5573d"><div class="ttname"><a href="class_usuario.html#ad7ce5447474f6d7dea843a420fe5573d">Usuario::setNombre</a></div><div class="ttdeci">Usuario &amp; setNombre(const std::string &amp;nombre)</div><div class="ttdoc">Establece el nombre del Usuario.</div><div class="ttdef"><b>Definition</b> Usuario.h:84</div></div>
-<div class="ttc" id="aclass_usuario_html_ae2701551b6e03b5f5bcffe210bbde448"><div class="ttname"><a href="class_usuario.html#ae2701551b6e03b5f5bcffe210bbde448">Usuario::getClave</a></div><div class="ttdeci">const std::string &amp; getClave() const</div><div class="ttdoc">Devuelve la clave del Usuario.</div><div class="ttdef"><b>Definition</b> Usuario.h:59</div></div>
-<div class="ttc" id="aclass_usuario_html_aefa80e335ed6a0c758167335a0910856"><div class="ttname"><a href="class_usuario.html#aefa80e335ed6a0c758167335a0910856">Usuario::getNif</a></div><div class="ttdeci">const std::string &amp; getNif() const</div><div class="ttdoc">NIF del Usuario.</div><div class="ttdef"><b>Definition</b> Usuario.h:42</div></div>
+<div class="ttc" id="aclass_usuario_html_ad7ce5447474f6d7dea843a420fe5573d"><div class="ttname"><a href="class_usuario.html#ad7ce5447474f6d7dea843a420fe5573d">Usuario::setNombre</a></div><div class="ttdeci">Usuario &amp; setNombre(const std::string &amp;nombre)</div><div class="ttdoc">Establece el nombre del Usuario.</div><div class="ttdef"><b>Definition</b> Usuario.h:89</div></div>
+<div class="ttc" id="aclass_usuario_html_ae2701551b6e03b5f5bcffe210bbde448"><div class="ttname"><a href="class_usuario.html#ae2701551b6e03b5f5bcffe210bbde448">Usuario::getClave</a></div><div class="ttdeci">const std::string &amp; getClave() const</div><div class="ttdoc">Devuelve la clave del Usuario.</div><div class="ttdef"><b>Definition</b> Usuario.h:64</div></div>
+<div class="ttc" id="aclass_usuario_html_aefa80e335ed6a0c758167335a0910856"><div class="ttname"><a href="class_usuario.html#aefa80e335ed6a0c758167335a0910856">Usuario::getNif</a></div><div class="ttdeci">const std::string &amp; getNif() const</div><div class="ttdoc">NIF del Usuario.</div><div class="ttdef"><b>Definition</b> Usuario.h:47</div></div>
 <div class="ttc" id="aclass_usuario_html_af7d254a5dd3741a36fb76be1ee1e3207"><div class="ttname"><a href="class_usuario.html#af7d254a5dd3741a36fb76be1ee1e3207">Usuario::Usuario</a></div><div class="ttdeci">Usuario()=default</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
