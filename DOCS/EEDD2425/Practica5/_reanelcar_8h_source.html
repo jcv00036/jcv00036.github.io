@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Práctica 5: Archivo de código fuente C:/Users/juego/Documents/GitHub/EEDD_P/Practica5/Reanelcar.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Práctica 5<span id="projectnumber">&#160;0.1</span>
+   </div>
+   <div id="projectbrief">Práctica realizada por Juan Carrasco Vico y Gregorio Torres Herrera</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_reanelcar_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Reanelcar.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef REANELCAR_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define REANELCAR_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;Coche.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;fecha.h&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;Trayecto.h&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;ThashUsuario.h&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;Usuario.h&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_reanelcar.html">   19</a></span><span class="keyword">class </span><a class="code hl_class" href="class_reanelcar.html">Reanelcar</a> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    std::list&lt;Usuario&gt; users;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_class" href="class_thash_usuario.html">ThashUsuario</a> usersNif;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    std::map&lt;std::string, Coche&gt; cars;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    std::vector&lt;PuntoRecarga&gt; sites;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_reanelcar.html#a97393050bbe874e8b2a3ddae81334d54">   29</a></span>    <a class="code hl_function" href="class_reanelcar.html#a97393050bbe874e8b2a3ddae81334d54">Reanelcar</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_reanelcar.html#a4b7aa995ce872a62e3c1b33d1e2e7ce1">   33</a></span>    <a class="code hl_function" href="class_reanelcar.html#a4b7aa995ce872a62e3c1b33d1e2e7ce1">~Reanelcar</a>();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_function" href="class_reanelcar.html#a97393050bbe874e8b2a3ddae81334d54">Reanelcar</a>(<span class="keyword">const</span> std::string &amp;ficheroCoches, <span class="keyword">const</span> std::string &amp;ficheroUsuarios, <span class="keyword">const</span> std::string &amp;ficheroPuntosRecarga,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>              <span class="keywordtype">float</span> lambda, <a class="code hl_enumeration" href="class_thash_usuario.html#a4683829170f380a5964a2346d4536573">ThashUsuario::tipoDispersion</a> dispersion = <a class="code hl_enumvalue" href="class_thash_usuario.html#a4683829170f380a5964a2346d4536573abff71fbf1f10c46a720cafe274bab512">ThashUsuario::CUADRATICA</a>);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_function" href="class_reanelcar.html#a97393050bbe874e8b2a3ddae81334d54">Reanelcar</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_reanelcar.html">Reanelcar</a> &amp;orig);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_function" href="class_reanelcar.html#a332ba744d16e96302e04d20f2196e490">tamCoches</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_function" href="class_reanelcar.html#acf938523ef8f75cfd979a32ed4889c93">tamUsuarios</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_function" href="class_reanelcar.html#ae68c38b1c01ab8f135d67a09216ecf6b">tamPR</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <a class="code hl_class" href="class_usuario.html">Usuario</a>* <a class="code hl_function" href="class_reanelcar.html#ac74f708982a7e136eb820ae506fb2253">buscarUsrNif</a>(std::string&amp; nifBuscar);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <a class="code hl_class" href="class_usuario.html">Usuario</a>* <a class="code hl_function" href="class_reanelcar.html#a7c50b466d73a208548f12638d2f3b9ba">buscarUsrNifTHash</a>(std::string&amp; nifBuscar); <span class="comment">//TODO implementar</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_reanelcar.html#a49da58214bdd0015c5c901c699e9ee0d">borrarUsuarioNifTHash</a>(std::string&amp; nifBuscar); <span class="comment">//TODO implementar</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_reanelcar.html#a956bf3c121b56c3542477340c36149b1">mostrarEstadoTabla</a>();</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_reanelcar.html#aad707eee044862d3681ecb2dfcb8eb6e">buscarUsrNomb</a>(std::string&amp; cadenaBuscar, std::list&lt;Usuario*&gt; &amp;listaARellenar);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <a class="code hl_class" href="class_coche.html">Coche</a>* <a class="code hl_function" href="class_reanelcar.html#a7249f2a9972cf61477ef806879bfb085">alquilar</a>(<a class="code hl_class" href="class_usuario.html">Usuario</a>&amp; usuario, <span class="keywordtype">int</span> idPROrigen, <span class="keywordtype">int</span> idPRDestino);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_reanelcar.html#af40b2aee9e9e046be096fd561cc24b65">colocarCochePR</a>(<a class="code hl_class" href="class_coche.html">Coche</a>* c, <a class="code hl_class" href="class_punto_recarga.html">PuntoRecarga</a> *pr);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    std::vector&lt;Coche*&gt; <a class="code hl_function" href="class_reanelcar.html#a8e5d2e9b9fc6bb23a85956e84215b6be">getCochesInorden</a>();</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <a class="code hl_class" href="class_coche.html">Coche</a>* <a class="code hl_function" href="class_reanelcar.html#a7cc914492f263aec4dbda150a7987e20">buscarCochMat</a>(std::string&amp; matriculaBuscar);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <a class="code hl_class" href="class_coche.html">Coche</a>* <a class="code hl_function" href="class_reanelcar.html#ae73c1afb0d476fb5347be09b585e0f9e">buscarCochMod</a>(std::string&amp; modeloBuscar);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <a class="code hl_class" href="class_punto_recarga.html">PuntoRecarga</a>* <a class="code hl_function" href="class_reanelcar.html#af259c0475e92399ccfa6774c43c191dd">buscarPunto</a>(<span class="keywordtype">int</span> idPR);</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <a class="code hl_class" href="class_punto_recarga.html">PuntoRecarga</a>* <a class="code hl_function" href="class_reanelcar.html#a98b32dc52e4a771f074e7afa3fb4d7b8">obtenerPRmenosCoches</a>();</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_reanelcar.html#a75702764ed333db6ce7dab349aadf9ee">aparcarTodo</a>();</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_reanelcar.html#afa71b6a6c4049a373c4f67bc529b4521">asignarCoches</a>(std::list&lt;Usuario*&gt;&amp; listaUsuarios);</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_reanelcar.html#a426046f2d308836a088e979ca87959a1">aparcarCoches</a>(std::list&lt;Usuario*&gt;&amp; listaUsuarios);</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_reanelcar.html#aae83dcdd6c203366df5dd22ef41a9eaf">mostrarTrayectosDia</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_fecha.html">Fecha</a>&amp; fechaHoy, std::list&lt;Usuario*&gt; &amp;listaUsuarios);</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_reanelcar.html#a6fab2cfb43f783045776ef9d27366b9c">trayectosEnFecha</a>(<a class="code hl_class" href="class_fecha.html">Fecha</a> fecha, std::vector&lt;std::pair&lt;Usuario,Trayecto&gt;&gt;&amp; vector);</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>};</div>
+</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="preprocessor">#endif </span><span class="comment">//REANELCAR_H</span></div>
+<div class="ttc" id="aclass_coche_html"><div class="ttname"><a href="class_coche.html">Coche</a></div><div class="ttdef"><b>Definition</b> Coche.h:14</div></div>
+<div class="ttc" id="aclass_fecha_html"><div class="ttname"><a href="class_fecha.html">Fecha</a></div><div class="ttdoc">Clase sencilla para representar fechas.</div><div class="ttdef"><b>Definition</b> fecha.h:33</div></div>
+<div class="ttc" id="aclass_punto_recarga_html"><div class="ttname"><a href="class_punto_recarga.html">PuntoRecarga</a></div><div class="ttdef"><b>Definition</b> PuntoRecarga.h:36</div></div>
+<div class="ttc" id="aclass_reanelcar_html"><div class="ttname"><a href="class_reanelcar.html">Reanelcar</a></div><div class="ttdef"><b>Definition</b> Reanelcar.h:19</div></div>
+<div class="ttc" id="aclass_reanelcar_html_a332ba744d16e96302e04d20f2196e490"><div class="ttname"><a href="class_reanelcar.html#a332ba744d16e96302e04d20f2196e490">Reanelcar::tamCoches</a></div><div class="ttdeci">unsigned long tamCoches() const</div><div class="ttdoc">Devuelve el tamaño del &lt;map&gt; de Coches.</div><div class="ttdef"><b>Definition</b> Reanelcar.cpp:186</div></div>
+<div class="ttc" id="aclass_reanelcar_html_a426046f2d308836a088e979ca87959a1"><div class="ttname"><a href="class_reanelcar.html#a426046f2d308836a088e979ca87959a1">Reanelcar::aparcarCoches</a></div><div class="ttdeci">int aparcarCoches(std::list&lt; Usuario * &gt; &amp;listaUsuarios)</div><div class="ttdoc">Aparca los Coches de los Usuarios en los PuntosRecarga.</div><div class="ttdef"><b>Definition</b> Reanelcar.cpp:379</div></div>
+<div class="ttc" id="aclass_reanelcar_html_a49da58214bdd0015c5c901c699e9ee0d"><div class="ttname"><a href="class_reanelcar.html#a49da58214bdd0015c5c901c699e9ee0d">Reanelcar::borrarUsuarioNifTHash</a></div><div class="ttdeci">bool borrarUsuarioNifTHash(std::string &amp;nifBuscar)</div><div class="ttdoc">Elimina el Usuario con nif igual a nifBuscar.</div><div class="ttdef"><b>Definition</b> Reanelcar.cpp:213</div></div>
+<div class="ttc" id="aclass_reanelcar_html_a4b7aa995ce872a62e3c1b33d1e2e7ce1"><div class="ttname"><a href="class_reanelcar.html#a4b7aa995ce872a62e3c1b33d1e2e7ce1">Reanelcar::~Reanelcar</a></div><div class="ttdeci">~Reanelcar()</div><div class="ttdoc">Destructor de la clase Reanelcar.</div></div>
+<div class="ttc" id="aclass_reanelcar_html_a6fab2cfb43f783045776ef9d27366b9c"><div class="ttname"><a href="class_reanelcar.html#a6fab2cfb43f783045776ef9d27366b9c">Reanelcar::trayectosEnFecha</a></div><div class="ttdeci">void trayectosEnFecha(Fecha fecha, std::vector&lt; std::pair&lt; Usuario, Trayecto &gt; &gt; &amp;vector)</div><div class="ttdoc">Muestra los Trayectos acontecidos en una Fecha dada y quién los realizó</div><div class="ttdef"><b>Definition</b> Reanelcar.cpp:431</div></div>
+<div class="ttc" id="aclass_reanelcar_html_a7249f2a9972cf61477ef806879bfb085"><div class="ttname"><a href="class_reanelcar.html#a7249f2a9972cf61477ef806879bfb085">Reanelcar::alquilar</a></div><div class="ttdeci">Coche * alquilar(Usuario &amp;usuario, int idPROrigen, int idPRDestino)</div><div class="ttdoc">Asigna un Coche a un Usuario.</div><div class="ttdef"><b>Definition</b> Reanelcar.cpp:252</div></div>
+<div class="ttc" id="aclass_reanelcar_html_a75702764ed333db6ce7dab349aadf9ee"><div class="ttname"><a href="class_reanelcar.html#a75702764ed333db6ce7dab349aadf9ee">Reanelcar::aparcarTodo</a></div><div class="ttdeci">int aparcarTodo()</div><div class="ttdoc">Aparca todos los Coches posibles en los PuntosRecarga.</div><div class="ttdef"><b>Definition</b> Reanelcar.cpp:323</div></div>
+<div class="ttc" id="aclass_reanelcar_html_a7c50b466d73a208548f12638d2f3b9ba"><div class="ttname"><a href="class_reanelcar.html#a7c50b466d73a208548f12638d2f3b9ba">Reanelcar::buscarUsrNifTHash</a></div><div class="ttdeci">Usuario * buscarUsrNifTHash(std::string &amp;nifBuscar)</div><div class="ttdoc">Busca un Usuario por su NIF.</div><div class="ttdef"><b>Definition</b> Reanelcar.cpp:208</div></div>
+<div class="ttc" id="aclass_reanelcar_html_a7cc914492f263aec4dbda150a7987e20"><div class="ttname"><a href="class_reanelcar.html#a7cc914492f263aec4dbda150a7987e20">Reanelcar::buscarCochMat</a></div><div class="ttdeci">Coche * buscarCochMat(std::string &amp;matriculaBuscar)</div><div class="ttdoc">Busca un Coche por su matrícula.</div><div class="ttdef"><b>Definition</b> Reanelcar.cpp:280</div></div>
+<div class="ttc" id="aclass_reanelcar_html_a8e5d2e9b9fc6bb23a85956e84215b6be"><div class="ttname"><a href="class_reanelcar.html#a8e5d2e9b9fc6bb23a85956e84215b6be">Reanelcar::getCochesInorden</a></div><div class="ttdeci">std::vector&lt; Coche * &gt; getCochesInorden()</div><div class="ttdoc">Coches de Reanelcar almacenados en inorden.</div><div class="ttdef"><b>Definition</b> Reanelcar.cpp:269</div></div>
+<div class="ttc" id="aclass_reanelcar_html_a956bf3c121b56c3542477340c36149b1"><div class="ttname"><a href="class_reanelcar.html#a956bf3c121b56c3542477340c36149b1">Reanelcar::mostrarEstadoTabla</a></div><div class="ttdeci">void mostrarEstadoTabla()</div><div class="ttdoc">Muestra el estado de la tabla hash de Usuarios: máximo, promedio y total de colisiones,...</div><div class="ttdef"><b>Definition</b> Reanelcar.cpp:218</div></div>
+<div class="ttc" id="aclass_reanelcar_html_a97393050bbe874e8b2a3ddae81334d54"><div class="ttname"><a href="class_reanelcar.html#a97393050bbe874e8b2a3ddae81334d54">Reanelcar::Reanelcar</a></div><div class="ttdeci">Reanelcar()=default</div><div class="ttdoc">Constructor de la clase Reanelcar.</div></div>
+<div class="ttc" id="aclass_reanelcar_html_a98b32dc52e4a771f074e7afa3fb4d7b8"><div class="ttname"><a href="class_reanelcar.html#a98b32dc52e4a771f074e7afa3fb4d7b8">Reanelcar::obtenerPRmenosCoches</a></div><div class="ttdeci">PuntoRecarga * obtenerPRmenosCoches()</div><div class="ttdoc">Busca el PuntoRecarga con menos Coches.</div><div class="ttdef"><b>Definition</b> Reanelcar.cpp:311</div></div>
+<div class="ttc" id="aclass_reanelcar_html_aad707eee044862d3681ecb2dfcb8eb6e"><div class="ttname"><a href="class_reanelcar.html#aad707eee044862d3681ecb2dfcb8eb6e">Reanelcar::buscarUsrNomb</a></div><div class="ttdeci">void buscarUsrNomb(std::string &amp;cadenaBuscar, std::list&lt; Usuario * &gt; &amp;listaARellenar)</div><div class="ttdoc">Busca los usuarios cuyo nombre empieza por la subcadena dada.</div><div class="ttdef"><b>Definition</b> Reanelcar.cpp:242</div></div>
+<div class="ttc" id="aclass_reanelcar_html_aae83dcdd6c203366df5dd22ef41a9eaf"><div class="ttname"><a href="class_reanelcar.html#aae83dcdd6c203366df5dd22ef41a9eaf">Reanelcar::mostrarTrayectosDia</a></div><div class="ttdeci">int mostrarTrayectosDia(const Fecha &amp;fechaHoy, std::list&lt; Usuario * &gt; &amp;listaUsuarios)</div><div class="ttdoc">Muestra los Usuarios con más de un trayecto en el día dado.</div><div class="ttdef"><b>Definition</b> Reanelcar.cpp:416</div></div>
+<div class="ttc" id="aclass_reanelcar_html_ac74f708982a7e136eb820ae506fb2253"><div class="ttname"><a href="class_reanelcar.html#ac74f708982a7e136eb820ae506fb2253">Reanelcar::buscarUsrNif</a></div><div class="ttdeci">Usuario * buscarUsrNif(std::string &amp;nifBuscar)</div><div class="ttdoc">Busca un Usuario por su NIF.</div><div class="ttdef"><b>Definition</b> Reanelcar.cpp:197</div></div>
+<div class="ttc" id="aclass_reanelcar_html_acf938523ef8f75cfd979a32ed4889c93"><div class="ttname"><a href="class_reanelcar.html#acf938523ef8f75cfd979a32ed4889c93">Reanelcar::tamUsuarios</a></div><div class="ttdeci">unsigned long tamUsuarios() const</div><div class="ttdoc">Devuelve el tamaño de la Usuarios.</div><div class="ttdef"><b>Definition</b> Reanelcar.cpp:190</div></div>
+<div class="ttc" id="aclass_reanelcar_html_ae68c38b1c01ab8f135d67a09216ecf6b"><div class="ttname"><a href="class_reanelcar.html#ae68c38b1c01ab8f135d67a09216ecf6b">Reanelcar::tamPR</a></div><div class="ttdeci">unsigned long tamPR() const</div><div class="ttdoc">Devuelve el tamaño del &lt;vector&gt; de Puntos de Recarga.</div><div class="ttdef"><b>Definition</b> Reanelcar.cpp:193</div></div>
+<div class="ttc" id="aclass_reanelcar_html_ae73c1afb0d476fb5347be09b585e0f9e"><div class="ttname"><a href="class_reanelcar.html#ae73c1afb0d476fb5347be09b585e0f9e">Reanelcar::buscarCochMod</a></div><div class="ttdeci">Coche * buscarCochMod(std::string &amp;modeloBuscar)</div><div class="ttdoc">Busca un Coche por su modelo.</div><div class="ttdef"><b>Definition</b> Reanelcar.cpp:289</div></div>
+<div class="ttc" id="aclass_reanelcar_html_af259c0475e92399ccfa6774c43c191dd"><div class="ttname"><a href="class_reanelcar.html#af259c0475e92399ccfa6774c43c191dd">Reanelcar::buscarPunto</a></div><div class="ttdeci">PuntoRecarga * buscarPunto(int idPR)</div><div class="ttdoc">Busca un PuntoRecarga por su ID.</div><div class="ttdef"><b>Definition</b> Reanelcar.cpp:300</div></div>
+<div class="ttc" id="aclass_reanelcar_html_af40b2aee9e9e046be096fd561cc24b65"><div class="ttname"><a href="class_reanelcar.html#af40b2aee9e9e046be096fd561cc24b65">Reanelcar::colocarCochePR</a></div><div class="ttdeci">bool colocarCochePR(Coche *c, PuntoRecarga *pr)</div><div class="ttdoc">Añade un Coche al PuntoRecarga.</div><div class="ttdef"><b>Definition</b> Reanelcar.cpp:262</div></div>
+<div class="ttc" id="aclass_reanelcar_html_afa71b6a6c4049a373c4f67bc529b4521"><div class="ttname"><a href="class_reanelcar.html#afa71b6a6c4049a373c4f67bc529b4521">Reanelcar::asignarCoches</a></div><div class="ttdeci">int asignarCoches(std::list&lt; Usuario * &gt; &amp;listaUsuarios)</div><div class="ttdoc">Asigna un Coche a cada Usuario en la std::list&lt;Usuario*&gt;</div><div class="ttdef"><b>Definition</b> Reanelcar.cpp:345</div></div>
+<div class="ttc" id="aclass_thash_usuario_html"><div class="ttname"><a href="class_thash_usuario.html">ThashUsuario</a></div><div class="ttdoc">Tabla hash para almacenar los Usuarios de Reanelcar.</div><div class="ttdef"><b>Definition</b> ThashUsuario.h:20</div></div>
+<div class="ttc" id="aclass_thash_usuario_html_a4683829170f380a5964a2346d4536573"><div class="ttname"><a href="class_thash_usuario.html#a4683829170f380a5964a2346d4536573">ThashUsuario::tipoDispersion</a></div><div class="ttdeci">tipoDispersion</div><div class="ttdef"><b>Definition</b> ThashUsuario.h:23</div></div>
+<div class="ttc" id="aclass_thash_usuario_html_a4683829170f380a5964a2346d4536573abff71fbf1f10c46a720cafe274bab512"><div class="ttname"><a href="class_thash_usuario.html#a4683829170f380a5964a2346d4536573abff71fbf1f10c46a720cafe274bab512">ThashUsuario::CUADRATICA</a></div><div class="ttdeci">@ CUADRATICA</div><div class="ttdef"><b>Definition</b> ThashUsuario.h:23</div></div>
+<div class="ttc" id="aclass_usuario_html"><div class="ttname"><a href="class_usuario.html">Usuario</a></div><div class="ttdef"><b>Definition</b> Usuario.h:19</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_f396504afdc959660871b003fa10164d.html">Documents</a></li><li class="navelem"><a class="el" href="dir_7e17ac9cf8fba2cb04bc248c85b0ceb7.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_9870a7a8923a86f2e07e11517072980e.html">EEDD_P</a></li><li class="navelem"><a class="el" href="dir_c342ec57592671472b3719866296e445.html">Practica5</a></li><li class="navelem"><b>Reanelcar.h</b></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

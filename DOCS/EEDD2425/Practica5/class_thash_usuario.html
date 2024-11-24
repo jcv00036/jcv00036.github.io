@@ -1,0 +1,757 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Práctica 5: Referencia de la clase ThashUsuario</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Práctica 5<span id="projectnumber">&#160;0.1</span>
+   </div>
+   <div id="projectbrief">Práctica realizada por Juan Carrasco Vico y Gregorio Torres Herrera</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_thash_usuario.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Tipos públicos</a> &#124;
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pub-attribs">Atributos públicos</a> &#124;
+<a href="class_thash_usuario-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle"><div class="title">Referencia de la clase ThashUsuario</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Tabla hash para almacenar los Usuarios de <a class="el" href="class_reanelcar.html">Reanelcar</a>.  
+ <a href="#details">Más...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_thash_usuario_8h_source.html">ThashUsuario.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Tipos públicos</h2></td></tr>
+<tr class="memitem:a4683829170f380a5964a2346d4536573" id="r_a4683829170f380a5964a2346d4536573"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4683829170f380a5964a2346d4536573">tipoDispersion</a> { <a class="el" href="#a4683829170f380a5964a2346d4536573abff71fbf1f10c46a720cafe274bab512">CUADRATICA</a>
+, <a class="el" href="#a4683829170f380a5964a2346d4536573a5fab218a5064e1fe4a4c95829d1035f1">DOBLE_DISPERSION1</a>
+, <a class="el" href="#a4683829170f380a5964a2346d4536573abd361e14a2b03427f30e2fce966fb270">DOBLE_DISPERSION2</a>
+ }</td></tr>
+<tr class="separator:a4683829170f380a5964a2346d4536573"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:ad7f0cfb09b72046f6e8f58b36d260b43" id="r_ad7f0cfb09b72046f6e8f58b36d260b43"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7f0cfb09b72046f6e8f58b36d260b43">ThashUsuario</a> ()=default</td></tr>
+<tr class="memdesc:ad7f0cfb09b72046f6e8f58b36d260b43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor por defecto de la clase <a class="el" href="class_thash_usuario.html" title="Tabla hash para almacenar los Usuarios de Reanelcar.">ThashUsuario</a>.  <br /></td></tr>
+<tr class="separator:ad7f0cfb09b72046f6e8f58b36d260b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7faa8567fc6da344cee286da91886324" id="r_a7faa8567fc6da344cee286da91886324"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7faa8567fc6da344cee286da91886324">ThashUsuario</a> (int maxElementos, float lambda=0.7, <a class="el" href="#a4683829170f380a5964a2346d4536573">tipoDispersion</a> tipo=<a class="el" href="#a4683829170f380a5964a2346d4536573abff71fbf1f10c46a720cafe274bab512">CUADRATICA</a>)</td></tr>
+<tr class="memdesc:a7faa8567fc6da344cee286da91886324"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor de la clase <a class="el" href="class_thash_usuario.html" title="Tabla hash para almacenar los Usuarios de Reanelcar.">ThashUsuario</a>.  <br /></td></tr>
+<tr class="separator:a7faa8567fc6da344cee286da91886324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66e652828fb5697c93086852dc34183b" id="r_a66e652828fb5697c93086852dc34183b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66e652828fb5697c93086852dc34183b">ThashUsuario</a> (const <a class="el" href="class_thash_usuario.html">ThashUsuario</a> &amp;thash)</td></tr>
+<tr class="memdesc:a66e652828fb5697c93086852dc34183b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor de copia de la clase <a class="el" href="class_thash_usuario.html" title="Tabla hash para almacenar los Usuarios de Reanelcar.">ThashUsuario</a>.  <br /></td></tr>
+<tr class="separator:a66e652828fb5697c93086852dc34183b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4ad1d12cfa4e98790965e7d27a4e2f3" id="r_ab4ad1d12cfa4e98790965e7d27a4e2f3"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4ad1d12cfa4e98790965e7d27a4e2f3">~ThashUsuario</a> ()</td></tr>
+<tr class="memdesc:ab4ad1d12cfa4e98790965e7d27a4e2f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor de la clase <a class="el" href="class_thash_usuario.html" title="Tabla hash para almacenar los Usuarios de Reanelcar.">ThashUsuario</a>.  <br /></td></tr>
+<tr class="separator:ab4ad1d12cfa4e98790965e7d27a4e2f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a944e262a5909f4878774ab2363b90144" id="r_a944e262a5909f4878774ab2363b90144"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_thash_usuario.html">ThashUsuario</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a944e262a5909f4878774ab2363b90144">operator=</a> (<a class="el" href="class_thash_usuario.html">ThashUsuario</a> &amp;thash)</td></tr>
+<tr class="memdesc:a944e262a5909f4878774ab2363b90144"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operador de asignación de la clase <a class="el" href="class_thash_usuario.html" title="Tabla hash para almacenar los Usuarios de Reanelcar.">ThashUsuario</a>.  <br /></td></tr>
+<tr class="separator:a944e262a5909f4878774ab2363b90144"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5f7556f00bf6e3532483d85d03eac18" id="r_af5f7556f00bf6e3532483d85d03eac18"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5f7556f00bf6e3532483d85d03eac18">insertar</a> (unsigned long hashClave, std::string &amp;clave, <a class="el" href="class_usuario.html">Usuario</a> &amp;usuario)</td></tr>
+<tr class="memdesc:af5f7556f00bf6e3532483d85d03eac18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserta un usuario en la <a class="el" href="class_thash_usuario.html" title="Tabla hash para almacenar los Usuarios de Reanelcar.">ThashUsuario</a>.  <br /></td></tr>
+<tr class="separator:af5f7556f00bf6e3532483d85d03eac18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44f704687f2c254b60bc80c2844c3623" id="r_a44f704687f2c254b60bc80c2844c3623"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_usuario.html">Usuario</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44f704687f2c254b60bc80c2844c3623">buscar</a> (unsigned long hashClave, std::string &amp;clave)</td></tr>
+<tr class="memdesc:a44f704687f2c254b60bc80c2844c3623"><td class="mdescLeft">&#160;</td><td class="mdescRight">Busca un usuario en la <a class="el" href="class_thash_usuario.html" title="Tabla hash para almacenar los Usuarios de Reanelcar.">ThashUsuario</a>.  <br /></td></tr>
+<tr class="separator:a44f704687f2c254b60bc80c2844c3623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d6604ebb06a3cde3b3f16dd37feac73" id="r_a7d6604ebb06a3cde3b3f16dd37feac73"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d6604ebb06a3cde3b3f16dd37feac73">borrar</a> (unsigned long hashClave, std::string &amp;clave)</td></tr>
+<tr class="memdesc:a7d6604ebb06a3cde3b3f16dd37feac73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Borra un <a class="el" href="class_usuario.html">Usuario</a> de la <a class="el" href="class_thash_usuario.html" title="Tabla hash para almacenar los Usuarios de Reanelcar.">ThashUsuario</a>.  <br /></td></tr>
+<tr class="separator:a7d6604ebb06a3cde3b3f16dd37feac73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bac45c7555ce9533d7e6fba89d47668" id="r_a6bac45c7555ce9533d7e6fba89d47668"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bac45c7555ce9533d7e6fba89d47668">djb2</a> (std::string str)</td></tr>
+<tr class="memdesc:a6bac45c7555ce9533d7e6fba89d47668"><td class="mdescLeft">&#160;</td><td class="mdescRight">Función hash djb2.  <br /></td></tr>
+<tr class="separator:a6bac45c7555ce9533d7e6fba89d47668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac11f6891ee5a29ebebeec4d7ed51857e" id="r_ac11f6891ee5a29ebebeec4d7ed51857e"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac11f6891ee5a29ebebeec4d7ed51857e">numElementos</a> ()</td></tr>
+<tr class="separator:ac11f6891ee5a29ebebeec4d7ed51857e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaf9010a2cb898536b92ef9f39124ecd" id="r_adaf9010a2cb898536b92ef9f39124ecd"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adaf9010a2cb898536b92ef9f39124ecd">getMaxColisiones</a> () const</td></tr>
+<tr class="memdesc:adaf9010a2cb898536b92ef9f39124ecd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el número máximo de colisiones que ha habido al insertar en la tabla.  <br /></td></tr>
+<tr class="separator:adaf9010a2cb898536b92ef9f39124ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad587515ec94432538d8d849fe5cf71be" id="r_ad587515ec94432538d8d849fe5cf71be"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad587515ec94432538d8d849fe5cf71be">getColisionesTimes10</a> () const</td></tr>
+<tr class="memdesc:ad587515ec94432538d8d849fe5cf71be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el número de veces que se ha llegado a 10 colisiones.  <br /></td></tr>
+<tr class="separator:ad587515ec94432538d8d849fe5cf71be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23a803614cefb6aea8780873cc3ad794" id="r_a23a803614cefb6aea8780873cc3ad794"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23a803614cefb6aea8780873cc3ad794">getPromedioColisiones</a> () const</td></tr>
+<tr class="memdesc:a23a803614cefb6aea8780873cc3ad794"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el promedio de colisiones por inserción.  <br /></td></tr>
+<tr class="separator:a23a803614cefb6aea8780873cc3ad794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54497376f52fce2173a14d76fb1e4ed4" id="r_a54497376f52fce2173a14d76fb1e4ed4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54497376f52fce2173a14d76fb1e4ed4">getFactorCarga</a> () const</td></tr>
+<tr class="memdesc:a54497376f52fce2173a14d76fb1e4ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el factor de carga de la tabla.  <br /></td></tr>
+<tr class="separator:a54497376f52fce2173a14d76fb1e4ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff64891c443f38c16a1f3dccf79cc063" id="r_aff64891c443f38c16a1f3dccf79cc063"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff64891c443f38c16a1f3dccf79cc063">getTamanioTabla</a> () const</td></tr>
+<tr class="memdesc:aff64891c443f38c16a1f3dccf79cc063"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el tamaño máximo de la tabla.  <br /></td></tr>
+<tr class="separator:aff64891c443f38c16a1f3dccf79cc063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62e40e59b20750ee1f422a56da9f2cb0" id="r_a62e40e59b20750ee1f422a56da9f2cb0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a4683829170f380a5964a2346d4536573">tipoDispersion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62e40e59b20750ee1f422a56da9f2cb0">getDispersion</a> () const</td></tr>
+<tr class="memdesc:a62e40e59b20750ee1f422a56da9f2cb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el tipo de dispersión de la tabla.  <br /></td></tr>
+<tr class="separator:a62e40e59b20750ee1f422a56da9f2cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad42ffde96a69c88fd72fb9e6d1b3e2a8" id="r_ad42ffde96a69c88fd72fb9e6d1b3e2a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad42ffde96a69c88fd72fb9e6d1b3e2a8">setDispersion</a> (<a class="el" href="#a4683829170f380a5964a2346d4536573">tipoDispersion</a> dispersion)</td></tr>
+<tr class="memdesc:ad42ffde96a69c88fd72fb9e6d1b3e2a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establece el tipo de dispersión de la tabla.  <br /></td></tr>
+<tr class="separator:ad42ffde96a69c88fd72fb9e6d1b3e2a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f80b9644e015c7c0fa7538c0ccd73b7" id="r_a6f80b9644e015c7c0fa7538c0ccd73b7"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f80b9644e015c7c0fa7538c0ccd73b7">getColisionesTotales</a> () const</td></tr>
+<tr class="separator:a6f80b9644e015c7c0fa7538c0ccd73b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Atributos públicos</h2></td></tr>
+<tr class="memitem:aaa92e7f01e01798fbf2327950a66e140" id="r_aaa92e7f01e01798fbf2327950a66e140"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa92e7f01e01798fbf2327950a66e140">MAX_LAMBDA</a> = 0.7</td></tr>
+<tr class="separator:aaa92e7f01e01798fbf2327950a66e140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Tabla hash para almacenar los Usuarios de <a class="el" href="class_reanelcar.html">Reanelcar</a>. </p>
+</div><h2 class="groupheader">Documentación de las enumeraciones miembro de la clase</h2>
+<a id="a4683829170f380a5964a2346d4536573" name="a4683829170f380a5964a2346d4536573"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4683829170f380a5964a2346d4536573">&#9670;&#160;</a></span>tipoDispersion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a4683829170f380a5964a2346d4536573">ThashUsuario::tipoDispersion</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="a4683829170f380a5964a2346d4536573abff71fbf1f10c46a720cafe274bab512" name="a4683829170f380a5964a2346d4536573abff71fbf1f10c46a720cafe274bab512"></a>CUADRATICA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4683829170f380a5964a2346d4536573a5fab218a5064e1fe4a4c95829d1035f1" name="a4683829170f380a5964a2346d4536573a5fab218a5064e1fe4a4c95829d1035f1"></a>DOBLE_DISPERSION1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4683829170f380a5964a2346d4536573abd361e14a2b03427f30e2fce966fb270" name="a4683829170f380a5964a2346d4536573abd361e14a2b03427f30e2fce966fb270"></a>DOBLE_DISPERSION2&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de constructores y destructores</h2>
+<a id="ad7f0cfb09b72046f6e8f58b36d260b43" name="ad7f0cfb09b72046f6e8f58b36d260b43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7f0cfb09b72046f6e8f58b36d260b43">&#9670;&#160;</a></span>ThashUsuario() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ThashUsuario::ThashUsuario </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor por defecto de la clase <a class="el" href="class_thash_usuario.html" title="Tabla hash para almacenar los Usuarios de Reanelcar.">ThashUsuario</a>. </p>
+<dl class="section warning"><dt>Atención</dt><dd>No se debe usar, crea un <a class="el" href="class_thash_usuario.html" title="Tabla hash para almacenar los Usuarios de Reanelcar.">ThashUsuario</a> inservible. Si se utiliza, utilizar el operador de asignación </dd></dl>
+
+</div>
+</div>
+<a id="a7faa8567fc6da344cee286da91886324" name="a7faa8567fc6da344cee286da91886324"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7faa8567fc6da344cee286da91886324">&#9670;&#160;</a></span>ThashUsuario() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ThashUsuario::ThashUsuario </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>maxElementos</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>lambda</em><span class="paramdefsep"> = </span><span class="paramdefval">0.7</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a4683829170f380a5964a2346d4536573">tipoDispersion</a></td>          <td class="paramname"><span class="paramname"><em>tipo</em><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="#a4683829170f380a5964a2346d4536573abff71fbf1f10c46a720cafe274bab512">CUADRATICA</a></span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor de la clase <a class="el" href="class_thash_usuario.html" title="Tabla hash para almacenar los Usuarios de Reanelcar.">ThashUsuario</a>. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">maxElementos</td><td>Número máximo de elementos que se pueden almacenar en la tabla </td></tr>
+    <tr><td class="paramname">lambda</td><td>Factor de carga de la tabla </td></tr>
+    <tr><td class="paramname">tipo</td><td>Tipo de dispersión. El tipo puede ser: <br  />
+ 1. <a class="el" href="#a4683829170f380a5964a2346d4536573abff71fbf1f10c46a720cafe274bab512">CUADRATICA(por defecto)</a> <br  />
+ 2. DOBLE_DISPERSION1 <br  />
+ 3. DOBLE_DISPERSION2 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Excepciones</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>Si maxElementos es negativo </td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td>Si lambda es menor que MAX_LAMBDA </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a66e652828fb5697c93086852dc34183b" name="a66e652828fb5697c93086852dc34183b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66e652828fb5697c93086852dc34183b">&#9670;&#160;</a></span>ThashUsuario() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ThashUsuario::ThashUsuario </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_thash_usuario.html">ThashUsuario</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>thash</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor de copia de la clase <a class="el" href="class_thash_usuario.html" title="Tabla hash para almacenar los Usuarios de Reanelcar.">ThashUsuario</a>. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thash</td><td><a class="el" href="class_thash_usuario.html" title="Tabla hash para almacenar los Usuarios de Reanelcar.">ThashUsuario</a> a copiar </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab4ad1d12cfa4e98790965e7d27a4e2f3" name="ab4ad1d12cfa4e98790965e7d27a4e2f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4ad1d12cfa4e98790965e7d27a4e2f3">&#9670;&#160;</a></span>~ThashUsuario()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ThashUsuario::~ThashUsuario </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor de la clase <a class="el" href="class_thash_usuario.html" title="Tabla hash para almacenar los Usuarios de Reanelcar.">ThashUsuario</a>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de funciones miembro</h2>
+<a id="a7d6604ebb06a3cde3b3f16dd37feac73" name="a7d6604ebb06a3cde3b3f16dd37feac73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d6604ebb06a3cde3b3f16dd37feac73">&#9670;&#160;</a></span>borrar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ThashUsuario::borrar </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long</td>          <td class="paramname"><span class="paramname"><em>hashClave</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>clave</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Borra un <a class="el" href="class_usuario.html">Usuario</a> de la <a class="el" href="class_thash_usuario.html" title="Tabla hash para almacenar los Usuarios de Reanelcar.">ThashUsuario</a>. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hashClave</td><td>Clave del <a class="el" href="class_usuario.html">Usuario</a> que se quiere borrar pasada por djb2 </td></tr>
+    <tr><td class="paramname">clave</td><td>Clave del <a class="el" href="class_usuario.html">Usuario</a> que se quiere borrar </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>true si se ha borrado correctamente, false si no se ha encontrado el <a class="el" href="class_usuario.html">Usuario</a> </dd></dl>
+
+</div>
+</div>
+<a id="a44f704687f2c254b60bc80c2844c3623" name="a44f704687f2c254b60bc80c2844c3623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44f704687f2c254b60bc80c2844c3623">&#9670;&#160;</a></span>buscar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_usuario.html">Usuario</a> * ThashUsuario::buscar </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long</td>          <td class="paramname"><span class="paramname"><em>hashClave</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>clave</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Busca un usuario en la <a class="el" href="class_thash_usuario.html" title="Tabla hash para almacenar los Usuarios de Reanelcar.">ThashUsuario</a>. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hashClave</td><td>Clave del <a class="el" href="class_usuario.html">Usuario</a> que se quiere buscar pasada por djb2 </td></tr>
+    <tr><td class="paramname">clave</td><td>Clave del <a class="el" href="class_usuario.html">Usuario</a> que se quiere buscar </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Puntero al <a class="el" href="class_usuario.html">Usuario</a> encontrado </dd>
+<dd>
+nullptr si no se ha encontrado el <a class="el" href="class_usuario.html">Usuario</a> </dd></dl>
+
+</div>
+</div>
+<a id="a6bac45c7555ce9533d7e6fba89d47668" name="a6bac45c7555ce9533d7e6fba89d47668"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bac45c7555ce9533d7e6fba89d47668">&#9670;&#160;</a></span>djb2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long ThashUsuario::djb2 </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>str</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Función hash djb2. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>String a la que se quiere calcular el hash </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor tras la función hash </dd></dl>
+
+</div>
+</div>
+<a id="ad587515ec94432538d8d849fe5cf71be" name="ad587515ec94432538d8d849fe5cf71be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad587515ec94432538d8d849fe5cf71be">&#9670;&#160;</a></span>getColisionesTimes10()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ThashUsuario::getColisionesTimes10 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtiene el número de veces que se ha llegado a 10 colisiones. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Número de veces que se ha llegado a 10 colisiones. </dd></dl>
+
+</div>
+</div>
+<a id="a6f80b9644e015c7c0fa7538c0ccd73b7" name="a6f80b9644e015c7c0fa7538c0ccd73b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f80b9644e015c7c0fa7538c0ccd73b7">&#9670;&#160;</a></span>getColisionesTotales()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ThashUsuario::getColisionesTotales </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a62e40e59b20750ee1f422a56da9f2cb0" name="a62e40e59b20750ee1f422a56da9f2cb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62e40e59b20750ee1f422a56da9f2cb0">&#9670;&#160;</a></span>getDispersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a4683829170f380a5964a2346d4536573">tipoDispersion</a> ThashUsuario::getDispersion </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtiene el tipo de dispersión de la tabla. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Tipo de dispersión de la tabla. </dd></dl>
+
+</div>
+</div>
+<a id="a54497376f52fce2173a14d76fb1e4ed4" name="a54497376f52fce2173a14d76fb1e4ed4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54497376f52fce2173a14d76fb1e4ed4">&#9670;&#160;</a></span>getFactorCarga()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ThashUsuario::getFactorCarga </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtiene el factor de carga de la tabla. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Factor de carga de la tabla. </dd></dl>
+
+</div>
+</div>
+<a id="adaf9010a2cb898536b92ef9f39124ecd" name="adaf9010a2cb898536b92ef9f39124ecd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaf9010a2cb898536b92ef9f39124ecd">&#9670;&#160;</a></span>getMaxColisiones()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ThashUsuario::getMaxColisiones </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtiene el número máximo de colisiones que ha habido al insertar en la tabla. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Número máximo de colisiones. </dd></dl>
+
+</div>
+</div>
+<a id="a23a803614cefb6aea8780873cc3ad794" name="a23a803614cefb6aea8780873cc3ad794"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23a803614cefb6aea8780873cc3ad794">&#9670;&#160;</a></span>getPromedioColisiones()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ThashUsuario::getPromedioColisiones </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtiene el promedio de colisiones por inserción. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Promedio de colisiones por inserción. </dd></dl>
+
+</div>
+</div>
+<a id="aff64891c443f38c16a1f3dccf79cc063" name="aff64891c443f38c16a1f3dccf79cc063"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff64891c443f38c16a1f3dccf79cc063">&#9670;&#160;</a></span>getTamanioTabla()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ThashUsuario::getTamanioTabla </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtiene el tamaño máximo de la tabla. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Tamaño máximo de la tabla. </dd></dl>
+
+</div>
+</div>
+<a id="af5f7556f00bf6e3532483d85d03eac18" name="af5f7556f00bf6e3532483d85d03eac18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5f7556f00bf6e3532483d85d03eac18">&#9670;&#160;</a></span>insertar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ThashUsuario::insertar </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long</td>          <td class="paramname"><span class="paramname"><em>hashClave</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>clave</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_usuario.html">Usuario</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>usuario</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inserta un usuario en la <a class="el" href="class_thash_usuario.html" title="Tabla hash para almacenar los Usuarios de Reanelcar.">ThashUsuario</a>. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hashClave</td><td>Clave del <a class="el" href="class_usuario.html">Usuario</a> pasada por djb2 </td></tr>
+    <tr><td class="paramname">clave</td><td>Clave del <a class="el" href="class_usuario.html">Usuario</a> </td></tr>
+    <tr><td class="paramname">usuario</td><td><a class="el" href="class_usuario.html">Usuario</a> a insertar </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>true si se ha insertado correctamente, false si el <a class="el" href="class_usuario.html">Usuario</a> ya había sido insertado </dd></dl>
+<dl class="section note"><dt>Nota</dt><dd>Se inserta un puntero al <a class="el" href="class_usuario.html">Usuario</a>, no una copia </dd></dl>
+
+</div>
+</div>
+<a id="ac11f6891ee5a29ebebeec4d7ed51857e" name="ac11f6891ee5a29ebebeec4d7ed51857e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac11f6891ee5a29ebebeec4d7ed51857e">&#9670;&#160;</a></span>numElementos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ThashUsuario::numElementos </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Devuelve</dt><dd>Número de elementos almacenados en la <a class="el" href="class_thash_usuario.html" title="Tabla hash para almacenar los Usuarios de Reanelcar.">ThashUsuario</a> </dd></dl>
+
+</div>
+</div>
+<a id="a944e262a5909f4878774ab2363b90144" name="a944e262a5909f4878774ab2363b90144"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a944e262a5909f4878774ab2363b90144">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_thash_usuario.html">ThashUsuario</a> &amp; ThashUsuario::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_thash_usuario.html">ThashUsuario</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>thash</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Operador de asignación de la clase <a class="el" href="class_thash_usuario.html" title="Tabla hash para almacenar los Usuarios de Reanelcar.">ThashUsuario</a>. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thash</td><td><a class="el" href="class_thash_usuario.html" title="Tabla hash para almacenar los Usuarios de Reanelcar.">ThashUsuario</a> a asignar </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad42ffde96a69c88fd72fb9e6d1b3e2a8" name="ad42ffde96a69c88fd72fb9e6d1b3e2a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad42ffde96a69c88fd72fb9e6d1b3e2a8">&#9670;&#160;</a></span>setDispersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ThashUsuario::setDispersion </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a4683829170f380a5964a2346d4536573">tipoDispersion</a></td>          <td class="paramname"><span class="paramname"><em>dispersion</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Establece el tipo de dispersión de la tabla. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dispersion</td><td>Tipo de dispersión de la tabla. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de datos miembro</h2>
+<a id="aaa92e7f01e01798fbf2327950a66e140" name="aaa92e7f01e01798fbf2327950a66e140"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa92e7f01e01798fbf2327950a66e140">&#9670;&#160;</a></span>MAX_LAMBDA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float ThashUsuario::MAX_LAMBDA = 0.7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_thash_usuario.html">ThashUsuario</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

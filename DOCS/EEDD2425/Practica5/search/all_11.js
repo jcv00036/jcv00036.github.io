@@ -1,0 +1,12 @@
+var searchData=
+[
+  ['la_20configuración_20elegida_0',['Justificación de la configuración elegida',['../md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md31',1,'']]],
+  ['lambda_20objetivo_3a_200_2065_1',['Lambda objetivo: 0 65',['../md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md2',1,'Lambda objetivo: 0.65'],['../md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md12',1,'Lambda objetivo: 0.65'],['../md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md22',1,'Lambda objetivo: 0.65']]],
+  ['lambda_20objetivo_3a_200_2068_2',['Lambda objetivo: 0 68',['../md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md7',1,'Lambda objetivo: 0.68'],['../md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md17',1,'Lambda objetivo: 0.68'],['../md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md27',1,'Lambda objetivo: 0.68']]],
+  ['llegó_20a_2010_20colisiones_3a_2013_3',['Veces que se llegó a 10 colisiones: 13',['../md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md5',1,'']]],
+  ['llegó_20a_2010_20colisiones_3a_2017_4',['Veces que se llegó a 10 colisiones: 17',['../md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md30',1,'']]],
+  ['llegó_20a_2010_20colisiones_3a_2025_5',['Veces que se llegó a 10 colisiones: 25',['../md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md10',1,'']]],
+  ['llegó_20a_2010_20colisiones_3a_207_6',['Veces que se llegó a 10 colisiones: 7',['../md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md25',1,'']]],
+  ['llegó_20a_2010_20colisiones_3a_208_7',['Veces que se llegó a 10 colisiones: 8',['../md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md15',1,'']]],
+  ['llegó_20a_2010_20colisiones_3a_209_8',['Veces que se llegó a 10 colisiones: 9',['../md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md20',1,'']]]
+];
