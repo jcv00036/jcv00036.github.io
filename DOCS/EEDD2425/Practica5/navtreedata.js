@@ -27,42 +27,24 @@ var NAVTREE =
   [ "Práctica 5", "index.html", [
     [ "Análisis de tablas de dispersión", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html", [
       [ "Dispersión cuadrática con λ= 0.65:", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md1", [
-        [ "Lambda objetivo: 0.65", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md2", null ],
-        [ "Tamaño de tabla: 15386", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md3", null ],
-        [ "Total de colisiones: 7103", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md4", null ],
-        [ "Veces que se llegó a 10 colisiones: 13", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md5", null ]
+        [ "Tabla de análisis:", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md2", null ]
       ] ],
-      [ "Dispersión cuadrática con λ= 0.68:", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md6", [
-        [ "Lambda objetivo: 0.68", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md7", null ],
-        [ "Tamaño de tabla: 14707", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md8", null ],
-        [ "Total de colisiones: 7717", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md9", null ],
-        [ "Veces que se llegó a 10 colisiones: 25", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md10", null ]
+      [ "Dispersión cuadrática con λ= 0.68:", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md3", [
+        [ "Tabla de análisis:", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md4", null ]
       ] ],
-      [ "Doble dispersión 1 con λ= 0.65:", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md11", [
-        [ "Lambda objetivo: 0.65", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md12", null ],
-        [ "Tamaño de tabla: 15386", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md13", null ],
-        [ "Total de colisiones: 5960", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md14", null ],
-        [ "Veces que se llegó a 10 colisiones: 8", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md15", null ]
+      [ "Doble dispersión 1 con λ= 0.65:", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md5", [
+        [ "Tabla de análisis:", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md6", null ]
       ] ],
-      [ "Doble dispersión 1 con λ= 0.68:", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md16", [
-        [ "Lambda objetivo: 0.68", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md17", null ],
-        [ "Tamaño de tabla: 14707", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md18", null ],
-        [ "Total de colisiones: 6703", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md19", null ],
-        [ "Veces que se llegó a 10 colisiones: 9", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md20", null ]
+      [ "Doble dispersión 1 con λ= 0.68:", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md7", [
+        [ "Tabla de análisis:", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md8", null ]
       ] ],
-      [ "Doble dispersión 2 con λ= 0.65:", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md21", [
-        [ "Lambda objetivo: 0.65", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md22", null ],
-        [ "Tamaño de tabla: 15386", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md23", null ],
-        [ "Total de colisiones: 6118", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md24", null ],
-        [ "Veces que se llegó a 10 colisiones: 7", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md25", null ]
+      [ "Doble dispersión 2 con λ= 0.65:", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md9", [
+        [ "Tabla de análisis:", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md10", null ]
       ] ],
-      [ "Doble dispersión 2 con λ= 0.68:", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md26", [
-        [ "Lambda objetivo: 0.68", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md27", null ],
-        [ "Tamaño de tabla: 14707", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md28", null ],
-        [ "Total de colisiones: 6792", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md29", null ],
-        [ "Veces que se llegó a 10 colisiones: 17", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md30", null ]
+      [ "Doble dispersión 2 con λ= 0.68:", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md11", [
+        [ "Tabla de análisis:", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md12", null ]
       ] ],
-      [ "Justificación de la configuración elegida", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md31", null ]
+      [ "Justificación de la configuración elegida", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md13", null ]
     ] ],
     [ "Clases", "annotated.html", [
       [ "Lista de clases", "annotated.html", "annotated_dup" ],

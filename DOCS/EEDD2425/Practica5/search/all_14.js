@@ -1,13 +1,12 @@
 var searchData=
 [
-  ['objetivo_3a_200_2065_0',['Objetivo: 0 65',['../md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md2',1,'Lambda objetivo: 0.65'],['../md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md12',1,'Lambda objetivo: 0.65'],['../md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md22',1,'Lambda objetivo: 0.65']]],
-  ['objetivo_3a_200_2068_1',['Objetivo: 0 68',['../md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md7',1,'Lambda objetivo: 0.68'],['../md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md17',1,'Lambda objetivo: 0.68'],['../md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md27',1,'Lambda objetivo: 0.68']]],
-  ['obtenerprmenoscoches_2',['obtenerPRmenosCoches',['../class_reanelcar.html#a98b32dc52e4a771f074e7afa3fb4d7b8',1,'Reanelcar']]],
-  ['operator_21_3d_3',['operator!=',['../class_fecha.html#a34637b0c9ab69ccb75852225c4c9a676',1,'Fecha']]],
-  ['operator_28_29_4',['operator()',['../classcomparar_coches.html#ab9d49e548537929486e129a0152e3a82',1,'compararCoches']]],
-  ['operator_3c_5',['operator&lt;',['../class_coche.html#ab9507b0fbafb34a0cb0719172d787b14',1,'Coche::operator&lt;()'],['../class_fecha.html#a19d5dab05cecb1e354326519373d8d3e',1,'Fecha::operator&lt;()']]],
-  ['operator_3c_3c_6',['operator&lt;&lt;',['../class_coche.html#a9f75832a105fddbe352da4d785308508',1,'Coche::operator&lt;&lt;'],['../class_trayecto.html#a9f0776f60d0be1bd13fdc7a6aed4e1b2',1,'Trayecto::operator&lt;&lt;']]],
-  ['operator_3d_7',['operator=',['../class_fecha.html#a44e01b56126ce63d8a56ffbb09088d7f',1,'Fecha::operator=()'],['../class_thash_usuario.html#a944e262a5909f4878774ab2363b90144',1,'ThashUsuario::operator=()']]],
-  ['operator_3d_3d_8',['operator==',['../class_coche.html#a248b734acf9fc926d8b8fed482c79c61',1,'Coche::operator==()'],['../class_fecha.html#abb71e4db0259f358c74e875267091c2f',1,'Fecha::operator==()']]],
-  ['operator_3e_9',['operator&gt;',['../class_coche.html#a1693ffeaf8ab822ab2c4c8ae82f5180b',1,'Coche']]]
+  ['tabla_20de_20análisis_3a_0',['Tabla de análisis:',['../md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md2',1,'Tabla de análisis:'],['../md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md4',1,'Tabla de análisis:'],['../md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md6',1,'Tabla de análisis:'],['../md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md8',1,'Tabla de análisis:'],['../md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md10',1,'Tabla de análisis:'],['../md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md12',1,'Tabla de análisis:']]],
+  ['tablas_20de_20dispersión_1',['Análisis de tablas de dispersión',['../md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html',1,'']]],
+  ['tamcoches_2',['tamCoches',['../class_reanelcar.html#a332ba744d16e96302e04d20f2196e490',1,'Reanelcar']]],
+  ['tampr_3',['tamPR',['../class_reanelcar.html#ae68c38b1c01ab8f135d67a09216ecf6b',1,'Reanelcar']]],
+  ['tamusuarios_4',['tamUsuarios',['../class_reanelcar.html#acf938523ef8f75cfd979a32ed4889c93',1,'Reanelcar']]],
+  ['thashusuario_5',['ThashUsuario',['../class_thash_usuario.html',1,'ThashUsuario'],['../class_thash_usuario.html#ad7f0cfb09b72046f6e8f58b36d260b43',1,'ThashUsuario::ThashUsuario()=default'],['../class_thash_usuario.html#a7faa8567fc6da344cee286da91886324',1,'ThashUsuario::ThashUsuario(int maxElementos, float lambda=0.7, tipoDispersion tipo=CUADRATICA)'],['../class_thash_usuario.html#a66e652828fb5697c93086852dc34183b',1,'ThashUsuario::ThashUsuario(const ThashUsuario &amp;thash)']]],
+  ['tipodispersion_6',['tipoDispersion',['../class_thash_usuario.html#a4683829170f380a5964a2346d4536573',1,'ThashUsuario']]],
+  ['trayecto_7',['Trayecto',['../class_trayecto.html',1,'Trayecto'],['../class_trayecto.html#ad129d7e55453d36e08b87ba4210f4515',1,'Trayecto::Trayecto()']]],
+  ['trayectosenfecha_8',['trayectosEnFecha',['../class_reanelcar.html#a6fab2cfb43f783045776ef9d27366b9c',1,'Reanelcar']]]
 ];

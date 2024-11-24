@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['penalizar_0',['penalizar',['../class_usuario.html#a8e8ddeb81fac602a41a5a2367e05e19a',1,'Usuario']]],
-  ['puntorecarga_1',['PuntoRecarga',['../class_punto_recarga.html',1,'PuntoRecarga'],['../class_punto_recarga.html#aea80b282f3c4391b90308e9ef3c21af7',1,'PuntoRecarga::PuntoRecarga(int idPR, UTM pos, int capacidadPR)'],['../class_punto_recarga.html#a56166a68c991288861ec06fb8655ed4e',1,'PuntoRecarga::PuntoRecarga(const PuntoRecarga &amp;orig)']]]
+  ['usuario_0',['Usuario',['../class_usuario.html',1,'Usuario'],['../class_usuario.html#af7d254a5dd3741a36fb76be1ee1e3207',1,'Usuario::Usuario()=default'],['../class_usuario.html#a52cc6f99c2eb915b7eb857950f6b9e60',1,'Usuario::Usuario(const std::string &amp;nif, const std::string &amp;clave, const std::string &amp;nombre, const std::string &amp;direccion)']]],
+  ['utm_1',['UTM',['../class_u_t_m.html',1,'UTM'],['../class_u_t_m.html#accfe462b0bb9f4f02c16338ac84c2ad0',1,'UTM::UTM()']]]
 ];
