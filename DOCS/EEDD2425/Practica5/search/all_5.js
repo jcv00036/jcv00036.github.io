@@ -1,12 +1,17 @@
 var searchData=
 [
-  ['borrar_0',['borrar',['../class_thash_usuario.html#a7d6604ebb06a3cde3b3f16dd37feac73',1,'ThashUsuario']]],
-  ['borrarusuarionifthash_1',['borrarUsuarioNifTHash',['../class_reanelcar.html#a49da58214bdd0015c5c901c699e9ee0d',1,'Reanelcar']]],
-  ['buscar_2',['buscar',['../class_thash_usuario.html#a44f704687f2c254b60bc80c2844c3623',1,'ThashUsuario']]],
-  ['buscarcochmat_3',['buscarCochMat',['../class_reanelcar.html#a7cc914492f263aec4dbda150a7987e20',1,'Reanelcar']]],
-  ['buscarcochmod_4',['buscarCochMod',['../class_reanelcar.html#ae73c1afb0d476fb5347be09b585e0f9e',1,'Reanelcar']]],
-  ['buscarpunto_5',['buscarPunto',['../class_reanelcar.html#af259c0475e92399ccfa6774c43c191dd',1,'Reanelcar']]],
-  ['buscarusrnif_6',['buscarUsrNif',['../class_reanelcar.html#ac74f708982a7e136eb820ae506fb2253',1,'Reanelcar']]],
-  ['buscarusrnifthash_7',['buscarUsrNifTHash',['../class_reanelcar.html#a7c50b466d73a208548f12638d2f3b9ba',1,'Reanelcar']]],
-  ['buscarusrnomb_8',['buscarUsrNomb',['../class_reanelcar.html#aad707eee044862d3681ecb2dfcb8eb6e',1,'Reanelcar']]]
+  ['addcoche_0',['addCoche',['../class_punto_recarga.html#a66a03cdc55220ada69e64205c0fee30a',1,'PuntoRecarga']]],
+  ['alquilar_1',['alquilar',['../class_reanelcar.html#a7249f2a9972cf61477ef806879bfb085',1,'Reanelcar']]],
+  ['análisis_20de_20tablas_20de_20dispersión_2',['Análisis de tablas de dispersión',['../md__practica5_2analisis___thash.html',1,'']]],
+  ['análisis_3a_3',['Análisis:',['../md__practica5_2analisis___thash.html#autotoc_md2',1,'Tabla de análisis:'],['../md__practica5_2analisis___thash.html#autotoc_md4',1,'Tabla de análisis:'],['../md__practica5_2analisis___thash.html#autotoc_md6',1,'Tabla de análisis:'],['../md__practica5_2analisis___thash.html#autotoc_md8',1,'Tabla de análisis:'],['../md__practica5_2analisis___thash.html#autotoc_md10',1,'Tabla de análisis:'],['../md__practica5_2analisis___thash.html#autotoc_md12',1,'Tabla de análisis:']]],
+  ['anadiranios_4',['anadirAnios',['../class_fecha.html#a6d91c9cbe056f0693c46e318613e67eb',1,'Fecha']]],
+  ['anadirdias_5',['anadirDias',['../class_fecha.html#a14c0f9e9a44161ec1a902fa2675c53a4',1,'Fecha']]],
+  ['anadirmeses_6',['anadirMeses',['../class_fecha.html#a89e9848dbdf7487d454770089290149b',1,'Fecha']]],
+  ['anio_7',['anio',['../class_fecha.html#afc21eaaff9f1517358ab0c29b14dc74a',1,'Fecha']]],
+  ['aparcacoche_8',['aparcaCoche',['../class_usuario.html#a671fb4a6c39bc361b9d7baf05f25008e',1,'Usuario']]],
+  ['aparcar_9',['aparcar',['../class_coche.html#aede3e6650fa4bf35f73cec8c615ede78',1,'Coche']]],
+  ['aparcarcoches_10',['aparcarCoches',['../class_reanelcar.html#a426046f2d308836a088e979ca87959a1',1,'Reanelcar']]],
+  ['aparcartodo_11',['aparcarTodo',['../class_reanelcar.html#a75702764ed333db6ce7dab349aadf9ee',1,'Reanelcar']]],
+  ['asignarcoches_12',['asignarCoches',['../class_reanelcar.html#afa71b6a6c4049a373c4f67bc529b4521',1,'Reanelcar']]],
+  ['asignardia_13',['asignarDia',['../class_fecha.html#a4c03df1d9e396d66886547173fba789d',1,'Fecha']]]
 ];

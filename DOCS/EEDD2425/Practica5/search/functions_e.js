@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['usuario_0',['Usuario',['../class_usuario.html#af7d254a5dd3741a36fb76be1ee1e3207',1,'Usuario::Usuario()=default'],['../class_usuario.html#a52cc6f99c2eb915b7eb857950f6b9e60',1,'Usuario::Usuario(const std::string &amp;nif, const std::string &amp;clave, const std::string &amp;nombre, const std::string &amp;direccion)']]],
-  ['utm_1',['UTM',['../class_u_t_m.html#accfe462b0bb9f4f02c16338ac84c2ad0',1,'UTM']]]
+  ['reanelcar_0',['Reanelcar',['../class_reanelcar.html#a97393050bbe874e8b2a3ddae81334d54',1,'Reanelcar::Reanelcar()=default'],['../class_reanelcar.html#a7719b2efb2605481f7d12649f081a3f1',1,'Reanelcar::Reanelcar(const std::string &amp;ficheroCoches, const std::string &amp;ficheroUsuarios, const std::string &amp;ficheroPuntosRecarga, float lambda, ThashUsuario::tipoDispersion dispersion=ThashUsuario::CUADRATICA)'],['../class_reanelcar.html#a2d12aed7a41185051e97a57f0b5e1ce3',1,'Reanelcar::Reanelcar(const Reanelcar &amp;orig)']]],
+  ['redispersar_1',['redispersar',['../class_thash_usuario.html#a5f1b2d707f146b81361b17c9a0f42c46',1,'ThashUsuario']]]
 ];

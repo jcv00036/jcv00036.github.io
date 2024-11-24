@@ -10,6 +10,9 @@ var class_fecha =
     [ "asignarDia", "class_fecha.html#a4c03df1d9e396d66886547173fba789d", null ],
     [ "cadena", "class_fecha.html#a79f7ee53c78f1251f232a668876abadc", null ],
     [ "cadenaDia", "class_fecha.html#aafc66a9292606a568dadd6a5bf9431d2", null ],
+    [ "comprobarFecha", "class_fecha.html#a227e4eb3d5ae16ba16d81a1adf3cf577", null ],
+    [ "escribirTiempo", "class_fecha.html#a82e209d65c4597e508fdeeb5b4685d9c", null ],
+    [ "leerTiempo", "class_fecha.html#ab819f1bb59ce3ca92ce2a6ab41519648", null ],
     [ "mismoDia", "class_fecha.html#a1d9b65cc26a1033ac812824f90955638", null ],
     [ "operator!=", "class_fecha.html#a34637b0c9ab69ccb75852225c4c9a676", null ],
     [ "operator<", "class_fecha.html#a19d5dab05cecb1e354326519373d8d3e", null ],
@@ -17,5 +20,8 @@ var class_fecha =
     [ "operator==", "class_fecha.html#abb71e4db0259f358c74e875267091c2f", null ],
     [ "verAnio", "class_fecha.html#a0b56e2d6672bc728cf82c4e26ab7fb38", null ],
     [ "verDia", "class_fecha.html#a0f6a9694242181a60f6351dd031ec265", null ],
-    [ "verMes", "class_fecha.html#ab42ccddfc74083d405b55ecd238cd393", null ]
+    [ "verMes", "class_fecha.html#ab42ccddfc74083d405b55ecd238cd393", null ],
+    [ "anio", "class_fecha.html#afc21eaaff9f1517358ab0c29b14dc74a", null ],
+    [ "dia", "class_fecha.html#ac81f0a991bb79610170be013a86562f8", null ],
+    [ "mes", "class_fecha.html#a7566b5910abbdfc253eadd7856d8be59", null ]
 ];

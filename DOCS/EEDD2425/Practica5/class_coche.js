@@ -22,5 +22,11 @@ var class_coche =
     [ "setIdMatricula", "class_coche.html#ad2f0083d5c15117d7fb14fd6975b1a81", null ],
     [ "setMarca", "class_coche.html#a5d42f25ca3497d100be2e3f9f1930c06", null ],
     [ "setModelo", "class_coche.html#acf8bcf3b2f37bab780b727f62ec6ebeb", null ],
-    [ "operator<<", "class_coche.html#a9f75832a105fddbe352da4d785308508", null ]
+    [ "operator<<", "class_coche.html#a9f75832a105fddbe352da4d785308508", null ],
+    [ "_charging", "class_coche.html#a6409395261aaf182ba9fc3d439e5cd0e", null ],
+    [ "_estaAsignado", "class_coche.html#a4fdbca380fd2769b8aac8edfa3c0d5e5", null ],
+    [ "_idMatricula", "class_coche.html#aa85fbd301cc51bdfedafab28a233517f", null ],
+    [ "_marca", "class_coche.html#a894282a1357134cbd9b5ab21b3b8a35d", null ],
+    [ "_modelo", "class_coche.html#a6e02b33ede606ac1fa8ce9f06e476655", null ],
+    [ "_nivelBateria", "class_coche.html#a29cb2428b2eceb76798ed65d91cab2c3", null ]
 ];

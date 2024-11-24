@@ -25,26 +25,26 @@
 var NAVTREE =
 [
   [ "Práctica 5", "index.html", [
-    [ "Análisis de tablas de dispersión", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html", [
-      [ "Dispersión cuadrática con λ= 0.65:", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md1", [
-        [ "Tabla de análisis:", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md2", null ]
+    [ "Análisis de tablas de dispersión", "md__practica5_2analisis___thash.html", [
+      [ "Dispersión cuadrática con λ= 0.65:", "md__practica5_2analisis___thash.html#autotoc_md1", [
+        [ "Tabla de análisis:", "md__practica5_2analisis___thash.html#autotoc_md2", null ]
       ] ],
-      [ "Dispersión cuadrática con λ= 0.68:", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md3", [
-        [ "Tabla de análisis:", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md4", null ]
+      [ "Dispersión cuadrática con λ= 0.68:", "md__practica5_2analisis___thash.html#autotoc_md3", [
+        [ "Tabla de análisis:", "md__practica5_2analisis___thash.html#autotoc_md4", null ]
       ] ],
-      [ "Doble dispersión 1 con λ= 0.65:", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md5", [
-        [ "Tabla de análisis:", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md6", null ]
+      [ "Doble dispersión 1 con λ= 0.65:", "md__practica5_2analisis___thash.html#autotoc_md5", [
+        [ "Tabla de análisis:", "md__practica5_2analisis___thash.html#autotoc_md6", null ]
       ] ],
-      [ "Doble dispersión 1 con λ= 0.68:", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md7", [
-        [ "Tabla de análisis:", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md8", null ]
+      [ "Doble dispersión 1 con λ= 0.68:", "md__practica5_2analisis___thash.html#autotoc_md7", [
+        [ "Tabla de análisis:", "md__practica5_2analisis___thash.html#autotoc_md8", null ]
       ] ],
-      [ "Doble dispersión 2 con λ= 0.65:", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md9", [
-        [ "Tabla de análisis:", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md10", null ]
+      [ "Doble dispersión 2 con λ= 0.65:", "md__practica5_2analisis___thash.html#autotoc_md9", [
+        [ "Tabla de análisis:", "md__practica5_2analisis___thash.html#autotoc_md10", null ]
       ] ],
-      [ "Doble dispersión 2 con λ= 0.68:", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md11", [
-        [ "Tabla de análisis:", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md12", null ]
+      [ "Doble dispersión 2 con λ= 0.68:", "md__practica5_2analisis___thash.html#autotoc_md11", [
+        [ "Tabla de análisis:", "md__practica5_2analisis___thash.html#autotoc_md12", null ]
       ] ],
-      [ "Justificación de la configuración elegida", "md__c_1_2_users_2juego_2_documents_2_git_hub_2_e_e_d_d___p_2_practica5_2analisis___thash.html#autotoc_md13", null ]
+      [ "Justificación de la configuración elegida", "md__practica5_2analisis___thash.html#autotoc_md13", null ]
     ] ],
     [ "Clases", "annotated.html", [
       [ "Lista de clases", "annotated.html", "annotated_dup" ],

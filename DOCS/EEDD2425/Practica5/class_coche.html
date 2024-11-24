@@ -94,6 +94,7 @@ $(function(){initNavTree('class_coche.html',''); initResizable(); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pri-attribs">Atributos privados</a> &#124;
 <a href="#friends">Amigas</a> &#124;
 <a href="class_coche-members.html">Lista de todos los miembros</a>  </div>
   <div class="headertitle"><div class="title">Referencia de la clase Coche</div></div>
@@ -168,6 +169,21 @@ Métodos públicos</h2></td></tr>
 <tr class="memitem:aede3e6650fa4bf35f73cec8c615ede78" id="r_aede3e6650fa4bf35f73cec8c615ede78"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aede3e6650fa4bf35f73cec8c615ede78">aparcar</a> (<a class="el" href="class_punto_recarga.html">PuntoRecarga</a> &amp;pr)</td></tr>
 <tr class="memdesc:aede3e6650fa4bf35f73cec8c615ede78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Carga el coche en un <a class="el" href="class_punto_recarga.html">PuntoRecarga</a>.  <br /></td></tr>
 <tr class="separator:aede3e6650fa4bf35f73cec8c615ede78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:aa85fbd301cc51bdfedafab28a233517f" id="r_aa85fbd301cc51bdfedafab28a233517f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa85fbd301cc51bdfedafab28a233517f">_idMatricula</a> = &quot;&quot;</td></tr>
+<tr class="separator:aa85fbd301cc51bdfedafab28a233517f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a894282a1357134cbd9b5ab21b3b8a35d" id="r_a894282a1357134cbd9b5ab21b3b8a35d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a894282a1357134cbd9b5ab21b3b8a35d">_marca</a> = &quot;&quot;</td></tr>
+<tr class="separator:a894282a1357134cbd9b5ab21b3b8a35d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e02b33ede606ac1fa8ce9f06e476655" id="r_a6e02b33ede606ac1fa8ce9f06e476655"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e02b33ede606ac1fa8ce9f06e476655">_modelo</a> = &quot;&quot;</td></tr>
+<tr class="separator:a6e02b33ede606ac1fa8ce9f06e476655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29cb2428b2eceb76798ed65d91cab2c3" id="r_a29cb2428b2eceb76798ed65d91cab2c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29cb2428b2eceb76798ed65d91cab2c3">_nivelBateria</a> =0</td></tr>
+<tr class="separator:a29cb2428b2eceb76798ed65d91cab2c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6409395261aaf182ba9fc3d439e5cd0e" id="r_a6409395261aaf182ba9fc3d439e5cd0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_punto_recarga.html">PuntoRecarga</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6409395261aaf182ba9fc3d439e5cd0e">_charging</a> = nullptr</td></tr>
+<tr class="separator:a6409395261aaf182ba9fc3d439e5cd0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fdbca380fd2769b8aac8edfa3c0d5e5" id="r_a4fdbca380fd2769b8aac8edfa3c0d5e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fdbca380fd2769b8aac8edfa3c0d5e5">_estaAsignado</a> = false</td></tr>
+<tr class="separator:a4fdbca380fd2769b8aac8edfa3c0d5e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Amigas</h2></td></tr>
@@ -816,6 +832,139 @@ Gregorio Torres Herrera </dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>Flujo de salida </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de datos miembro</h2>
+<a id="a6409395261aaf182ba9fc3d439e5cd0e" name="a6409395261aaf182ba9fc3d439e5cd0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6409395261aaf182ba9fc3d439e5cd0e">&#9670;&#160;</a></span>_charging</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_punto_recarga.html">PuntoRecarga</a>* Coche::_charging = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4fdbca380fd2769b8aac8edfa3c0d5e5" name="a4fdbca380fd2769b8aac8edfa3c0d5e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fdbca380fd2769b8aac8edfa3c0d5e5">&#9670;&#160;</a></span>_estaAsignado</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Coche::_estaAsignado = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa85fbd301cc51bdfedafab28a233517f" name="aa85fbd301cc51bdfedafab28a233517f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa85fbd301cc51bdfedafab28a233517f">&#9670;&#160;</a></span>_idMatricula</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Coche::_idMatricula = &quot;&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a894282a1357134cbd9b5ab21b3b8a35d" name="a894282a1357134cbd9b5ab21b3b8a35d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a894282a1357134cbd9b5ab21b3b8a35d">&#9670;&#160;</a></span>_marca</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Coche::_marca = &quot;&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6e02b33ede606ac1fa8ce9f06e476655" name="a6e02b33ede606ac1fa8ce9f06e476655"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e02b33ede606ac1fa8ce9f06e476655">&#9670;&#160;</a></span>_modelo</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Coche::_modelo = &quot;&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a29cb2428b2eceb76798ed65d91cab2c3" name="a29cb2428b2eceb76798ed65d91cab2c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29cb2428b2eceb76798ed65d91cab2c3">&#9670;&#160;</a></span>_nivelBateria</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Coche::_nivelBateria =0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

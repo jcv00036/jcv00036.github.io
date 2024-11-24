@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['penalizar_0',['penalizar',['../class_usuario.html#a8e8ddeb81fac602a41a5a2367e05e19a',1,'Usuario']]],
-  ['puntorecarga_1',['PuntoRecarga',['../class_punto_recarga.html',1,'PuntoRecarga'],['../class_punto_recarga.html#aea80b282f3c4391b90308e9ef3c21af7',1,'PuntoRecarga::PuntoRecarga(int idPR, UTM pos, int capacidadPR)'],['../class_punto_recarga.html#a56166a68c991288861ec06fb8655ed4e',1,'PuntoRecarga::PuntoRecarga(const PuntoRecarga &amp;orig)']]]
+  ['numelementos_0',['numElementos',['../class_thash_usuario.html#ac11f6891ee5a29ebebeec4d7ed51857e',1,'ThashUsuario']]],
+  ['numtrayectos_1',['numTrayectos',['../class_usuario.html#a3cd0170c326d7d176b3825491d2135e4',1,'Usuario']]]
 ];

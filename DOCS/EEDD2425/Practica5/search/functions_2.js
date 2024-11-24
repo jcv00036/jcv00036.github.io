@@ -6,5 +6,6 @@ var searchData=
   ['coche_3',['Coche',['../class_coche.html#a1c1d543a68ab32f170da90dea821d71d',1,'Coche::Coche()=default'],['../class_coche.html#a85b383f795702f913530fb58a0dd1b12',1,'Coche::Coche(const std::string &amp;idMatricula, const std::string &amp;marca, const std::string &amp;modelo)'],['../class_coche.html#a137d7049e44387d766ae9bfc6b2f4091',1,'Coche::Coche(const std::string &amp;idMatricula, const std::string &amp;marca, const std::string &amp;modelo, int bateria)'],['../class_coche.html#a102adfbe504df716c91b112f29a1b44b',1,'Coche::Coche(const Coche &amp;orig)'],['../class_coche.html#aefe842d0427052e64e2ff5513c4a3041',1,'Coche::Coche(std::string &amp;idMatricula)']]],
   ['cogecoche_4',['cogeCoche',['../class_usuario.html#acb1aec725e2c245567c67b18de93ed84',1,'Usuario']]],
   ['colocarcochepr_5',['colocarCochePR',['../class_reanelcar.html#af40b2aee9e9e046be096fd561cc24b65',1,'Reanelcar']]],
-  ['creartrayecto_6',['crearTrayecto',['../class_usuario.html#ab1d4f15e4672b8653a4fa5d7cbc9363e',1,'Usuario']]]
+  ['comprobarfecha_6',['comprobarFecha',['../class_fecha.html#a227e4eb3d5ae16ba16d81a1adf3cf577',1,'Fecha']]],
+  ['creartrayecto_7',['crearTrayecto',['../class_usuario.html#ab1d4f15e4672b8653a4fa5d7cbc9363e',1,'Usuario']]]
 ];

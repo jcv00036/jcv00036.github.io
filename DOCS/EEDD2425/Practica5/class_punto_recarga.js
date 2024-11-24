@@ -10,5 +10,9 @@ var class_punto_recarga =
     [ "getNumCoches", "class_punto_recarga.html#a1663cc7883b94d1a4395450459513913", null ],
     [ "getPosicion", "class_punto_recarga.html#a74ff82573a32868ce543da5d3eaecced", null ],
     [ "mostrarCoches", "class_punto_recarga.html#ac377ffa0730f10289ddbb0072a5e10f7", null ],
-    [ "setPosicion", "class_punto_recarga.html#a7aff123f1cc10b0ee2163ab5c1a7018d", null ]
+    [ "setPosicion", "class_punto_recarga.html#a7aff123f1cc10b0ee2163ab5c1a7018d", null ],
+    [ "_capacidadPR", "class_punto_recarga.html#ab5d93d5c6081ee00c6be0dc6c18f26c4", null ],
+    [ "_chargingPoint", "class_punto_recarga.html#ae82549a097327d125e27dd3a83f29845", null ],
+    [ "_idPR", "class_punto_recarga.html#abac04695880279ed8388e562d20354f9", null ],
+    [ "_posicion", "class_punto_recarga.html#a99529cc11e3d6d90e62684cc159421e1", null ]
 ];

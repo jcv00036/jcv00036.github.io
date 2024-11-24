@@ -93,9 +93,12 @@ $(function(){initNavTree('class_thash_usuario.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Clases</a> &#124;
 <a href="#pub-types">Tipos públicos</a> &#124;
 <a href="#pub-methods">Métodos públicos</a> &#124;
 <a href="#pub-attribs">Atributos públicos</a> &#124;
+<a href="#pri-methods">Métodos privados</a> &#124;
+<a href="#pri-attribs">Atributos privados</a> &#124;
 <a href="class_thash_usuario-members.html">Lista de todos los miembros</a>  </div>
   <div class="headertitle"><div class="title">Referencia de la clase ThashUsuario</div></div>
 </div><!--header-->
@@ -106,6 +109,12 @@ $(function(){initNavTree('class_thash_usuario.html',''); initResizable(); });
 
 <p><code>#include &lt;<a class="el" href="_thash_usuario_8h_source.html">ThashUsuario.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Clases</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_thash_usuario_1_1_entrada.html">Entrada</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clase para almacenar los elementos de la tabla.  <a href="class_thash_usuario_1_1_entrada.html#details">Más...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Tipos públicos</h2></td></tr>
 <tr class="memitem:a4683829170f380a5964a2346d4536573" id="r_a4683829170f380a5964a2346d4536573"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4683829170f380a5964a2346d4536573">tipoDispersion</a> { <a class="el" href="#a4683829170f380a5964a2346d4536573abff71fbf1f10c46a720cafe274bab512">CUADRATICA</a>
@@ -173,6 +182,47 @@ Métodos públicos</h2></td></tr>
 Atributos públicos</h2></td></tr>
 <tr class="memitem:aaa92e7f01e01798fbf2327950a66e140" id="r_aaa92e7f01e01798fbf2327950a66e140"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa92e7f01e01798fbf2327950a66e140">MAX_LAMBDA</a> = 0.7</td></tr>
 <tr class="separator:aaa92e7f01e01798fbf2327950a66e140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Métodos privados</h2></td></tr>
+<tr class="memitem:af3d945686248283db70d660f891bc257" id="r_af3d945686248283db70d660f891bc257"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3d945686248283db70d660f891bc257">hash</a> (unsigned long clave, int intento)</td></tr>
+<tr class="memdesc:af3d945686248283db70d660f891bc257"><td class="mdescLeft">&#160;</td><td class="mdescRight">Función hash.  <br /></td></tr>
+<tr class="separator:af3d945686248283db70d660f891bc257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88dcc65ed93eb73a37c92f5cf3e5081f" id="r_a88dcc65ed93eb73a37c92f5cf3e5081f"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88dcc65ed93eb73a37c92f5cf3e5081f">hashCuad</a> (unsigned long clave, int intento)</td></tr>
+<tr class="separator:a88dcc65ed93eb73a37c92f5cf3e5081f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8861bac8dee9fda5aaa9926222eebd42" id="r_a8861bac8dee9fda5aaa9926222eebd42"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8861bac8dee9fda5aaa9926222eebd42">hashDD1</a> (unsigned long clave, int intento)</td></tr>
+<tr class="separator:a8861bac8dee9fda5aaa9926222eebd42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a4d0d66b4f756c05024e2413711018e" id="r_a0a4d0d66b4f756c05024e2413711018e"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a4d0d66b4f756c05024e2413711018e">hashDD2</a> (unsigned long clave, int intento)</td></tr>
+<tr class="separator:a0a4d0d66b4f756c05024e2413711018e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a784b9e00eb2066ffa4afaf5bf4f27f33" id="r_a784b9e00eb2066ffa4afaf5bf4f27f33"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a784b9e00eb2066ffa4afaf5bf4f27f33">esPrimo</a> (int n)</td></tr>
+<tr class="memdesc:a784b9e00eb2066ffa4afaf5bf4f27f33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comprueba si n es primo mediante el método de Miller-Rabin.  <br /></td></tr>
+<tr class="separator:a784b9e00eb2066ffa4afaf5bf4f27f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1393f721f807658745a8c0b28551031" id="r_ab1393f721f807658745a8c0b28551031"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1393f721f807658745a8c0b28551031">primoSuperior</a> (int n)</td></tr>
+<tr class="memdesc:ab1393f721f807658745a8c0b28551031"><td class="mdescLeft">&#160;</td><td class="mdescRight">Busca el primo inmediatamente superior al número dado.  <br /></td></tr>
+<tr class="separator:ab1393f721f807658745a8c0b28551031"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a761ee31762be5843743632e0e225da9f" id="r_a761ee31762be5843743632e0e225da9f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a761ee31762be5843743632e0e225da9f">primoInferior</a> (int n)</td></tr>
+<tr class="separator:a761ee31762be5843743632e0e225da9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f1b2d707f146b81361b17c9a0f42c46" id="r_a5f1b2d707f146b81361b17c9a0f42c46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f1b2d707f146b81361b17c9a0f42c46">redispersar</a> (unsigned int tam)</td></tr>
+<tr class="separator:a5f1b2d707f146b81361b17c9a0f42c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:ad426e69ec7870434884a2fad9b64e9ae" id="r_ad426e69ec7870434884a2fad9b64e9ae"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad426e69ec7870434884a2fad9b64e9ae">_numElementos</a> = 0</td></tr>
+<tr class="separator:ad426e69ec7870434884a2fad9b64e9ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e992b867418fad0ba4ab802614225af" id="r_a4e992b867418fad0ba4ab802614225af"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e992b867418fad0ba4ab802614225af">_maxElementos</a> = 0</td></tr>
+<tr class="separator:a4e992b867418fad0ba4ab802614225af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c882ca51d7f30294501727648f09ff8" id="r_a8c882ca51d7f30294501727648f09ff8"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c882ca51d7f30294501727648f09ff8">_maxColisiones</a> = 0</td></tr>
+<tr class="separator:a8c882ca51d7f30294501727648f09ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad02ab82c5d4b4870d4bb81751f8a24" id="r_a4ad02ab82c5d4b4870d4bb81751f8a24"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ad02ab82c5d4b4870d4bb81751f8a24">_colisionesTimes10</a> = 0</td></tr>
+<tr class="separator:a4ad02ab82c5d4b4870d4bb81751f8a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56c7ebe9339d5bdf3439d3aa62d6763d" id="r_a56c7ebe9339d5bdf3439d3aa62d6763d"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56c7ebe9339d5bdf3439d3aa62d6763d">_colisionesTotales</a> = 0</td></tr>
+<tr class="separator:a56c7ebe9339d5bdf3439d3aa62d6763d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6db082ba5b0fc726a595d0949f80211" id="r_ab6db082ba5b0fc726a595d0949f80211"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a4683829170f380a5964a2346d4536573">tipoDispersion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6db082ba5b0fc726a595d0949f80211">_dispersion</a> = <a class="el" href="#a4683829170f380a5964a2346d4536573abff71fbf1f10c46a720cafe274bab512">CUADRATICA</a></td></tr>
+<tr class="separator:ab6db082ba5b0fc726a595d0949f80211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81297b3c530562c45912ddd3f8a60d33" id="r_a81297b3c530562c45912ddd3f8a60d33"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81297b3c530562c45912ddd3f8a60d33">_primoMenorAtributo</a> = 0</td></tr>
+<tr class="separator:a81297b3c530562c45912ddd3f8a60d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc97805e2dd4073097f77b2cc13f816e" id="r_adc97805e2dd4073097f77b2cc13f816e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_thash_usuario_1_1_entrada.html">Entrada</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc97805e2dd4073097f77b2cc13f816e">_tabla</a></td></tr>
+<tr class="separator:adc97805e2dd4073097f77b2cc13f816e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
 <div class="textblock"><p>Tabla hash para almacenar los Usuarios de <a class="el" href="class_reanelcar.html">Reanelcar</a>. </p>
@@ -414,6 +464,41 @@ nullptr si no se ha encontrado el <a class="el" href="class_usuario.html">Usuari
 
 </div>
 </div>
+<a id="a784b9e00eb2066ffa4afaf5bf4f27f33" name="a784b9e00eb2066ffa4afaf5bf4f27f33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a784b9e00eb2066ffa4afaf5bf4f27f33">&#9670;&#160;</a></span>esPrimo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ThashUsuario::esPrimo </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>n</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Comprueba si n es primo mediante el método de Miller-Rabin. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Número que se quiere comprobar </td></tr>
+    <tr><td class="paramname">t</td><td>número de iteraciones </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>true si es primo y false si no lo es </dd></dl>
+
+</div>
+</div>
 <a id="ad587515ec94432538d8d849fe5cf71be" name="ad587515ec94432538d8d849fe5cf71be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad587515ec94432538d8d849fe5cf71be">&#9670;&#160;</a></span>getColisionesTimes10()</h2>
 
@@ -607,6 +692,132 @@ nullptr si no se ha encontrado el <a class="el" href="class_usuario.html">Usuari
 
 </div>
 </div>
+<a id="af3d945686248283db70d660f891bc257" name="af3d945686248283db70d660f891bc257"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3d945686248283db70d660f891bc257">&#9670;&#160;</a></span>hash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long ThashUsuario::hash </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long</td>          <td class="paramname"><span class="paramname"><em>clave</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>intento</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Función hash. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clave</td><td>Clave a la que se quiere calcular el hash </td></tr>
+    <tr><td class="paramname">intento</td><td>Número del intento </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor tras la función hash </dd></dl>
+
+</div>
+</div>
+<a id="a88dcc65ed93eb73a37c92f5cf3e5081f" name="a88dcc65ed93eb73a37c92f5cf3e5081f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88dcc65ed93eb73a37c92f5cf3e5081f">&#9670;&#160;</a></span>hashCuad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long ThashUsuario::hashCuad </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long</td>          <td class="paramname"><span class="paramname"><em>clave</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>intento</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8861bac8dee9fda5aaa9926222eebd42" name="a8861bac8dee9fda5aaa9926222eebd42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8861bac8dee9fda5aaa9926222eebd42">&#9670;&#160;</a></span>hashDD1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long ThashUsuario::hashDD1 </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long</td>          <td class="paramname"><span class="paramname"><em>clave</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>intento</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a4d0d66b4f756c05024e2413711018e" name="a0a4d0d66b4f756c05024e2413711018e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a4d0d66b4f756c05024e2413711018e">&#9670;&#160;</a></span>hashDD2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long ThashUsuario::hashDD2 </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long</td>          <td class="paramname"><span class="paramname"><em>clave</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>intento</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af5f7556f00bf6e3532483d85d03eac18" name="af5f7556f00bf6e3532483d85d03eac18"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af5f7556f00bf6e3532483d85d03eac18">&#9670;&#160;</a></span>insertar()</h2>
 
@@ -696,6 +907,96 @@ nullptr si no se ha encontrado el <a class="el" href="class_usuario.html">Usuari
 
 </div>
 </div>
+<a id="a761ee31762be5843743632e0e225da9f" name="a761ee31762be5843743632e0e225da9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a761ee31762be5843743632e0e225da9f">&#9670;&#160;</a></span>primoInferior()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ThashUsuario::primoInferior </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>n</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab1393f721f807658745a8c0b28551031" name="ab1393f721f807658745a8c0b28551031"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1393f721f807658745a8c0b28551031">&#9670;&#160;</a></span>primoSuperior()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ThashUsuario::primoSuperior </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>n</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Busca el primo inmediatamente superior al número dado. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Número para el que queremos encontrar un primo </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Primo inmediatamente superior de n </dd></dl>
+<dl class="exception"><dt>Excepciones</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>Si n&lt;=0 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5f1b2d707f146b81361b17c9a0f42c46" name="a5f1b2d707f146b81361b17c9a0f42c46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f1b2d707f146b81361b17c9a0f42c46">&#9670;&#160;</a></span>redispersar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ThashUsuario::redispersar </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>tam</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad42ffde96a69c88fd72fb9e6d1b3e2a8" name="ad42ffde96a69c88fd72fb9e6d1b3e2a8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad42ffde96a69c88fd72fb9e6d1b3e2a8">&#9670;&#160;</a></span>setDispersion()</h2>
 
@@ -730,6 +1031,182 @@ nullptr si no se ha encontrado el <a class="el" href="class_usuario.html">Usuari
 </div>
 </div>
 <h2 class="groupheader">Documentación de datos miembro</h2>
+<a id="a4ad02ab82c5d4b4870d4bb81751f8a24" name="a4ad02ab82c5d4b4870d4bb81751f8a24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ad02ab82c5d4b4870d4bb81751f8a24">&#9670;&#160;</a></span>_colisionesTimes10</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ThashUsuario::_colisionesTimes10 = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56c7ebe9339d5bdf3439d3aa62d6763d" name="a56c7ebe9339d5bdf3439d3aa62d6763d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56c7ebe9339d5bdf3439d3aa62d6763d">&#9670;&#160;</a></span>_colisionesTotales</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ThashUsuario::_colisionesTotales = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab6db082ba5b0fc726a595d0949f80211" name="ab6db082ba5b0fc726a595d0949f80211"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6db082ba5b0fc726a595d0949f80211">&#9670;&#160;</a></span>_dispersion</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a4683829170f380a5964a2346d4536573">tipoDispersion</a> ThashUsuario::_dispersion = <a class="el" href="#a4683829170f380a5964a2346d4536573abff71fbf1f10c46a720cafe274bab512">CUADRATICA</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c882ca51d7f30294501727648f09ff8" name="a8c882ca51d7f30294501727648f09ff8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c882ca51d7f30294501727648f09ff8">&#9670;&#160;</a></span>_maxColisiones</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ThashUsuario::_maxColisiones = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e992b867418fad0ba4ab802614225af" name="a4e992b867418fad0ba4ab802614225af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e992b867418fad0ba4ab802614225af">&#9670;&#160;</a></span>_maxElementos</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ThashUsuario::_maxElementos = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad426e69ec7870434884a2fad9b64e9ae" name="ad426e69ec7870434884a2fad9b64e9ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad426e69ec7870434884a2fad9b64e9ae">&#9670;&#160;</a></span>_numElementos</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ThashUsuario::_numElementos = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a81297b3c530562c45912ddd3f8a60d33" name="a81297b3c530562c45912ddd3f8a60d33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81297b3c530562c45912ddd3f8a60d33">&#9670;&#160;</a></span>_primoMenorAtributo</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ThashUsuario::_primoMenorAtributo = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc97805e2dd4073097f77b2cc13f816e" name="adc97805e2dd4073097f77b2cc13f816e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc97805e2dd4073097f77b2cc13f816e">&#9670;&#160;</a></span>_tabla</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="class_thash_usuario_1_1_entrada.html">Entrada</a>*&gt; ThashUsuario::_tabla</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aaa92e7f01e01798fbf2327950a66e140" name="aaa92e7f01e01798fbf2327950a66e140"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaa92e7f01e01798fbf2327950a66e140">&#9670;&#160;</a></span>MAX_LAMBDA</h2>
 

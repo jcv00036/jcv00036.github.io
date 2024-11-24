@@ -1,5 +1,6 @@
 var class_thash_usuario =
 [
+    [ "Entrada", "class_thash_usuario_1_1_entrada.html", "class_thash_usuario_1_1_entrada" ],
     [ "tipoDispersion", "class_thash_usuario.html#a4683829170f380a5964a2346d4536573", [
       [ "CUADRATICA", "class_thash_usuario.html#a4683829170f380a5964a2346d4536573abff71fbf1f10c46a720cafe274bab512", null ],
       [ "DOBLE_DISPERSION1", "class_thash_usuario.html#a4683829170f380a5964a2346d4536573a5fab218a5064e1fe4a4c95829d1035f1", null ],
@@ -12,6 +13,7 @@ var class_thash_usuario =
     [ "borrar", "class_thash_usuario.html#a7d6604ebb06a3cde3b3f16dd37feac73", null ],
     [ "buscar", "class_thash_usuario.html#a44f704687f2c254b60bc80c2844c3623", null ],
     [ "djb2", "class_thash_usuario.html#a6bac45c7555ce9533d7e6fba89d47668", null ],
+    [ "esPrimo", "class_thash_usuario.html#a784b9e00eb2066ffa4afaf5bf4f27f33", null ],
     [ "getColisionesTimes10", "class_thash_usuario.html#ad587515ec94432538d8d849fe5cf71be", null ],
     [ "getColisionesTotales", "class_thash_usuario.html#a6f80b9644e015c7c0fa7538c0ccd73b7", null ],
     [ "getDispersion", "class_thash_usuario.html#a62e40e59b20750ee1f422a56da9f2cb0", null ],
@@ -19,9 +21,24 @@ var class_thash_usuario =
     [ "getMaxColisiones", "class_thash_usuario.html#adaf9010a2cb898536b92ef9f39124ecd", null ],
     [ "getPromedioColisiones", "class_thash_usuario.html#a23a803614cefb6aea8780873cc3ad794", null ],
     [ "getTamanioTabla", "class_thash_usuario.html#aff64891c443f38c16a1f3dccf79cc063", null ],
+    [ "hash", "class_thash_usuario.html#af3d945686248283db70d660f891bc257", null ],
+    [ "hashCuad", "class_thash_usuario.html#a88dcc65ed93eb73a37c92f5cf3e5081f", null ],
+    [ "hashDD1", "class_thash_usuario.html#a8861bac8dee9fda5aaa9926222eebd42", null ],
+    [ "hashDD2", "class_thash_usuario.html#a0a4d0d66b4f756c05024e2413711018e", null ],
     [ "insertar", "class_thash_usuario.html#af5f7556f00bf6e3532483d85d03eac18", null ],
     [ "numElementos", "class_thash_usuario.html#ac11f6891ee5a29ebebeec4d7ed51857e", null ],
     [ "operator=", "class_thash_usuario.html#a944e262a5909f4878774ab2363b90144", null ],
+    [ "primoInferior", "class_thash_usuario.html#a761ee31762be5843743632e0e225da9f", null ],
+    [ "primoSuperior", "class_thash_usuario.html#ab1393f721f807658745a8c0b28551031", null ],
+    [ "redispersar", "class_thash_usuario.html#a5f1b2d707f146b81361b17c9a0f42c46", null ],
     [ "setDispersion", "class_thash_usuario.html#ad42ffde96a69c88fd72fb9e6d1b3e2a8", null ],
+    [ "_colisionesTimes10", "class_thash_usuario.html#a4ad02ab82c5d4b4870d4bb81751f8a24", null ],
+    [ "_colisionesTotales", "class_thash_usuario.html#a56c7ebe9339d5bdf3439d3aa62d6763d", null ],
+    [ "_dispersion", "class_thash_usuario.html#ab6db082ba5b0fc726a595d0949f80211", null ],
+    [ "_maxColisiones", "class_thash_usuario.html#a8c882ca51d7f30294501727648f09ff8", null ],
+    [ "_maxElementos", "class_thash_usuario.html#a4e992b867418fad0ba4ab802614225af", null ],
+    [ "_numElementos", "class_thash_usuario.html#ad426e69ec7870434884a2fad9b64e9ae", null ],
+    [ "_primoMenorAtributo", "class_thash_usuario.html#a81297b3c530562c45912ddd3f8a60d33", null ],
+    [ "_tabla", "class_thash_usuario.html#adc97805e2dd4073097f77b2cc13f816e", null ],
     [ "MAX_LAMBDA", "class_thash_usuario.html#aaa92e7f01e01798fbf2327950a66e140", null ]
 ];

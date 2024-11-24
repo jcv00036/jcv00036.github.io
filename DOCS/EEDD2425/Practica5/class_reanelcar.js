@@ -23,5 +23,9 @@ var class_reanelcar =
     [ "tamCoches", "class_reanelcar.html#a332ba744d16e96302e04d20f2196e490", null ],
     [ "tamPR", "class_reanelcar.html#ae68c38b1c01ab8f135d67a09216ecf6b", null ],
     [ "tamUsuarios", "class_reanelcar.html#acf938523ef8f75cfd979a32ed4889c93", null ],
-    [ "trayectosEnFecha", "class_reanelcar.html#a6fab2cfb43f783045776ef9d27366b9c", null ]
+    [ "trayectosEnFecha", "class_reanelcar.html#a6fab2cfb43f783045776ef9d27366b9c", null ],
+    [ "cars", "class_reanelcar.html#a1e431e660e5401e5f764585c61b43fff", null ],
+    [ "sites", "class_reanelcar.html#a3849c306bee4928ec85baf3c98650ac3", null ],
+    [ "users", "class_reanelcar.html#ab230d41896ac365298fcd4420f55e8ea", null ],
+    [ "usersNif", "class_reanelcar.html#af2599f02841d63b01b2c8f6852171acf", null ]
 ];

@@ -19,5 +19,14 @@ var class_usuario =
     [ "setDireccion", "class_usuario.html#a160109dc3a00e50087a9e7b4b74dd3a6", null ],
     [ "setLink", "class_usuario.html#a58e3a5b8c4d5cc6c0dd9751e6db5dd3b", null ],
     [ "setNif", "class_usuario.html#a5fca60342f889b8943fc8656edf02469", null ],
-    [ "setNombre", "class_usuario.html#ad7ce5447474f6d7dea843a420fe5573d", null ]
+    [ "setNombre", "class_usuario.html#ad7ce5447474f6d7dea843a420fe5573d", null ],
+    [ "_clave", "class_usuario.html#a2a766a1731974a1b8fd4eb143a4a4001", null ],
+    [ "_direccion", "class_usuario.html#a9e1e82440cd82a28f413ce128c349f30", null ],
+    [ "_linkReanel", "class_usuario.html#a531b894cb4c4c3046ab29d22a4afb4b4", null ],
+    [ "_nif", "class_usuario.html#ad05eba774536d654139414318275350f", null ],
+    [ "_nombre", "class_usuario.html#a2e88a33879dc0db12cb55032ded4bf9b", null ],
+    [ "_puntos", "class_usuario.html#a80ec9c382e4741288e9cb3fa6be600f0", null ],
+    [ "_rent", "class_usuario.html#a3b0307f92ed6f8c1468b6b880c1dee6d", null ],
+    [ "_route", "class_usuario.html#a6f7d5a909c8088089dc3df0fdfb97286", null ],
+    [ "numTrayectos", "class_usuario.html#a3cd0170c326d7d176b3825491d2135e4", null ]
 ];
