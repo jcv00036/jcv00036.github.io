@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['borrar_0',['borrar',['../class_thash_usuario.html#a7d6604ebb06a3cde3b3f16dd37feac73',1,'ThashUsuario']]],
+  ['borrar_0',['borrar',['../class_thash_usuario.html#a0cefb7d9ccf63026aeba4a41a0cf8bee',1,'ThashUsuario']]],
   ['borrarusuarionifthash_1',['borrarUsuarioNifTHash',['../class_reanelcar.html#a49da58214bdd0015c5c901c699e9ee0d',1,'Reanelcar']]],
-  ['buscar_2',['buscar',['../class_thash_usuario.html#a44f704687f2c254b60bc80c2844c3623',1,'ThashUsuario']]],
+  ['buscar_2',['buscar',['../class_thash_usuario.html#abe5d613afc5292ae56b256b877ef2460',1,'ThashUsuario']]],
   ['buscarcochmat_3',['buscarCochMat',['../class_reanelcar.html#a7cc914492f263aec4dbda150a7987e20',1,'Reanelcar']]],
   ['buscarcochmod_4',['buscarCochMod',['../class_reanelcar.html#ae73c1afb0d476fb5347be09b585e0f9e',1,'Reanelcar']]],
   ['buscarpunto_5',['buscarPunto',['../class_reanelcar.html#af259c0475e92399ccfa6774c43c191dd',1,'Reanelcar']]],

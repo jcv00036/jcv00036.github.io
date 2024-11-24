@@ -18,7 +18,7 @@ var searchData=
   ['getlat_15',['getLat',['../class_u_t_m.html#af27c060616ae0f86e22a986730eb8488',1,'UTM']]],
   ['getlon_16',['getLon',['../class_u_t_m.html#a26af45146cd1e662e98d7b5d7ef86fff',1,'UTM']]],
   ['getmarca_17',['getMarca',['../class_coche.html#ab4a7d4a527bb3a40a11f2599c4fb66df',1,'Coche']]],
-  ['getmaxbateria_18',['getMaxBateria',['../class_punto_recarga.html#ab898dd481857645d8a80fbaf6564e1ec',1,'PuntoRecarga']]],
+  ['getmaxbateria_18',['getMaxBateria',['../class_punto_recarga.html#a1dd7bc513ad8072662338eb6216e10cc',1,'PuntoRecarga']]],
   ['getmaxcoche_19',['getMaxCoche',['../class_punto_recarga.html#a7f265ec6ca00524c0d168452fb1b240d',1,'PuntoRecarga']]],
   ['getmaxcolisiones_20',['getMaxColisiones',['../class_thash_usuario.html#adaf9010a2cb898536b92ef9f39124ecd',1,'ThashUsuario']]],
   ['getmodelo_21',['getModelo',['../class_coche.html#a8df3ab72849eafe663a00656e892ed1d',1,'Coche']]],

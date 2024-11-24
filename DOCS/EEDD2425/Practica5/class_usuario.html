@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Práctica 5<span id="projectnumber">&#160;0.1</span>
+   <div id="projectname">Práctica 5<span id="projectnumber">&#160;0.2</span>
    </div>
    <div id="projectbrief">Práctica realizada por Juan Carrasco Vico y Gregorio Torres Herrera</div>
   </td>
@@ -148,9 +148,6 @@ Métodos públicos</h2></td></tr>
 <tr class="memitem:a70e1e69fa2aaf48975dde33ccb9dbf68" id="r_a70e1e69fa2aaf48975dde33ccb9dbf68"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_trayecto.html">Trayecto</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70e1e69fa2aaf48975dde33ccb9dbf68">getTrayectosFecha</a> (const <a class="el" href="class_fecha.html">Fecha</a> &amp;fechaBuscar)</td></tr>
 <tr class="memdesc:a70e1e69fa2aaf48975dde33ccb9dbf68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve los <a class="el" href="class_trayecto.html">Trayecto</a> que se realizarán en una <a class="el" href="class_fecha.html" title="Clase sencilla para representar fechas.">Fecha</a>.  <br /></td></tr>
 <tr class="separator:a70e1e69fa2aaf48975dde33ccb9dbf68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e8ddeb81fac602a41a5a2367e05e19a" id="r_a8e8ddeb81fac602a41a5a2367e05e19a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e8ddeb81fac602a41a5a2367e05e19a">penalizar</a> (int horasRetraso)</td></tr>
-<tr class="memdesc:a8e8ddeb81fac602a41a5a2367e05e19a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Penaliza a un <a class="el" href="class_usuario.html">Usuario</a> por las horas que se ha retrasado.  <br /></td></tr>
-<tr class="separator:a8e8ddeb81fac602a41a5a2367e05e19a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e146a7729705cc975fd4afd7ed4c158" id="r_a3e146a7729705cc975fd4afd7ed4c158"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e146a7729705cc975fd4afd7ed4c158">getPuntos</a> () const</td></tr>
 <tr class="memdesc:a3e146a7729705cc975fd4afd7ed4c158"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve los puntos del trayecto.  <br /></td></tr>
 <tr class="separator:a3e146a7729705cc975fd4afd7ed4c158"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,9 +157,15 @@ Métodos públicos</h2></td></tr>
 <tr class="memitem:a966998fe39afeeb6436a8ffc726806a4" id="r_a966998fe39afeeb6436a8ffc726806a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_coche.html">Coche</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a966998fe39afeeb6436a8ffc726806a4">iniciarTrayecto</a> (int idPROrigen, int idPRDestino, <a class="el" href="class_fecha.html">Fecha</a> fInicio, <a class="el" href="class_fecha.html">Fecha</a> fFin)</td></tr>
 <tr class="memdesc:a966998fe39afeeb6436a8ffc726806a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le da al <a class="el" href="class_usuario.html">Usuario</a> un <a class="el" href="class_coche.html">Coche</a> para realizar un <a class="el" href="class_trayecto.html">Trayecto</a>.  <br /></td></tr>
 <tr class="separator:a966998fe39afeeb6436a8ffc726806a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a671fb4a6c39bc361b9d7baf05f25008e" id="r_a671fb4a6c39bc361b9d7baf05f25008e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_usuario.html">Usuario</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a671fb4a6c39bc361b9d7baf05f25008e">aparcaCoche</a> (<a class="el" href="class_coche.html">Coche</a> *coche, <a class="el" href="class_punto_recarga.html">PuntoRecarga</a> *destino)</td></tr>
-<tr class="memdesc:a671fb4a6c39bc361b9d7baf05f25008e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deja el <a class="el" href="class_coche.html">Coche</a> asociado.  <br /></td></tr>
-<tr class="separator:a671fb4a6c39bc361b9d7baf05f25008e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addb11e961762a3171924ea229f91bb72" id="r_addb11e961762a3171924ea229f91bb72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#addb11e961762a3171924ea229f91bb72">eliminarTrayectos</a> ()</td></tr>
+<tr class="memdesc:addb11e961762a3171924ea229f91bb72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Elimina todos los Trayectos del <a class="el" href="class_usuario.html">Usuario</a>.  <br /></td></tr>
+<tr class="separator:addb11e961762a3171924ea229f91bb72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41dd479fbb3d3e0510cd62ce748e1ff0" id="r_a41dd479fbb3d3e0510cd62ce748e1ff0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_usuario.html">Usuario</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41dd479fbb3d3e0510cd62ce748e1ff0">aparcaCoche</a> (<a class="el" href="class_coche.html">Coche</a> *coche, <a class="el" href="class_punto_recarga.html">PuntoRecarga</a> *destino, int retraso=0)</td></tr>
+<tr class="memdesc:a41dd479fbb3d3e0510cd62ce748e1ff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deja el <a class="el" href="class_coche.html">Coche</a> asociado.  <br /></td></tr>
+<tr class="separator:a41dd479fbb3d3e0510cd62ce748e1ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0d9932de3641c33745a422deaca18ef" id="r_ad0d9932de3641c33745a422deaca18ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0d9932de3641c33745a422deaca18ef">decrementarPuntos</a> (int horasRetraso)</td></tr>
+<tr class="memdesc:ad0d9932de3641c33745a422deaca18ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Penaliza a un <a class="el" href="class_usuario.html">Usuario</a> por las horas que se ha retrasado.  <br /></td></tr>
+<tr class="separator:ad0d9932de3641c33745a422deaca18ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Atributos privados</h2></td></tr>
@@ -258,8 +261,8 @@ Gregorio Torres Herrera </dd></dl>
 </div>
 </div>
 <h2 class="groupheader">Documentación de funciones miembro</h2>
-<a id="a671fb4a6c39bc361b9d7baf05f25008e" name="a671fb4a6c39bc361b9d7baf05f25008e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a671fb4a6c39bc361b9d7baf05f25008e">&#9670;&#160;</a></span>aparcaCoche()</h2>
+<a id="a41dd479fbb3d3e0510cd62ce748e1ff0" name="a41dd479fbb3d3e0510cd62ce748e1ff0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41dd479fbb3d3e0510cd62ce748e1ff0">&#9670;&#160;</a></span>aparcaCoche()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -272,7 +275,12 @@ Gregorio Torres Herrera </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_punto_recarga.html">PuntoRecarga</a> *</td>          <td class="paramname"><span class="paramname"><em>destino</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="class_punto_recarga.html">PuntoRecarga</a> *</td>          <td class="paramname"><span class="paramname"><em>destino</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>retraso</em><span class="paramdefsep"> = </span><span class="paramdefval">0</span></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -283,6 +291,7 @@ Gregorio Torres Herrera </dd></dl>
   <table class="params">
     <tr><td class="paramname">coche</td><td>Coche* que se quiere aparcar </td></tr>
     <tr><td class="paramname">destino</td><td>PuntoRecarga* donde se aparcará el coche </td></tr>
+    <tr><td class="paramname">retraso</td><td>Horas de retraso, por defecto es 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -371,6 +380,59 @@ Gregorio Torres Herrera </dd></dl>
   </dd>
 </dl>
 <dl class="section note"><dt>Nota</dt><dd>Es llamada por <a class="el" href="class_reanelcar.html#a7249f2a9972cf61477ef806879bfb085" title="Asigna un Coche a un Usuario.">Reanelcar::alquilar()</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad0d9932de3641c33745a422deaca18ef" name="ad0d9932de3641c33745a422deaca18ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0d9932de3641c33745a422deaca18ef">&#9670;&#160;</a></span>decrementarPuntos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Usuario::decrementarPuntos </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>horasRetraso</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Penaliza a un <a class="el" href="class_usuario.html">Usuario</a> por las horas que se ha retrasado. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">horasRetraso</td><td>Horas de retraso </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Nota</dt><dd>Se le restan 2 _puntos por cada hora de retraso </dd></dl>
+
+</div>
+</div>
+<a id="addb11e961762a3171924ea229f91bb72" name="addb11e961762a3171924ea229f91bb72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addb11e961762a3171924ea229f91bb72">&#9670;&#160;</a></span>eliminarTrayectos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Usuario::eliminarTrayectos </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Elimina todos los Trayectos del <a class="el" href="class_usuario.html">Usuario</a>. </p>
 
 </div>
 </div>
@@ -633,40 +695,6 @@ Gregorio Torres Herrera </dd></dl>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a8e8ddeb81fac602a41a5a2367e05e19a" name="a8e8ddeb81fac602a41a5a2367e05e19a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e8ddeb81fac602a41a5a2367e05e19a">&#9670;&#160;</a></span>penalizar()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Usuario::penalizar </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>horasRetraso</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Penaliza a un <a class="el" href="class_usuario.html">Usuario</a> por las horas que se ha retrasado. </p>
-<dl class="params"><dt>Parámetros</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">horasRetraso</td><td>Horas de retraso </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Nota</dt><dd>Se le restan 2 _puntos por cada hora de retraso </dd></dl>
 
 </div>
 </div>

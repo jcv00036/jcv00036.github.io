@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Práctica 5<span id="projectnumber">&#160;0.1</span>
+   <div id="projectname">Práctica 5<span id="projectnumber">&#160;0.2</span>
    </div>
    <div id="projectbrief">Práctica realizada por Juan Carrasco Vico y Gregorio Torres Herrera</div>
   </td>
@@ -120,9 +120,9 @@ Métodos públicos</h2></td></tr>
 <tr class="memitem:a7e98c1266007107e25197411cdb601bb" id="r_a7e98c1266007107e25197411cdb601bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_coche.html">Coche</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e98c1266007107e25197411cdb601bb">delCoche</a> (<a class="el" href="class_coche.html">Coche</a> *coche)</td></tr>
 <tr class="memdesc:a7e98c1266007107e25197411cdb601bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Elimina un coche de la carga.  <br /></td></tr>
 <tr class="separator:a7e98c1266007107e25197411cdb601bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab898dd481857645d8a80fbaf6564e1ec" id="r_ab898dd481857645d8a80fbaf6564e1ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_coche.html">Coche</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab898dd481857645d8a80fbaf6564e1ec">getMaxBateria</a> ()</td></tr>
-<tr class="memdesc:ab898dd481857645d8a80fbaf6564e1ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve el coche con la batería más cargada.  <br /></td></tr>
-<tr class="separator:ab898dd481857645d8a80fbaf6564e1ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dd7bc513ad8072662338eb6216e10cc" id="r_a1dd7bc513ad8072662338eb6216e10cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_coche.html">Coche</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dd7bc513ad8072662338eb6216e10cc">getMaxBateria</a> ()</td></tr>
+<tr class="memdesc:a1dd7bc513ad8072662338eb6216e10cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve el coche con la batería más cargada.  <br /></td></tr>
+<tr class="separator:a1dd7bc513ad8072662338eb6216e10cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74ff82573a32868ce543da5d3eaecced" id="r_a74ff82573a32868ce543da5d3eaecced"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_u_t_m.html">UTM</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74ff82573a32868ce543da5d3eaecced">getPosicion</a> () const</td></tr>
 <tr class="memdesc:a74ff82573a32868ce543da5d3eaecced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Posición del <a class="el" href="class_punto_recarga.html">PuntoRecarga</a>.  <br /></td></tr>
 <tr class="separator:a74ff82573a32868ce543da5d3eaecced"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,8 +147,10 @@ Atributos privados</h2></td></tr>
 <tr class="separator:abac04695880279ed8388e562d20354f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99529cc11e3d6d90e62684cc159421e1" id="r_a99529cc11e3d6d90e62684cc159421e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_u_t_m.html">UTM</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99529cc11e3d6d90e62684cc159421e1">_posicion</a></td></tr>
 <tr class="separator:a99529cc11e3d6d90e62684cc159421e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae82549a097327d125e27dd3a83f29845" id="r_ae82549a097327d125e27dd3a83f29845"><td class="memItemLeft" align="right" valign="top">std::priority_queue&lt; <a class="el" href="class_coche.html">Coche</a> *, std::vector&lt; <a class="el" href="class_coche.html">Coche</a> * &gt;, <a class="el" href="classcomparar_coches.html">compararCoches</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae82549a097327d125e27dd3a83f29845">_chargingPoint</a></td></tr>
-<tr class="separator:ae82549a097327d125e27dd3a83f29845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add20bb9ad2fd2cc9e759266af4bd728e" id="r_add20bb9ad2fd2cc9e759266af4bd728e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_coche.html">Coche</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add20bb9ad2fd2cc9e759266af4bd728e">_chargingPoint</a></td></tr>
+<tr class="separator:add20bb9ad2fd2cc9e759266af4bd728e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeee77c2f7992dae4ab5ae33fc380aaf6" id="r_aeee77c2f7992dae4ab5ae33fc380aaf6"><td class="memItemLeft" align="right" valign="top">std::multimap&lt; int, <a class="el" href="class_coche.html">Coche</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeee77c2f7992dae4ab5ae33fc380aaf6">_coches</a></td></tr>
+<tr class="separator:aeee77c2f7992dae4ab5ae33fc380aaf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Atributos estáticos privados</h2></td></tr>
@@ -309,14 +311,14 @@ Atributos estáticos privados</h2></td></tr>
 
 </div>
 </div>
-<a id="ab898dd481857645d8a80fbaf6564e1ec" name="ab898dd481857645d8a80fbaf6564e1ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab898dd481857645d8a80fbaf6564e1ec">&#9670;&#160;</a></span>getMaxBateria()</h2>
+<a id="a1dd7bc513ad8072662338eb6216e10cc" name="a1dd7bc513ad8072662338eb6216e10cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dd7bc513ad8072662338eb6216e10cc">&#9670;&#160;</a></span>getMaxBateria()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_coche.html">Coche</a> * PuntoRecarga::getMaxBateria </td>
+          <td class="memname"><a class="el" href="class_coche.html">Coche</a> &amp; PuntoRecarga::getMaxBateria </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -494,8 +496,8 @@ Atributos estáticos privados</h2></td></tr>
 
 </div>
 </div>
-<a id="ae82549a097327d125e27dd3a83f29845" name="ae82549a097327d125e27dd3a83f29845"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae82549a097327d125e27dd3a83f29845">&#9670;&#160;</a></span>_chargingPoint</h2>
+<a id="add20bb9ad2fd2cc9e759266af4bd728e" name="add20bb9ad2fd2cc9e759266af4bd728e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add20bb9ad2fd2cc9e759266af4bd728e">&#9670;&#160;</a></span>_chargingPoint</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -504,7 +506,29 @@ Atributos estáticos privados</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::priority_queue&lt;<a class="el" href="class_coche.html">Coche</a>*,std::vector&lt;<a class="el" href="class_coche.html">Coche</a>*&gt;,<a class="el" href="classcomparar_coches.html">compararCoches</a>&gt; PuntoRecarga::_chargingPoint</td>
+          <td class="memname">std::vector&lt;<a class="el" href="class_coche.html">Coche</a>*&gt; PuntoRecarga::_chargingPoint</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeee77c2f7992dae4ab5ae33fc380aaf6" name="aeee77c2f7992dae4ab5ae33fc380aaf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeee77c2f7992dae4ab5ae33fc380aaf6">&#9670;&#160;</a></span>_coches</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::multimap&lt;int, <a class="el" href="class_coche.html">Coche</a>*&gt; PuntoRecarga::_coches</td>
         </tr>
       </table>
   </td>
@@ -557,6 +581,9 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section author"><dt>Autores</dt><dd>Juan Carrasco Vico </dd>
+<dd>
+Gregorio Torres Herrera </dd></dl>
 
 </div>
 </div>
