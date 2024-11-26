@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Práctica 5<span id="projectnumber">&#160;0.2</span>
+   <div id="projectname">Práctica 5<span id="projectnumber">&#160;1.0</span>
    </div>
    <div id="projectbrief">Práctica realizada por Juan Carrasco Vico y Gregorio Torres Herrera</div>
   </td>
@@ -102,7 +102,7 @@ $(function(){initNavTree('class_fecha.html',''); initResizable(); });
 </div><!--header-->
 <div class="contents">
 
-<p>Clase sencilla para representar fechas.  
+<p>Clases sencilla para representar fechas y horas.  
  <a href="#details">Más...</a></p>
 
 <p><code>#include &lt;<a class="el" href="fecha_8h_source.html">fecha.h</a>&gt;</code></p>
@@ -111,12 +111,18 @@ $(function(){initNavTree('class_fecha.html',''); initResizable(); });
 Métodos públicos</h2></td></tr>
 <tr class="memitem:a5fbc6564d9c48e73cf8d27568a2a7fc5" id="r_a5fbc6564d9c48e73cf8d27568a2a7fc5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5fbc6564d9c48e73cf8d27568a2a7fc5">Fecha</a> ()</td></tr>
 <tr class="separator:a5fbc6564d9c48e73cf8d27568a2a7fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af89bc6e0c8b454b05d72fb39e6bdd33d" id="r_af89bc6e0c8b454b05d72fb39e6bdd33d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af89bc6e0c8b454b05d72fb39e6bdd33d">Fecha</a> (unsigned aDia, unsigned aMes, unsigned aAnio)</td></tr>
-<tr class="separator:af89bc6e0c8b454b05d72fb39e6bdd33d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2548cec49fb9b07debabd9ee0565514f" id="r_a2548cec49fb9b07debabd9ee0565514f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2548cec49fb9b07debabd9ee0565514f">Fecha</a> (unsigned aDia, unsigned aMes, unsigned aAnio, unsigned aHora=0, unsigned aMin=0)</td></tr>
+<tr class="separator:a2548cec49fb9b07debabd9ee0565514f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7201e00ac3fa1e07dfa124f3bd999dec" id="r_a7201e00ac3fa1e07dfa124f3bd999dec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7201e00ac3fa1e07dfa124f3bd999dec">Fecha</a> (const <a class="el" href="class_fecha.html">Fecha</a> &amp;f)</td></tr>
 <tr class="separator:a7201e00ac3fa1e07dfa124f3bd999dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c03df1d9e396d66886547173fba789d" id="r_a4c03df1d9e396d66886547173fba789d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c03df1d9e396d66886547173fba789d">asignarDia</a> (unsigned aDia, unsigned aMes, unsigned aAnio)</td></tr>
 <tr class="separator:a4c03df1d9e396d66886547173fba789d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc9b7a806cfe248814ba9d15b603d9fb" id="r_acc9b7a806cfe248814ba9d15b603d9fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc9b7a806cfe248814ba9d15b603d9fb">asignarHora</a> (unsigned aHora, unsigned aMin)</td></tr>
+<tr class="separator:acc9b7a806cfe248814ba9d15b603d9fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14c51421f53202110c2dd030b4d323a8" id="r_a14c51421f53202110c2dd030b4d323a8"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14c51421f53202110c2dd030b4d323a8">verHora</a> () const</td></tr>
+<tr class="separator:a14c51421f53202110c2dd030b4d323a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af10a546982dc738bef0c249357e1a0cf" id="r_af10a546982dc738bef0c249357e1a0cf"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af10a546982dc738bef0c249357e1a0cf">verMin</a> () const</td></tr>
+<tr class="separator:af10a546982dc738bef0c249357e1a0cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f6a9694242181a60f6351dd031ec265" id="r_a0f6a9694242181a60f6351dd031ec265"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f6a9694242181a60f6351dd031ec265">verDia</a> () const</td></tr>
 <tr class="separator:a0f6a9694242181a60f6351dd031ec265"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab42ccddfc74083d405b55ecd238cd393" id="r_ab42ccddfc74083d405b55ecd238cd393"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab42ccddfc74083d405b55ecd238cd393">verMes</a> () const</td></tr>
@@ -125,18 +131,24 @@ Métodos públicos</h2></td></tr>
 <tr class="separator:a0b56e2d6672bc728cf82c4e26ab7fb38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafc66a9292606a568dadd6a5bf9431d2" id="r_aafc66a9292606a568dadd6a5bf9431d2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aafc66a9292606a568dadd6a5bf9431d2">cadenaDia</a> () const</td></tr>
 <tr class="separator:aafc66a9292606a568dadd6a5bf9431d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae898e8367f3d20810978a6b7e7125e16" id="r_ae898e8367f3d20810978a6b7e7125e16"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae898e8367f3d20810978a6b7e7125e16">cadenaHora</a> () const</td></tr>
+<tr class="separator:ae898e8367f3d20810978a6b7e7125e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79f7ee53c78f1251f232a668876abadc" id="r_a79f7ee53c78f1251f232a668876abadc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79f7ee53c78f1251f232a668876abadc">cadena</a> () const</td></tr>
 <tr class="separator:a79f7ee53c78f1251f232a668876abadc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d9b65cc26a1033ac812824f90955638" id="r_a1d9b65cc26a1033ac812824f90955638"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d9b65cc26a1033ac812824f90955638">mismoDia</a> (const <a class="el" href="class_fecha.html">Fecha</a> &amp;f) const</td></tr>
 <tr class="separator:a1d9b65cc26a1033ac812824f90955638"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19d5dab05cecb1e354326519373d8d3e" id="r_a19d5dab05cecb1e354326519373d8d3e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19d5dab05cecb1e354326519373d8d3e">operator&lt;</a> (const <a class="el" href="class_fecha.html">Fecha</a> &amp;f) const</td></tr>
 <tr class="separator:a19d5dab05cecb1e354326519373d8d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44e01b56126ce63d8a56ffbb09088d7f" id="r_a44e01b56126ce63d8a56ffbb09088d7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_fecha.html">Fecha</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44e01b56126ce63d8a56ffbb09088d7f">operator=</a> (const <a class="el" href="class_fecha.html">Fecha</a> &amp;f)</td></tr>
+<tr class="separator:a44e01b56126ce63d8a56ffbb09088d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb71e4db0259f358c74e875267091c2f" id="r_abb71e4db0259f358c74e875267091c2f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb71e4db0259f358c74e875267091c2f">operator==</a> (const <a class="el" href="class_fecha.html">Fecha</a> &amp;rhs) const</td></tr>
 <tr class="separator:abb71e4db0259f358c74e875267091c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34637b0c9ab69ccb75852225c4c9a676" id="r_a34637b0c9ab69ccb75852225c4c9a676"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34637b0c9ab69ccb75852225c4c9a676">operator!=</a> (const <a class="el" href="class_fecha.html">Fecha</a> &amp;rhs) const</td></tr>
 <tr class="separator:a34637b0c9ab69ccb75852225c4c9a676"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44e01b56126ce63d8a56ffbb09088d7f" id="r_a44e01b56126ce63d8a56ffbb09088d7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_fecha.html">Fecha</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44e01b56126ce63d8a56ffbb09088d7f">operator=</a> (const <a class="el" href="class_fecha.html">Fecha</a> &amp;f)</td></tr>
-<tr class="separator:a44e01b56126ce63d8a56ffbb09088d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab55f8847567931178bd7491704dbd689" id="r_ab55f8847567931178bd7491704dbd689"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab55f8847567931178bd7491704dbd689">anadirMin</a> (int numMin)</td></tr>
+<tr class="separator:ab55f8847567931178bd7491704dbd689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a65bd0f06a99d7e04aedd28adcbf7c5" id="r_a2a65bd0f06a99d7e04aedd28adcbf7c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a65bd0f06a99d7e04aedd28adcbf7c5">anadirHoras</a> (int numHoras)</td></tr>
+<tr class="separator:a2a65bd0f06a99d7e04aedd28adcbf7c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14c0f9e9a44161ec1a902fa2675c53a4" id="r_a14c0f9e9a44161ec1a902fa2675c53a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_fecha.html">Fecha</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14c0f9e9a44161ec1a902fa2675c53a4">anadirDias</a> (int numDias)</td></tr>
 <tr class="separator:a14c0f9e9a44161ec1a902fa2675c53a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89e9848dbdf7487d454770089290149b" id="r_a89e9848dbdf7487d454770089290149b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89e9848dbdf7487d454770089290149b">anadirMeses</a> (int numMeses)</td></tr>
@@ -148,8 +160,8 @@ Métodos públicos</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Métodos privados</h2></td></tr>
-<tr class="memitem:a227e4eb3d5ae16ba16d81a1adf3cf577" id="r_a227e4eb3d5ae16ba16d81a1adf3cf577"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a227e4eb3d5ae16ba16d81a1adf3cf577">comprobarFecha</a> (unsigned aDia, unsigned aMes, unsigned aAnio) const</td></tr>
-<tr class="separator:a227e4eb3d5ae16ba16d81a1adf3cf577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93f3f547c72cc89327e713980cd15012" id="r_a93f3f547c72cc89327e713980cd15012"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93f3f547c72cc89327e713980cd15012">comprobarFecha</a> (unsigned aDia, unsigned aMes, unsigned aAnio, unsigned aHora, unsigned aMin) const</td></tr>
+<tr class="separator:a93f3f547c72cc89327e713980cd15012"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab819f1bb59ce3ca92ce2a6ab41519648" id="r_ab819f1bb59ce3ca92ce2a6ab41519648"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab819f1bb59ce3ca92ce2a6ab41519648">leerTiempo</a> (const tm &amp;t)</td></tr>
 <tr class="separator:ab819f1bb59ce3ca92ce2a6ab41519648"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82e209d65c4597e508fdeeb5b4685d9c" id="r_a82e209d65c4597e508fdeeb5b4685d9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82e209d65c4597e508fdeeb5b4685d9c">escribirTiempo</a> (tm &amp;t)</td></tr>
@@ -163,6 +175,10 @@ Atributos privados</h2></td></tr>
 <tr class="separator:a7566b5910abbdfc253eadd7856d8be59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc21eaaff9f1517358ab0c29b14dc74a" id="r_afc21eaaff9f1517358ab0c29b14dc74a"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc21eaaff9f1517358ab0c29b14dc74a">anio</a></td></tr>
 <tr class="separator:afc21eaaff9f1517358ab0c29b14dc74a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a763ed4dd0d89c41a7a0e3725f6a81663" id="r_a763ed4dd0d89c41a7a0e3725f6a81663"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a763ed4dd0d89c41a7a0e3725f6a81663">hora</a></td></tr>
+<tr class="separator:a763ed4dd0d89c41a7a0e3725f6a81663"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5503d064a6797124e7c80b61261ba1a3" id="r_a5503d064a6797124e7c80b61261ba1a3"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5503d064a6797124e7c80b61261ba1a3">min</a></td></tr>
+<tr class="separator:a5503d064a6797124e7c80b61261ba1a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Atributos estáticos privados</h2></td></tr>
@@ -170,7 +186,7 @@ Atributos estáticos privados</h2></td></tr>
 <tr class="separator:a282cd7299fec7bb49830b313b68e5e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
-<div class="textblock"><p>Clase sencilla para representar fechas. </p>
+<div class="textblock"><p>Clases sencilla para representar fechas y horas. </p>
 </div><h2 class="groupheader">Documentación de constructores y destructores</h2>
 <a id="a5fbc6564d9c48e73cf8d27568a2a7fc5" name="a5fbc6564d9c48e73cf8d27568a2a7fc5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5fbc6564d9c48e73cf8d27568a2a7fc5">&#9670;&#160;</a></span>Fecha() <span class="overload">[1/3]</span></h2>
@@ -186,12 +202,12 @@ Atributos estáticos privados</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Crea una fecha con la fecha actual </p>
+<p>Crea una fecha con la hora actual </p>
 
 </div>
 </div>
-<a id="af89bc6e0c8b454b05d72fb39e6bdd33d" name="af89bc6e0c8b454b05d72fb39e6bdd33d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af89bc6e0c8b454b05d72fb39e6bdd33d">&#9670;&#160;</a></span>Fecha() <span class="overload">[2/3]</span></h2>
+<a id="a2548cec49fb9b07debabd9ee0565514f" name="a2548cec49fb9b07debabd9ee0565514f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2548cec49fb9b07debabd9ee0565514f">&#9670;&#160;</a></span>Fecha() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -209,11 +225,21 @@ Atributos estáticos privados</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned</td>          <td class="paramname"><span class="paramname"><em>aAnio</em></span>&#160;)</td>
+          <td class="paramtype">unsigned</td>          <td class="paramname"><span class="paramname"><em>aAnio</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned</td>          <td class="paramname"><span class="paramname"><em>aHora</em><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned</td>          <td class="paramname"><span class="paramname"><em>aMin</em><span class="paramdefsep"> = </span><span class="paramdefval">0</span></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Crea una fecha concreta. Devuelve una excepción <a class="el" href="class_error_fecha_incorrecta.html" title="Excepción que representa fechas incorrectas.">ErrorFechaIncorrecta</a> si la fecha introducida no es correcta </p>
+<p>Crea una fecha concreta. Devuelve una excepci�n <a class="el" href="class_error_fecha_incorrecta.html" title="Excepci�n que representa fechas incorrectas.">ErrorFechaIncorrecta</a> si la fecha introducida no es correcta </p>
 
 </div>
 </div>
@@ -275,7 +301,7 @@ Atributos estáticos privados</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Añadir un número de años indicado </p>
+<p>A�adir un n�mero de a�os indicado </p>
 
 </div>
 </div>
@@ -293,7 +319,25 @@ Atributos estáticos privados</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Añadir un número de días indicado </p>
+<p>A�adir un n�mero de d�as indicado </p>
+
+</div>
+</div>
+<a id="a2a65bd0f06a99d7e04aedd28adcbf7c5" name="a2a65bd0f06a99d7e04aedd28adcbf7c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a65bd0f06a99d7e04aedd28adcbf7c5">&#9670;&#160;</a></span>anadirHoras()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Fecha::anadirHoras </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>numHoras</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A�adir un n�mero de horas indicado </p>
 
 </div>
 </div>
@@ -311,7 +355,25 @@ Atributos estáticos privados</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Añadir un número de meses indicado </p>
+<p>A�adir un n�mero de meses indicado </p>
+
+</div>
+</div>
+<a id="ab55f8847567931178bd7491704dbd689" name="ab55f8847567931178bd7491704dbd689"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab55f8847567931178bd7491704dbd689">&#9670;&#160;</a></span>anadirMin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Fecha::anadirMin </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>numMin</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A�adir un n�mero de minutos indicado </p>
 
 </div>
 </div>
@@ -338,7 +400,29 @@ Atributos estáticos privados</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Asignar un nuevo día </p>
+<p>Asignar un nuevo d�a </p>
+
+</div>
+</div>
+<a id="acc9b7a806cfe248814ba9d15b603d9fb" name="acc9b7a806cfe248814ba9d15b603d9fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc9b7a806cfe248814ba9d15b603d9fb">&#9670;&#160;</a></span>asignarHora()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Fecha::asignarHora </td>
+          <td>(</td>
+          <td class="paramtype">unsigned</td>          <td class="paramname"><span class="paramname"><em>aHora</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned</td>          <td class="paramname"><span class="paramname"><em>aMin</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Asignar una nueva hora </p>
 
 </div>
 </div>
@@ -364,7 +448,7 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Obtener una cadena con fecha completa </p>
+<p>Obtener una cadena con d�a y hora </p>
 
 </div>
 </div>
@@ -382,12 +466,30 @@ Atributos estáticos privados</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Obtener una cadena con el día </p>
+<p>Obtener una cadena con el d�a </p>
 
 </div>
 </div>
-<a id="a227e4eb3d5ae16ba16d81a1adf3cf577" name="a227e4eb3d5ae16ba16d81a1adf3cf577"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a227e4eb3d5ae16ba16d81a1adf3cf577">&#9670;&#160;</a></span>comprobarFecha()</h2>
+<a id="ae898e8367f3d20810978a6b7e7125e16" name="ae898e8367f3d20810978a6b7e7125e16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae898e8367f3d20810978a6b7e7125e16">&#9670;&#160;</a></span>cadenaHora()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Fecha::cadenaHora </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtener una cadena con la hora </p>
+
+</div>
+</div>
+<a id="a93f3f547c72cc89327e713980cd15012" name="a93f3f547c72cc89327e713980cd15012"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93f3f547c72cc89327e713980cd15012">&#9670;&#160;</a></span>comprobarFecha()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -408,7 +510,17 @@ Atributos estáticos privados</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned</td>          <td class="paramname"><span class="paramname"><em>aAnio</em></span>&#160;) const</td>
+          <td class="paramtype">unsigned</td>          <td class="paramname"><span class="paramname"><em>aAnio</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned</td>          <td class="paramname"><span class="paramname"><em>aHora</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned</td>          <td class="paramname"><span class="paramname"><em>aMin</em></span>&#160;) const</td>
         </tr>
       </table>
   </td>
@@ -417,7 +529,7 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Comprobación de validez de una fecha </p>
+<p>Comprobaci�n de validez de una fecha </p>
 
 </div>
 </div>
@@ -443,7 +555,7 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Función auxiliar de conversión a estructura de tiempo tm de time.h </p>
+<p>Funci�n auxiliar de conversi�n a estructura de tiempo tm de time.h </p>
 
 </div>
 </div>
@@ -469,7 +581,7 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Función auxiliar de conversión desde estructura de tiempo tm de time.h </p>
+<p>Funci�n auxiliar de conversi�n desde estructura de tiempo tm de time.h </p>
 
 </div>
 </div>
@@ -495,7 +607,7 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Indica si las dos fechas tienen el mismo día </p>
+<p>Indica si las dos fechas tienen el mismo d�a </p>
 
 </div>
 </div>
@@ -591,7 +703,7 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Obtener año </p>
+<p>Obtener a�o </p>
 
 </div>
 </div>
@@ -621,6 +733,32 @@ Atributos estáticos privados</h2></td></tr>
 
 </div>
 </div>
+<a id="a14c51421f53202110c2dd030b4d323a8" name="a14c51421f53202110c2dd030b4d323a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14c51421f53202110c2dd030b4d323a8">&#9670;&#160;</a></span>verHora()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned Fecha::verHora </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Obtener hora </p>
+
+</div>
+</div>
 <a id="ab42ccddfc74083d405b55ecd238cd393" name="ab42ccddfc74083d405b55ecd238cd393"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab42ccddfc74083d405b55ecd238cd393">&#9670;&#160;</a></span>verMes()</h2>
 
@@ -644,6 +782,32 @@ Atributos estáticos privados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Obtener mes </p>
+
+</div>
+</div>
+<a id="af10a546982dc738bef0c249357e1a0cf" name="af10a546982dc738bef0c249357e1a0cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af10a546982dc738bef0c249357e1a0cf">&#9670;&#160;</a></span>verMin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned Fecha::verMin </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Obtener minutos </p>
 
 </div>
 </div>
@@ -689,7 +853,7 @@ Atributos estáticos privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="class_fecha.html" title="Clase sencilla para representar fechas.">Fecha</a> </p>
+<p><a class="el" href="class_fecha.html" title="Clases sencilla para representar fechas y horas.">Fecha</a> y hora </p>
 
 </div>
 </div>
@@ -716,6 +880,28 @@ Atributos estáticos privados</h2></td></tr>
 
 </div>
 </div>
+<a id="a763ed4dd0d89c41a7a0e3725f6a81663" name="a763ed4dd0d89c41a7a0e3725f6a81663"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a763ed4dd0d89c41a7a0e3725f6a81663">&#9670;&#160;</a></span>hora</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned Fecha::hora</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a7566b5910abbdfc253eadd7856d8be59" name="a7566b5910abbdfc253eadd7856d8be59"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7566b5910abbdfc253eadd7856d8be59">&#9670;&#160;</a></span>mes</h2>
 
@@ -727,6 +913,28 @@ Atributos estáticos privados</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">unsigned Fecha::mes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5503d064a6797124e7c80b61261ba1a3" name="a5503d064a6797124e7c80b61261ba1a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5503d064a6797124e7c80b61261ba1a3">&#9670;&#160;</a></span>min</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned Fecha::min</td>
         </tr>
       </table>
   </td>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sites_0',['sites',['../class_reanelcar.html#a3849c306bee4928ec85baf3c98650ac3',1,'Reanelcar']]]
+  ['numtrayectos_0',['numTrayectos',['../class_usuario.html#a3cd0170c326d7d176b3825491d2135e4',1,'Usuario']]]
 ];

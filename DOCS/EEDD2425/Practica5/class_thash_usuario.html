@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Práctica 5<span id="projectnumber">&#160;0.2</span>
+   <div id="projectname">Práctica 5<span id="projectnumber">&#160;1.0</span>
    </div>
    <div id="projectbrief">Práctica realizada por Juan Carrasco Vico y Gregorio Torres Herrera</div>
   </td>
@@ -146,12 +146,15 @@ Métodos públicos</h2></td></tr>
 <tr class="memitem:abe5d613afc5292ae56b256b877ef2460" id="r_abe5d613afc5292ae56b256b877ef2460"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_usuario.html">Usuario</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe5d613afc5292ae56b256b877ef2460">buscar</a> (unsigned long hashNif, std::string &amp;nif)</td></tr>
 <tr class="memdesc:abe5d613afc5292ae56b256b877ef2460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Busca un usuario en la <a class="el" href="class_thash_usuario.html" title="Tabla hash para almacenar los Usuarios de Reanelcar.">ThashUsuario</a>.  <br /></td></tr>
 <tr class="separator:abe5d613afc5292ae56b256b877ef2460"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cefb7d9ccf63026aeba4a41a0cf8bee" id="r_a0cefb7d9ccf63026aeba4a41a0cf8bee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0cefb7d9ccf63026aeba4a41a0cf8bee">borrar</a> (unsigned long hashNif, std::string &amp;nif)</td></tr>
-<tr class="memdesc:a0cefb7d9ccf63026aeba4a41a0cf8bee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Borra un <a class="el" href="class_usuario.html">Usuario</a> de la <a class="el" href="class_thash_usuario.html" title="Tabla hash para almacenar los Usuarios de Reanelcar.">ThashUsuario</a>.  <br /></td></tr>
-<tr class="separator:a0cefb7d9ccf63026aeba4a41a0cf8bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ab81f73a98e36ac733b2b0d5c644356" id="r_a5ab81f73a98e36ac733b2b0d5c644356"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ab81f73a98e36ac733b2b0d5c644356">borrar</a> (unsigned long hashNif, const std::string &amp;nif)</td></tr>
+<tr class="memdesc:a5ab81f73a98e36ac733b2b0d5c644356"><td class="mdescLeft">&#160;</td><td class="mdescRight">Borra un <a class="el" href="class_usuario.html">Usuario</a> de la <a class="el" href="class_thash_usuario.html" title="Tabla hash para almacenar los Usuarios de Reanelcar.">ThashUsuario</a>.  <br /></td></tr>
+<tr class="separator:a5ab81f73a98e36ac733b2b0d5c644356"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bac45c7555ce9533d7e6fba89d47668" id="r_a6bac45c7555ce9533d7e6fba89d47668"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bac45c7555ce9533d7e6fba89d47668">djb2</a> (std::string str)</td></tr>
 <tr class="memdesc:a6bac45c7555ce9533d7e6fba89d47668"><td class="mdescLeft">&#160;</td><td class="mdescRight">Función hash djb2.  <br /></td></tr>
 <tr class="separator:a6bac45c7555ce9533d7e6fba89d47668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4226db70ff5505f9a76a9f60b796838a" id="r_a4226db70ff5505f9a76a9f60b796838a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4226db70ff5505f9a76a9f60b796838a">forzarRedispersion</a> ()</td></tr>
+<tr class="memdesc:a4226db70ff5505f9a76a9f60b796838a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fuerza la redispersión de la tabla.  <br /></td></tr>
+<tr class="separator:a4226db70ff5505f9a76a9f60b796838a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac11f6891ee5a29ebebeec4d7ed51857e" id="r_ac11f6891ee5a29ebebeec4d7ed51857e"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac11f6891ee5a29ebebeec4d7ed51857e">numElementos</a> ()</td></tr>
 <tr class="separator:ac11f6891ee5a29ebebeec4d7ed51857e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaf9010a2cb898536b92ef9f39124ecd" id="r_adaf9010a2cb898536b92ef9f39124ecd"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adaf9010a2cb898536b92ef9f39124ecd">getMaxColisiones</a> () const</td></tr>
@@ -166,9 +169,12 @@ Métodos públicos</h2></td></tr>
 <tr class="memitem:a54497376f52fce2173a14d76fb1e4ed4" id="r_a54497376f52fce2173a14d76fb1e4ed4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54497376f52fce2173a14d76fb1e4ed4">getFactorCarga</a> () const</td></tr>
 <tr class="memdesc:a54497376f52fce2173a14d76fb1e4ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el factor de carga de la tabla.  <br /></td></tr>
 <tr class="separator:a54497376f52fce2173a14d76fb1e4ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff64891c443f38c16a1f3dccf79cc063" id="r_aff64891c443f38c16a1f3dccf79cc063"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff64891c443f38c16a1f3dccf79cc063">getTamanioTabla</a> () const</td></tr>
-<tr class="memdesc:aff64891c443f38c16a1f3dccf79cc063"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el tamaño máximo de la tabla.  <br /></td></tr>
-<tr class="separator:aff64891c443f38c16a1f3dccf79cc063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af88c2d2a1ae7d8167cccc8b8a3461915" id="r_af88c2d2a1ae7d8167cccc8b8a3461915"><td class="memItemLeft" align="right" valign="top">const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af88c2d2a1ae7d8167cccc8b8a3461915">getTamanioTabla</a> () const</td></tr>
+<tr class="memdesc:af88c2d2a1ae7d8167cccc8b8a3461915"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el tamaño máximo de la tabla.  <br /></td></tr>
+<tr class="separator:af88c2d2a1ae7d8167cccc8b8a3461915"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c6cfec6e66a9cb30defc26e78d36dba" id="r_a9c6cfec6e66a9cb30defc26e78d36dba"><td class="memItemLeft" align="right" valign="top">const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c6cfec6e66a9cb30defc26e78d36dba">getElementosTabla</a> () const</td></tr>
+<tr class="memdesc:a9c6cfec6e66a9cb30defc26e78d36dba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el número de elementos de la tabla.  <br /></td></tr>
+<tr class="separator:a9c6cfec6e66a9cb30defc26e78d36dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62e40e59b20750ee1f422a56da9f2cb0" id="r_a62e40e59b20750ee1f422a56da9f2cb0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a4683829170f380a5964a2346d4536573">tipoDispersion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62e40e59b20750ee1f422a56da9f2cb0">getDispersion</a> () const</td></tr>
 <tr class="memdesc:a62e40e59b20750ee1f422a56da9f2cb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el tipo de dispersión de la tabla.  <br /></td></tr>
 <tr class="separator:a62e40e59b20750ee1f422a56da9f2cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,10 +195,13 @@ Métodos privados</h2></td></tr>
 <tr class="memdesc:af3d945686248283db70d660f891bc257"><td class="mdescLeft">&#160;</td><td class="mdescRight">Función hash.  <br /></td></tr>
 <tr class="separator:af3d945686248283db70d660f891bc257"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88dcc65ed93eb73a37c92f5cf3e5081f" id="r_a88dcc65ed93eb73a37c92f5cf3e5081f"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88dcc65ed93eb73a37c92f5cf3e5081f">hashCuad</a> (unsigned long clave, int intento)</td></tr>
+<tr class="memdesc:a88dcc65ed93eb73a37c92f5cf3e5081f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula la posición en la tabla hash utilizando una función de dispersión cuadrática.  <br /></td></tr>
 <tr class="separator:a88dcc65ed93eb73a37c92f5cf3e5081f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8861bac8dee9fda5aaa9926222eebd42" id="r_a8861bac8dee9fda5aaa9926222eebd42"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8861bac8dee9fda5aaa9926222eebd42">hashDD1</a> (unsigned long clave, int intento)</td></tr>
+<tr class="memdesc:a8861bac8dee9fda5aaa9926222eebd42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula la posición en la tabla hash utilizando dispersión doble (versión 1).  <br /></td></tr>
 <tr class="separator:a8861bac8dee9fda5aaa9926222eebd42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a4d0d66b4f756c05024e2413711018e" id="r_a0a4d0d66b4f756c05024e2413711018e"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a4d0d66b4f756c05024e2413711018e">hashDD2</a> (unsigned long clave, int intento)</td></tr>
+<tr class="memdesc:a0a4d0d66b4f756c05024e2413711018e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula la posición en la tabla hash utilizando dispersión doble (versión 1).  <br /></td></tr>
 <tr class="separator:a0a4d0d66b4f756c05024e2413711018e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a784b9e00eb2066ffa4afaf5bf4f27f33" id="r_a784b9e00eb2066ffa4afaf5bf4f27f33"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a784b9e00eb2066ffa4afaf5bf4f27f33">esPrimo</a> (int n)</td></tr>
 <tr class="memdesc:a784b9e00eb2066ffa4afaf5bf4f27f33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comprueba si n es primo mediante el método de Miller-Rabin.  <br /></td></tr>
@@ -374,8 +383,8 @@ Atributos privados</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Documentación de funciones miembro</h2>
-<a id="a0cefb7d9ccf63026aeba4a41a0cf8bee" name="a0cefb7d9ccf63026aeba4a41a0cf8bee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0cefb7d9ccf63026aeba4a41a0cf8bee">&#9670;&#160;</a></span>borrar()</h2>
+<a id="a5ab81f73a98e36ac733b2b0d5c644356" name="a5ab81f73a98e36ac733b2b0d5c644356"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ab81f73a98e36ac733b2b0d5c644356">&#9670;&#160;</a></span>borrar()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -388,7 +397,7 @@ Atributos privados</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>nif</em></span>&#160;)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>nif</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -499,6 +508,26 @@ nullptr si no se ha encontrado el <a class="el" href="class_usuario.html">Usuari
 
 </div>
 </div>
+<a id="a4226db70ff5505f9a76a9f60b796838a" name="a4226db70ff5505f9a76a9f60b796838a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4226db70ff5505f9a76a9f60b796838a">&#9670;&#160;</a></span>forzarRedispersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ThashUsuario::forzarRedispersion </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fuerza la redispersión de la tabla. </p>
+<dl class="section warning"><dt>Atención</dt><dd>No usar a no ser que se sepa lo que se está haciendo </dd></dl>
+
+</div>
+</div>
 <a id="ad587515ec94432538d8d849fe5cf71be" name="ad587515ec94432538d8d849fe5cf71be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad587515ec94432538d8d849fe5cf71be">&#9670;&#160;</a></span>getColisionesTimes10()</h2>
 
@@ -577,6 +606,34 @@ nullptr si no se ha encontrado el <a class="el" href="class_usuario.html">Usuari
 
 <p>Obtiene el tipo de dispersión de la tabla. </p>
 <dl class="section return"><dt>Devuelve</dt><dd>Tipo de dispersión de la tabla. </dd></dl>
+
+</div>
+</div>
+<a id="a9c6cfec6e66a9cb30defc26e78d36dba" name="a9c6cfec6e66a9cb30defc26e78d36dba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c6cfec6e66a9cb30defc26e78d36dba">&#9670;&#160;</a></span>getElementosTabla()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int ThashUsuario::getElementosTabla </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtiene el número de elementos de la tabla. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Número de elementos de la tabla. </dd></dl>
 
 </div>
 </div>
@@ -664,8 +721,8 @@ nullptr si no se ha encontrado el <a class="el" href="class_usuario.html">Usuari
 
 </div>
 </div>
-<a id="aff64891c443f38c16a1f3dccf79cc063" name="aff64891c443f38c16a1f3dccf79cc063"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff64891c443f38c16a1f3dccf79cc063">&#9670;&#160;</a></span>getTamanioTabla()</h2>
+<a id="af88c2d2a1ae7d8167cccc8b8a3461915" name="af88c2d2a1ae7d8167cccc8b8a3461915"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af88c2d2a1ae7d8167cccc8b8a3461915">&#9670;&#160;</a></span>getTamanioTabla()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -674,7 +731,7 @@ nullptr si no se ha encontrado el <a class="el" href="class_usuario.html">Usuari
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int ThashUsuario::getTamanioTabla </td>
+          <td class="memname">const unsigned int ThashUsuario::getTamanioTabla </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -758,6 +815,17 @@ nullptr si no se ha encontrado el <a class="el" href="class_usuario.html">Usuari
 </table>
 </div><div class="memdoc">
 
+<p>Calcula la posición en la tabla hash utilizando una función de dispersión cuadrática. </p>
+<p>La función que aplicamos es la fórmula: clave + (i^2) % _maxElementos para calcular la posición en la tabla hash.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clave</td><td>Clave numérica que se dispersa </td></tr>
+    <tr><td class="paramname">i</td><td>Intento de colisión </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>unsigned long Posición final calculada en la tabla hash. </dd></dl>
+
 </div>
 </div>
 <a id="a8861bac8dee9fda5aaa9926222eebd42" name="a8861bac8dee9fda5aaa9926222eebd42"></a>
@@ -787,6 +855,17 @@ nullptr si no se ha encontrado el <a class="el" href="class_usuario.html">Usuari
 </table>
 </div><div class="memdoc">
 
+<p>Calcula la posición en la tabla hash utilizando dispersión doble (versión 1). </p>
+<p>La función usa la fórmula: posicion + intento * (_primoMenorAtributo - clave % _primoMenorAtributo) % _maxElementos</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clave</td><td>Clave numérica que se dispersa </td></tr>
+    <tr><td class="paramname">intento</td><td>Intento de colisión </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>unsigned long Posición final calculada en la tabla hash </dd></dl>
+
 </div>
 </div>
 <a id="a0a4d0d66b4f756c05024e2413711018e" name="a0a4d0d66b4f756c05024e2413711018e"></a>
@@ -815,6 +894,17 @@ nullptr si no se ha encontrado el <a class="el" href="class_usuario.html">Usuari
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Calcula la posición en la tabla hash utilizando dispersión doble (versión 1). </p>
+<p>La función usa la fórmula: posicion + intento * (1 + clave % _primoMenorAtributo) % _maxElementos</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clave</td><td>Clave numérica que se dispersa </td></tr>
+    <tr><td class="paramname">intento</td><td>Intento de colisión </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>unsigned long Posición final calculada en la tabla hash </dd></dl>
 
 </div>
 </div>

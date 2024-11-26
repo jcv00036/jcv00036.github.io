@@ -50,7 +50,7 @@ var NAVTREE =
       [ "Lista de clases", "annotated.html", "annotated_dup" ],
       [ "Índice de clases", "classes.html", null ],
       [ "Miembros de clases", "functions.html", [
-        [ "Todos", "functions.html", null ],
+        [ "Todos", "functions.html", "functions_dup" ],
         [ "Funciones", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
         [ "Enumeraciones", "functions_enum.html", null ],
@@ -63,7 +63,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+"functions_vars.html"
 ];
 
 var SYNCONMSG = 'pulsar para deshabilitar sincronización';

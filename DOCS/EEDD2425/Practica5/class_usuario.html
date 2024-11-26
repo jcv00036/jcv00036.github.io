@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Práctica 5<span id="projectnumber">&#160;0.2</span>
+   <div id="projectname">Práctica 5<span id="projectnumber">&#160;1.0</span>
    </div>
    <div id="projectbrief">Práctica realizada por Juan Carrasco Vico y Gregorio Torres Herrera</div>
   </td>
@@ -95,6 +95,7 @@ $(function(){initNavTree('class_usuario.html',''); initResizable(); });
   <div class="summary">
 <a href="#pub-methods">Métodos públicos</a> &#124;
 <a href="#pri-attribs">Atributos privados</a> &#124;
+<a href="#friends">Amigas</a> &#124;
 <a href="class_usuario-members.html">Lista de todos los miembros</a>  </div>
   <div class="headertitle"><div class="title">Referencia de la clase Usuario</div></div>
 </div><!--header-->
@@ -146,7 +147,7 @@ Métodos públicos</h2></td></tr>
 <tr class="memdesc:aac7a4a694a4473a36c391e7e6813adc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve el <a class="el" href="class_coche.html">Coche</a> alquilado por el <a class="el" href="class_usuario.html">Usuario</a>.  <br /></td></tr>
 <tr class="separator:aac7a4a694a4473a36c391e7e6813adc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70e1e69fa2aaf48975dde33ccb9dbf68" id="r_a70e1e69fa2aaf48975dde33ccb9dbf68"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_trayecto.html">Trayecto</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70e1e69fa2aaf48975dde33ccb9dbf68">getTrayectosFecha</a> (const <a class="el" href="class_fecha.html">Fecha</a> &amp;fechaBuscar)</td></tr>
-<tr class="memdesc:a70e1e69fa2aaf48975dde33ccb9dbf68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve los <a class="el" href="class_trayecto.html">Trayecto</a> que se realizarán en una <a class="el" href="class_fecha.html" title="Clase sencilla para representar fechas.">Fecha</a>.  <br /></td></tr>
+<tr class="memdesc:a70e1e69fa2aaf48975dde33ccb9dbf68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve los <a class="el" href="class_trayecto.html">Trayecto</a> que se realizarán en una <a class="el" href="class_fecha.html" title="Clases sencilla para representar fechas y horas.">Fecha</a>.  <br /></td></tr>
 <tr class="separator:a70e1e69fa2aaf48975dde33ccb9dbf68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e146a7729705cc975fd4afd7ed4c158" id="r_a3e146a7729705cc975fd4afd7ed4c158"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e146a7729705cc975fd4afd7ed4c158">getPuntos</a> () const</td></tr>
 <tr class="memdesc:a3e146a7729705cc975fd4afd7ed4c158"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve los puntos del trayecto.  <br /></td></tr>
@@ -166,6 +167,8 @@ Métodos públicos</h2></td></tr>
 <tr class="memitem:ad0d9932de3641c33745a422deaca18ef" id="r_ad0d9932de3641c33745a422deaca18ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0d9932de3641c33745a422deaca18ef">decrementarPuntos</a> (int horasRetraso)</td></tr>
 <tr class="memdesc:ad0d9932de3641c33745a422deaca18ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Penaliza a un <a class="el" href="class_usuario.html">Usuario</a> por las horas que se ha retrasado.  <br /></td></tr>
 <tr class="separator:ad0d9932de3641c33745a422deaca18ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8916a61099d68c42d21b444657e95276" id="r_a8916a61099d68c42d21b444657e95276"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8916a61099d68c42d21b444657e95276">operator==</a> (const <a class="el" href="class_usuario.html">Usuario</a> &amp;other) const</td></tr>
+<tr class="separator:a8916a61099d68c42d21b444657e95276"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Atributos privados</h2></td></tr>
@@ -187,6 +190,11 @@ Atributos privados</h2></td></tr>
 <tr class="separator:a3b0307f92ed6f8c1468b6b880c1dee6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f7d5a909c8088089dc3df0fdfb97286" id="r_a6f7d5a909c8088089dc3df0fdfb97286"><td class="memItemLeft" align="right" valign="top">std::multimap&lt; <a class="el" href="class_fecha.html">Fecha</a>, <a class="el" href="class_trayecto.html">Trayecto</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f7d5a909c8088089dc3df0fdfb97286">_route</a></td></tr>
 <tr class="separator:a6f7d5a909c8088089dc3df0fdfb97286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Amigas</h2></td></tr>
+<tr class="memitem:a93d1044f48949e52edd9bb2572016e98" id="r_a93d1044f48949e52edd9bb2572016e98"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93d1044f48949e52edd9bb2572016e98">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="class_usuario.html">Usuario</a> &amp;usuario)</td></tr>
+<tr class="separator:a93d1044f48949e52edd9bb2572016e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Documentación de constructores y destructores</h2>
 <a id="af7d254a5dd3741a36fb76be1ee1e3207" name="af7d254a5dd3741a36fb76be1ee1e3207"></a>
@@ -639,14 +647,14 @@ Gregorio Torres Herrera </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Devuelve los <a class="el" href="class_trayecto.html">Trayecto</a> que se realizarán en una <a class="el" href="class_fecha.html" title="Clase sencilla para representar fechas.">Fecha</a>. </p>
+<p>Devuelve los <a class="el" href="class_trayecto.html">Trayecto</a> que se realizarán en una <a class="el" href="class_fecha.html" title="Clases sencilla para representar fechas y horas.">Fecha</a>. </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fechaBuscar</td><td><a class="el" href="class_fecha.html" title="Clase sencilla para representar fechas.">Fecha</a> de inicio de los <a class="el" href="class_trayecto.html">Trayecto</a> a buscar </td></tr>
+    <tr><td class="paramname">fechaBuscar</td><td><a class="el" href="class_fecha.html" title="Clases sencilla para representar fechas y horas.">Fecha</a> de inicio de los <a class="el" href="class_trayecto.html">Trayecto</a> a buscar </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Devuelve</dt><dd>Trayectos que comienzan en la <a class="el" href="class_fecha.html" title="Clase sencilla para representar fechas.">Fecha</a> fechaBuscar </dd></dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Trayectos que comienzan en la <a class="el" href="class_fecha.html" title="Clases sencilla para representar fechas y horas.">Fecha</a> fechaBuscar </dd></dl>
 
 </div>
 </div>
@@ -695,6 +703,31 @@ Gregorio Torres Herrera </dd></dl>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a8916a61099d68c42d21b444657e95276" name="a8916a61099d68c42d21b444657e95276"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8916a61099d68c42d21b444657e95276">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Usuario::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_usuario.html">Usuario</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -864,6 +897,36 @@ Gregorio Torres Herrera </dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Devuelve</dt><dd>Referencia al objeto <a class="el" href="class_usuario.html">Usuario</a> </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de símbolos amigos y relacionados</h2>
+<a id="a93d1044f48949e52edd9bb2572016e98" name="a93d1044f48949e52edd9bb2572016e98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93d1044f48949e52edd9bb2572016e98">&#9670;&#160;</a></span>operator&lt;&lt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;</td>          <td class="paramname"><span class="paramname"><em>os</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_usuario.html">Usuario</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>usuario</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

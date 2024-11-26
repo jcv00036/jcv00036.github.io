@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Práctica 5<span id="projectnumber">&#160;0.2</span>
+   <div id="projectname">Práctica 5<span id="projectnumber">&#160;1.0</span>
    </div>
    <div id="projectbrief">Práctica realizada por Juan Carrasco Vico y Gregorio Torres Herrera</div>
   </td>
@@ -99,9 +99,9 @@ $(function(){initNavTree('class_reanelcar.html',''); initResizable(); });
 <p>Lista completa de los miembros de <a class="el" href="class_reanelcar.html">Reanelcar</a>, incluyendo todos los heredados:</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="class_reanelcar.html#a7249f2a9972cf61477ef806879bfb085">alquilar</a>(Usuario &amp;usuario, int idPROrigen, int idPRDestino)</td><td class="entry"><a class="el" href="class_reanelcar.html">Reanelcar</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_reanelcar.html#a426046f2d308836a088e979ca87959a1">aparcarCoches</a>(std::list&lt; Usuario * &gt; &amp;listaUsuarios)</td><td class="entry"><a class="el" href="class_reanelcar.html">Reanelcar</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_reanelcar.html#ac9cd28de1bb59a3d19725e348c6dbf2b">aparcarCoches</a>(std::list&lt; Usuario * &gt; &amp;listaUsuarios, int horasRetraso)</td><td class="entry"><a class="el" href="class_reanelcar.html">Reanelcar</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_reanelcar.html#a75702764ed333db6ce7dab349aadf9ee">aparcarTodo</a>()</td><td class="entry"><a class="el" href="class_reanelcar.html">Reanelcar</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_reanelcar.html#afa71b6a6c4049a373c4f67bc529b4521">asignarCoches</a>(std::list&lt; Usuario * &gt; &amp;listaUsuarios)</td><td class="entry"><a class="el" href="class_reanelcar.html">Reanelcar</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_reanelcar.html#ac84b4915f109509612e57018704c2499">asignarCoches</a>(std::list&lt; Usuario * &gt; &amp;listaUsuarios, Fecha fechaInicio)</td><td class="entry"><a class="el" href="class_reanelcar.html">Reanelcar</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_reanelcar.html#a49da58214bdd0015c5c901c699e9ee0d">borrarUsuarioNifTHash</a>(std::string &amp;nifBuscar)</td><td class="entry"><a class="el" href="class_reanelcar.html">Reanelcar</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_reanelcar.html#a7cc914492f263aec4dbda150a7987e20">buscarCochMat</a>(std::string &amp;matriculaBuscar)</td><td class="entry"><a class="el" href="class_reanelcar.html">Reanelcar</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_reanelcar.html#ae73c1afb0d476fb5347be09b585e0f9e">buscarCochMod</a>(std::string &amp;modeloBuscar)</td><td class="entry"><a class="el" href="class_reanelcar.html">Reanelcar</a></td><td class="entry"></td></tr>
@@ -111,7 +111,9 @@ $(function(){initNavTree('class_reanelcar.html',''); initResizable(); });
   <tr class="even"><td class="entry"><a class="el" href="class_reanelcar.html#aad707eee044862d3681ecb2dfcb8eb6e">buscarUsrNomb</a>(std::string &amp;cadenaBuscar, std::list&lt; Usuario * &gt; &amp;listaARellenar)</td><td class="entry"><a class="el" href="class_reanelcar.html">Reanelcar</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_reanelcar.html#a1e431e660e5401e5f764585c61b43fff">cars</a></td><td class="entry"><a class="el" href="class_reanelcar.html">Reanelcar</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_reanelcar.html#af40b2aee9e9e046be096fd561cc24b65">colocarCochePR</a>(Coche *c, PuntoRecarga *pr)</td><td class="entry"><a class="el" href="class_reanelcar.html">Reanelcar</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_reanelcar.html#a8e5d2e9b9fc6bb23a85956e84215b6be">getCochesInorden</a>()</td><td class="entry"><a class="el" href="class_reanelcar.html">Reanelcar</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_reanelcar.html#afc858e885416ff1e5e634498f2e3f78a">forzarRedispersion</a>()</td><td class="entry"><a class="el" href="class_reanelcar.html">Reanelcar</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_reanelcar.html#a8e5d2e9b9fc6bb23a85956e84215b6be">getCochesInorden</a>()</td><td class="entry"><a class="el" href="class_reanelcar.html">Reanelcar</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_reanelcar.html#ab0f4dc888a9a073e6d0f3b02b54a8574">insertarUsuario</a>(Usuario &amp;u)</td><td class="entry"><a class="el" href="class_reanelcar.html">Reanelcar</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_reanelcar.html#a956bf3c121b56c3542477340c36149b1">mostrarEstadoTabla</a>()</td><td class="entry"><a class="el" href="class_reanelcar.html">Reanelcar</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_reanelcar.html#aae83dcdd6c203366df5dd22ef41a9eaf">mostrarTrayectosDia</a>(const Fecha &amp;fechaHoy, std::list&lt; Usuario * &gt; &amp;listaUsuarios)</td><td class="entry"><a class="el" href="class_reanelcar.html">Reanelcar</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_reanelcar.html#a98b32dc52e4a771f074e7afa3fb4d7b8">obtenerPRmenosCoches</a>()</td><td class="entry"><a class="el" href="class_reanelcar.html">Reanelcar</a></td><td class="entry"></td></tr>
@@ -122,10 +124,11 @@ $(function(){initNavTree('class_reanelcar.html',''); initResizable(); });
   <tr class="odd"><td class="entry"><a class="el" href="class_reanelcar.html#a332ba744d16e96302e04d20f2196e490">tamCoches</a>() const</td><td class="entry"><a class="el" href="class_reanelcar.html">Reanelcar</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_reanelcar.html#ae68c38b1c01ab8f135d67a09216ecf6b">tamPR</a>() const</td><td class="entry"><a class="el" href="class_reanelcar.html">Reanelcar</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_reanelcar.html#acf938523ef8f75cfd979a32ed4889c93">tamUsuarios</a>() const</td><td class="entry"><a class="el" href="class_reanelcar.html">Reanelcar</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_reanelcar.html#a6fab2cfb43f783045776ef9d27366b9c">trayectosEnFecha</a>(Fecha fecha, std::vector&lt; std::pair&lt; Usuario, Trayecto &gt; &gt; &amp;vector)</td><td class="entry"><a class="el" href="class_reanelcar.html">Reanelcar</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_reanelcar.html#ab230d41896ac365298fcd4420f55e8ea">users</a></td><td class="entry"><a class="el" href="class_reanelcar.html">Reanelcar</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_reanelcar.html#af2599f02841d63b01b2c8f6852171acf">usersNif</a></td><td class="entry"><a class="el" href="class_reanelcar.html">Reanelcar</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_reanelcar.html#a4b7aa995ce872a62e3c1b33d1e2e7ce1">~Reanelcar</a>()</td><td class="entry"><a class="el" href="class_reanelcar.html">Reanelcar</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_reanelcar.html#a96cdde51c34e8e65dd2fc4656533eccb">tamUsuariosTHash</a>() const</td><td class="entry"><a class="el" href="class_reanelcar.html">Reanelcar</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_reanelcar.html#a6fab2cfb43f783045776ef9d27366b9c">trayectosEnFecha</a>(Fecha fecha, std::vector&lt; std::pair&lt; Usuario, Trayecto &gt; &gt; &amp;vector)</td><td class="entry"><a class="el" href="class_reanelcar.html">Reanelcar</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_reanelcar.html#ab230d41896ac365298fcd4420f55e8ea">users</a></td><td class="entry"><a class="el" href="class_reanelcar.html">Reanelcar</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_reanelcar.html#af2599f02841d63b01b2c8f6852171acf">usersNif</a></td><td class="entry"><a class="el" href="class_reanelcar.html">Reanelcar</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_reanelcar.html#a4b7aa995ce872a62e3c1b33d1e2e7ce1">~Reanelcar</a>()</td><td class="entry"><a class="el" href="class_reanelcar.html">Reanelcar</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['borrar_0',['borrar',['../class_thash_usuario.html#a0cefb7d9ccf63026aeba4a41a0cf8bee',1,'ThashUsuario']]],
+  ['borrar_0',['borrar',['../class_thash_usuario.html#a5ab81f73a98e36ac733b2b0d5c644356',1,'ThashUsuario']]],
   ['borrarusuarionifthash_1',['borrarUsuarioNifTHash',['../class_reanelcar.html#a49da58214bdd0015c5c901c699e9ee0d',1,'Reanelcar']]],
   ['buscar_2',['buscar',['../class_thash_usuario.html#abe5d613afc5292ae56b256b877ef2460',1,'ThashUsuario']]],
   ['buscarcochmat_3',['buscarCochMat',['../class_reanelcar.html#a7cc914492f263aec4dbda150a7987e20',1,'Reanelcar']]],

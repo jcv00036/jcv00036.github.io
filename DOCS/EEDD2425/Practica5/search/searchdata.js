@@ -3,7 +3,7 @@ var indexSectionsWithContent =
   0: "0126_abcdefghijlmnoprstuv~λ",
   1: "cefprtu",
   2: "abcdefghilmnoprstuv~",
-  3: "_acdmnsu",
+  3: "_acdhmnsu",
   4: "t",
   5: "cd",
   6: "o",

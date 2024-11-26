@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Práctica 5<span id="projectnumber">&#160;0.2</span>
+   <div id="projectname">Práctica 5<span id="projectnumber">&#160;1.0</span>
    </div>
    <div id="projectbrief">Práctica realizada por Juan Carrasco Vico y Gregorio Torres Herrera</div>
   </td>
@@ -124,6 +124,9 @@ Métodos públicos</h2></td></tr>
 </ul>
 <p>Usuarios.  <br /></td></tr>
 <tr class="separator:acf938523ef8f75cfd979a32ed4889c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96cdde51c34e8e65dd2fc4656533eccb" id="r_a96cdde51c34e8e65dd2fc4656533eccb"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96cdde51c34e8e65dd2fc4656533eccb">tamUsuariosTHash</a> () const</td></tr>
+<tr class="memdesc:a96cdde51c34e8e65dd2fc4656533eccb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve el tamaño de la tabla hash de Usuarios.  <br /></td></tr>
+<tr class="separator:a96cdde51c34e8e65dd2fc4656533eccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae68c38b1c01ab8f135d67a09216ecf6b" id="r_ae68c38b1c01ab8f135d67a09216ecf6b"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae68c38b1c01ab8f135d67a09216ecf6b">tamPR</a> () const</td></tr>
 <tr class="memdesc:ae68c38b1c01ab8f135d67a09216ecf6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve el tamaño del &lt;vector&gt; de Puntos de Recarga.  <br /></td></tr>
 <tr class="separator:ae68c38b1c01ab8f135d67a09216ecf6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,6 +139,12 @@ Métodos públicos</h2></td></tr>
 <tr class="memitem:a49da58214bdd0015c5c901c699e9ee0d" id="r_a49da58214bdd0015c5c901c699e9ee0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49da58214bdd0015c5c901c699e9ee0d">borrarUsuarioNifTHash</a> (std::string &amp;nifBuscar)</td></tr>
 <tr class="memdesc:a49da58214bdd0015c5c901c699e9ee0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Elimina el <a class="el" href="class_usuario.html">Usuario</a> con nif igual a nifBuscar.  <br /></td></tr>
 <tr class="separator:a49da58214bdd0015c5c901c699e9ee0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0f4dc888a9a073e6d0f3b02b54a8574" id="r_ab0f4dc888a9a073e6d0f3b02b54a8574"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0f4dc888a9a073e6d0f3b02b54a8574">insertarUsuario</a> (<a class="el" href="class_usuario.html">Usuario</a> &amp;u)</td></tr>
+<tr class="memdesc:ab0f4dc888a9a073e6d0f3b02b54a8574"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserta un <a class="el" href="class_usuario.html">Usuario</a>.  <br /></td></tr>
+<tr class="separator:ab0f4dc888a9a073e6d0f3b02b54a8574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc858e885416ff1e5e634498f2e3f78a" id="r_afc858e885416ff1e5e634498f2e3f78a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc858e885416ff1e5e634498f2e3f78a">forzarRedispersion</a> ()</td></tr>
+<tr class="memdesc:afc858e885416ff1e5e634498f2e3f78a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fuerza la redispersión de la tabla hash de Usuarios.  <br /></td></tr>
+<tr class="separator:afc858e885416ff1e5e634498f2e3f78a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a956bf3c121b56c3542477340c36149b1" id="r_a956bf3c121b56c3542477340c36149b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a956bf3c121b56c3542477340c36149b1">mostrarEstadoTabla</a> ()</td></tr>
 <tr class="memdesc:a956bf3c121b56c3542477340c36149b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Muestra el estado de la tabla hash de Usuarios: máximo, promedio y total de colisiones, tamaño de la tabla y veces que se han llegado a 10 colisiones.  <br /></td></tr>
 <tr class="separator:a956bf3c121b56c3542477340c36149b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,17 +175,17 @@ Métodos públicos</h2></td></tr>
 <tr class="memitem:a75702764ed333db6ce7dab349aadf9ee" id="r_a75702764ed333db6ce7dab349aadf9ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75702764ed333db6ce7dab349aadf9ee">aparcarTodo</a> ()</td></tr>
 <tr class="memdesc:a75702764ed333db6ce7dab349aadf9ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aparca todos los Coches posibles en los PuntosRecarga.  <br /></td></tr>
 <tr class="separator:a75702764ed333db6ce7dab349aadf9ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa71b6a6c4049a373c4f67bc529b4521" id="r_afa71b6a6c4049a373c4f67bc529b4521"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa71b6a6c4049a373c4f67bc529b4521">asignarCoches</a> (std::list&lt; <a class="el" href="class_usuario.html">Usuario</a> * &gt; &amp;listaUsuarios)</td></tr>
-<tr class="memdesc:afa71b6a6c4049a373c4f67bc529b4521"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asigna un <a class="el" href="class_coche.html">Coche</a> a cada <a class="el" href="class_usuario.html">Usuario</a> en la std::list&lt;Usuario*&gt;  <br /></td></tr>
-<tr class="separator:afa71b6a6c4049a373c4f67bc529b4521"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a426046f2d308836a088e979ca87959a1" id="r_a426046f2d308836a088e979ca87959a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a426046f2d308836a088e979ca87959a1">aparcarCoches</a> (std::list&lt; <a class="el" href="class_usuario.html">Usuario</a> * &gt; &amp;listaUsuarios)</td></tr>
-<tr class="memdesc:a426046f2d308836a088e979ca87959a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aparca los Coches de los Usuarios en los PuntosRecarga.  <br /></td></tr>
-<tr class="separator:a426046f2d308836a088e979ca87959a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac84b4915f109509612e57018704c2499" id="r_ac84b4915f109509612e57018704c2499"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac84b4915f109509612e57018704c2499">asignarCoches</a> (std::list&lt; <a class="el" href="class_usuario.html">Usuario</a> * &gt; &amp;listaUsuarios, <a class="el" href="class_fecha.html">Fecha</a> fechaInicio)</td></tr>
+<tr class="memdesc:ac84b4915f109509612e57018704c2499"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asigna un <a class="el" href="class_coche.html">Coche</a> a cada <a class="el" href="class_usuario.html">Usuario</a> en la std::list&lt;Usuario*&gt;  <br /></td></tr>
+<tr class="separator:ac84b4915f109509612e57018704c2499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9cd28de1bb59a3d19725e348c6dbf2b" id="r_ac9cd28de1bb59a3d19725e348c6dbf2b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9cd28de1bb59a3d19725e348c6dbf2b">aparcarCoches</a> (std::list&lt; <a class="el" href="class_usuario.html">Usuario</a> * &gt; &amp;listaUsuarios, int horasRetraso)</td></tr>
+<tr class="memdesc:ac9cd28de1bb59a3d19725e348c6dbf2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aparca los Coches de los Usuarios en los PuntosRecarga.  <br /></td></tr>
+<tr class="separator:ac9cd28de1bb59a3d19725e348c6dbf2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae83dcdd6c203366df5dd22ef41a9eaf" id="r_aae83dcdd6c203366df5dd22ef41a9eaf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae83dcdd6c203366df5dd22ef41a9eaf">mostrarTrayectosDia</a> (const <a class="el" href="class_fecha.html">Fecha</a> &amp;fechaHoy, std::list&lt; <a class="el" href="class_usuario.html">Usuario</a> * &gt; &amp;listaUsuarios)</td></tr>
 <tr class="memdesc:aae83dcdd6c203366df5dd22ef41a9eaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Muestra los Usuarios con más de un trayecto en el día dado.  <br /></td></tr>
 <tr class="separator:aae83dcdd6c203366df5dd22ef41a9eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fab2cfb43f783045776ef9d27366b9c" id="r_a6fab2cfb43f783045776ef9d27366b9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fab2cfb43f783045776ef9d27366b9c">trayectosEnFecha</a> (<a class="el" href="class_fecha.html">Fecha</a> fecha, std::vector&lt; std::pair&lt; <a class="el" href="class_usuario.html">Usuario</a>, <a class="el" href="class_trayecto.html">Trayecto</a> &gt; &gt; &amp;vector)</td></tr>
-<tr class="memdesc:a6fab2cfb43f783045776ef9d27366b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Muestra los Trayectos acontecidos en una <a class="el" href="class_fecha.html" title="Clase sencilla para representar fechas.">Fecha</a> dada y quién los realizó  <br /></td></tr>
+<tr class="memdesc:a6fab2cfb43f783045776ef9d27366b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Muestra los Trayectos acontecidos en una <a class="el" href="class_fecha.html" title="Clases sencilla para representar fechas y horas.">Fecha</a> dada y quién los realizó  <br /></td></tr>
 <tr class="separator:a6fab2cfb43f783045776ef9d27366b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
@@ -364,8 +373,8 @@ false si no se consiguió asignar el <a class="el" href="class_coche.html">Coche
 
 </div>
 </div>
-<a id="a426046f2d308836a088e979ca87959a1" name="a426046f2d308836a088e979ca87959a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a426046f2d308836a088e979ca87959a1">&#9670;&#160;</a></span>aparcarCoches()</h2>
+<a id="ac9cd28de1bb59a3d19725e348c6dbf2b" name="ac9cd28de1bb59a3d19725e348c6dbf2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9cd28de1bb59a3d19725e348c6dbf2b">&#9670;&#160;</a></span>aparcarCoches()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -373,8 +382,12 @@ false si no se consiguió asignar el <a class="el" href="class_coche.html">Coche
         <tr>
           <td class="memname">int Reanelcar::aparcarCoches </td>
           <td>(</td>
-          <td class="paramtype">std::list&lt; <a class="el" href="class_usuario.html">Usuario</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>listaUsuarios</em></span></td><td>)</td>
+          <td class="paramtype">std::list&lt; <a class="el" href="class_usuario.html">Usuario</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>listaUsuarios</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>horasRetraso</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -411,8 +424,8 @@ false si no se consiguió asignar el <a class="el" href="class_coche.html">Coche
 
 </div>
 </div>
-<a id="afa71b6a6c4049a373c4f67bc529b4521" name="afa71b6a6c4049a373c4f67bc529b4521"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa71b6a6c4049a373c4f67bc529b4521">&#9670;&#160;</a></span>asignarCoches()</h2>
+<a id="ac84b4915f109509612e57018704c2499" name="ac84b4915f109509612e57018704c2499"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac84b4915f109509612e57018704c2499">&#9670;&#160;</a></span>asignarCoches()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -420,8 +433,12 @@ false si no se consiguió asignar el <a class="el" href="class_coche.html">Coche
         <tr>
           <td class="memname">int Reanelcar::asignarCoches </td>
           <td>(</td>
-          <td class="paramtype">std::list&lt; <a class="el" href="class_usuario.html">Usuario</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>listaUsuarios</em></span></td><td>)</td>
+          <td class="paramtype">std::list&lt; <a class="el" href="class_usuario.html">Usuario</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>listaUsuarios</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="class_fecha.html">Fecha</a></td>          <td class="paramname"><span class="paramname"><em>fechaInicio</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -465,6 +482,12 @@ Si el <a class="el" href="class_usuario.html">Usuario</a> ya tiene un <a class="
 <dl class="section return"><dt>Devuelve</dt><dd>true si se pudo eliminar </dd>
 <dd>
 false si no se pudo eliminar </dd></dl>
+<dl class="exception"><dt>Excepciones</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>si no se encuentra el <a class="el" href="class_usuario.html">Usuario</a> con nif igual a nifBuscar </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section warning"><dt>Atención</dt><dd>Es imposible recuperar la dirección de memoria del usuario con este método. Usar <a class="el" href="#a7c50b466d73a208548f12638d2f3b9ba" title="Busca un Usuario por su NIF.">Reanelcar::buscarUsrNifTHash()</a> antes. </dd></dl>
 
 </div>
@@ -677,6 +700,25 @@ nullptr si no existe un <a class="el" href="class_usuario.html">Usuario</a> en <
 
 </div>
 </div>
+<a id="afc858e885416ff1e5e634498f2e3f78a" name="afc858e885416ff1e5e634498f2e3f78a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc858e885416ff1e5e634498f2e3f78a">&#9670;&#160;</a></span>forzarRedispersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Reanelcar::forzarRedispersion </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fuerza la redispersión de la tabla hash de Usuarios. </p>
+
+</div>
+</div>
 <a id="a8e5d2e9b9fc6bb23a85956e84215b6be" name="a8e5d2e9b9fc6bb23a85956e84215b6be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8e5d2e9b9fc6bb23a85956e84215b6be">&#9670;&#160;</a></span>getCochesInorden()</h2>
 
@@ -694,6 +736,37 @@ nullptr si no existe un <a class="el" href="class_usuario.html">Usuario</a> en <
 
 <p>Coches de <a class="el" href="class_reanelcar.html">Reanelcar</a> almacenados en inorden. </p>
 <dl class="section return"><dt>Devuelve</dt><dd>vector VDinamico de Coche* que apuntan a los <a class="el" href="class_coche.html">Coche</a> almacenados en <a class="el" href="class_reanelcar.html">Reanelcar</a> ordenados en inorden </dd></dl>
+
+</div>
+</div>
+<a id="ab0f4dc888a9a073e6d0f3b02b54a8574" name="ab0f4dc888a9a073e6d0f3b02b54a8574"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0f4dc888a9a073e6d0f3b02b54a8574">&#9670;&#160;</a></span>insertarUsuario()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Reanelcar::insertarUsuario </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_usuario.html">Usuario</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>u</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inserta un <a class="el" href="class_usuario.html">Usuario</a>. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">u</td><td><a class="el" href="class_usuario.html">Usuario</a> que se quiere insertar </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Excepciones</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>si ya existe un <a class="el" href="class_usuario.html">Usuario</a> con el mismo NIF </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -829,6 +902,26 @@ nullptr si no existe un <a class="el" href="class_usuario.html">Usuario</a> en <
 
 </div>
 </div>
+<a id="a96cdde51c34e8e65dd2fc4656533eccb" name="a96cdde51c34e8e65dd2fc4656533eccb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96cdde51c34e8e65dd2fc4656533eccb">&#9670;&#160;</a></span>tamUsuariosTHash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long Reanelcar::tamUsuariosTHash </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Devuelve el tamaño de la tabla hash de Usuarios. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>.size() de la tabla hash de Usuarios </dd></dl>
+
+</div>
+</div>
 <a id="a6fab2cfb43f783045776ef9d27366b9c" name="a6fab2cfb43f783045776ef9d27366b9c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6fab2cfb43f783045776ef9d27366b9c">&#9670;&#160;</a></span>trayectosEnFecha()</h2>
 
@@ -848,11 +941,11 @@ nullptr si no existe un <a class="el" href="class_usuario.html">Usuario</a> en <
       </table>
 </div><div class="memdoc">
 
-<p>Muestra los Trayectos acontecidos en una <a class="el" href="class_fecha.html" title="Clase sencilla para representar fechas.">Fecha</a> dada y quién los realizó </p>
+<p>Muestra los Trayectos acontecidos en una <a class="el" href="class_fecha.html" title="Clases sencilla para representar fechas y horas.">Fecha</a> dada y quién los realizó </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fecha</td><td><a class="el" href="class_fecha.html" title="Clase sencilla para representar fechas.">Fecha</a> en la que se quieren buscar los Trayectos </td></tr>
-    <tr><td class="paramname">vector</td><td>std::vector&lt;std::pair&lt;<a class="el" href="class_usuario.html">Usuario</a>,<a class="el" href="class_trayecto.html">Trayecto</a>&gt;&gt; que se rellenará con los Trayectos realizados en la <a class="el" href="class_fecha.html" title="Clase sencilla para representar fechas.">Fecha</a> dada </td></tr>
+    <tr><td class="paramname">fecha</td><td><a class="el" href="class_fecha.html" title="Clases sencilla para representar fechas y horas.">Fecha</a> en la que se quieren buscar los Trayectos </td></tr>
+    <tr><td class="paramname">vector</td><td>std::vector&lt;std::pair&lt;<a class="el" href="class_usuario.html">Usuario</a>,<a class="el" href="class_trayecto.html">Trayecto</a>&gt;&gt; que se rellenará con los Trayectos realizados en la <a class="el" href="class_fecha.html" title="Clases sencilla para representar fechas y horas.">Fecha</a> dada </td></tr>
   </table>
   </dd>
 </dl>
