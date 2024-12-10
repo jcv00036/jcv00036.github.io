@@ -20,6 +20,8 @@ var class_reanelcar =
     [ "buscarUsrNomb", "class_reanelcar.html#aef98b3a09300ba3fdf6bd73cb311b816", null ],
     [ "calcularDistancia", "class_reanelcar.html#ac065073d4fd48ac2def0337bbf3523fb", null ],
     [ "colocarCochePR", "class_reanelcar.html#af40b2aee9e9e046be096fd561cc24b65", null ],
+    [ "dibujarCoches", "class_reanelcar.html#ae8582ecd0a3315762b760418ec48e3c6", null ],
+    [ "dibujarPR", "class_reanelcar.html#af13eecbdb014ca5cfe7d775a5cbfd966", null ],
     [ "distanciaPuntosREA", "class_reanelcar.html#a226a11ccc164bb4b496c3f15a99ae4c1", null ],
     [ "forzarPenalizacion", "class_reanelcar.html#a5742d84af6302b50374b0cf27f602199", null ],
     [ "forzarRedispersion", "class_reanelcar.html#afc858e885416ff1e5e634498f2e3f78a", null ],

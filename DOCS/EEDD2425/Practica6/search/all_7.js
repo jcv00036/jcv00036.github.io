@@ -43,8 +43,8 @@ var searchData=
   ['getx_40',['GetX',['../class_coche.html#a70ff89b40eecfe2b5650e6dfbd44d778',1,'Coche']]],
   ['getxmax_41',['getXMax',['../class_malla_regular.html#a1f4058988011e21ca4c31a2ecfe09b46',1,'MallaRegular']]],
   ['getxmin_42',['getXMin',['../class_malla_regular.html#aa024154675e797b2a14485716a3c12cf',1,'MallaRegular']]],
-  ['gety_43',['GetY',['../class_coche.html#a80229739af55d0aee8a226b0a3338eb4',1,'Coche']]],
-  ['gety_44',['getY',['../class_malla_regular_1_1_casilla.html#adece958a89e68d27a802a7a0a14abee2',1,'MallaRegular::Casilla']]],
+  ['gety_43',['getY',['../class_malla_regular_1_1_casilla.html#adece958a89e68d27a802a7a0a14abee2',1,'MallaRegular::Casilla']]],
+  ['gety_44',['GetY',['../class_coche.html#a80229739af55d0aee8a226b0a3338eb4',1,'Coche']]],
   ['getymax_45',['getYMax',['../class_malla_regular.html#a6823eb03ab2a246da0439587173a50eb',1,'MallaRegular']]],
   ['getymin_46',['getYMin',['../class_malla_regular.html#a694e328c25d8dd6be1efe890d81f636f',1,'MallaRegular']]],
   ['guardar_47',['guardar',['../class_img.html#af77bf31c149b6ffb8708b0a29c783662',1,'Img']]]
