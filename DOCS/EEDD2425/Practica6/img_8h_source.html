@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Práctica 6: Archivo de código fuente Practica6/img.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Práctica 6<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Práctica realizada por Juan Carrasco Vico y Gregorio Torres Herrera</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('img_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">img.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">//  Created by Antonio Rueda y Lidia Ortega </span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef PPM_IMG_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define PPM_IMG_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_error_lectura_fichero.html">   16</a></span><span class="keyword">class </span><a class="code hl_class" href="class_error_lectura_fichero.html">ErrorLecturaFichero</a> {};</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_error_formato_fichero.html">   18</a></span><span class="keyword">class </span><a class="code hl_class" href="class_error_formato_fichero.html">ErrorFormatoFichero</a> {};</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_error_escritura_fichero.html">   20</a></span><span class="keyword">class </span><a class="code hl_class" href="class_error_escritura_fichero.html">ErrorEscrituraFichero</a> {};</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_r_g_b_color.html">   23</a></span><span class="keyword">class </span><a class="code hl_class" href="class_r_g_b_color.html">RGBColor</a> {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_r_g_b_color.html#af24a8ebcd90343a2fd226ef53b3f5e69">   24</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_variable" href="class_r_g_b_color.html#a60d4e7624380517c8b7993e1fbb602c8">r</a>, <a class="code hl_variable" href="class_r_g_b_color.html#a44111dbc8e22536a46b3581d556eaab9">g</a>, <a class="code hl_variable" href="class_r_g_b_color.html#af24a8ebcd90343a2fd226ef53b3f5e69">b</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_r_g_b_color.html#a9383ce7b63b0a6ada5d4e54e16adf733">   28</a></span>    <a class="code hl_function" href="class_r_g_b_color.html#a9383ce7b63b0a6ada5d4e54e16adf733">RGBColor</a>() { <a class="code hl_variable" href="class_r_g_b_color.html#a60d4e7624380517c8b7993e1fbb602c8">r</a> = <a class="code hl_variable" href="class_r_g_b_color.html#a44111dbc8e22536a46b3581d556eaab9">g</a> = <a class="code hl_variable" href="class_r_g_b_color.html#af24a8ebcd90343a2fd226ef53b3f5e69">b</a> = 0; }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="}">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_r_g_b_color.html#a73b3f87c0dc095bc72ea01d5ab8f4667">   31</a></span>    <a class="code hl_function" href="class_r_g_b_color.html#a73b3f87c0dc095bc72ea01d5ab8f4667">RGBColor</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_variable" href="class_r_g_b_color.html#a60d4e7624380517c8b7993e1fbb602c8">r</a>, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_variable" href="class_r_g_b_color.html#a44111dbc8e22536a46b3581d556eaab9">g</a>, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_variable" href="class_r_g_b_color.html#af24a8ebcd90343a2fd226ef53b3f5e69">b</a>) {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        this-&gt;r = <a class="code hl_variable" href="class_r_g_b_color.html#a60d4e7624380517c8b7993e1fbb602c8">r</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        this-&gt;g = <a class="code hl_variable" href="class_r_g_b_color.html#a44111dbc8e22536a46b3581d556eaab9">g</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        this-&gt;b = <a class="code hl_variable" href="class_r_g_b_color.html#af24a8ebcd90343a2fd226ef53b3f5e69">b</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    }</div>
+</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_r_g_b_color.html#a33b89e40a6c7d4d6c61615b53b9d532c">   38</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_r_g_b_color.html#a33b89e40a6c7d4d6c61615b53b9d532c">operator==</a>(<a class="code hl_class" href="class_r_g_b_color.html">RGBColor</a>&amp; color) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordflow">return</span> color.<a class="code hl_variable" href="class_r_g_b_color.html#a60d4e7624380517c8b7993e1fbb602c8">r</a> == <a class="code hl_variable" href="class_r_g_b_color.html#a60d4e7624380517c8b7993e1fbb602c8">r</a> &amp;&amp; color.<a class="code hl_variable" href="class_r_g_b_color.html#a44111dbc8e22536a46b3581d556eaab9">g</a> == <a class="code hl_variable" href="class_r_g_b_color.html#a44111dbc8e22536a46b3581d556eaab9">g</a> &amp;&amp; color.<a class="code hl_variable" href="class_r_g_b_color.html#af24a8ebcd90343a2fd226ef53b3f5e69">b</a> == <a class="code hl_variable" href="class_r_g_b_color.html#af24a8ebcd90343a2fd226ef53b3f5e69">b</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
+</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_r_g_b_color.html#a9c0ae552ff9bee5b87d7383999584869">   43</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_r_g_b_color.html#a9c0ae552ff9bee5b87d7383999584869">operator!=</a>(<a class="code hl_class" href="class_r_g_b_color.html">RGBColor</a>&amp; color) {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keywordflow">return</span> !(*<span class="keyword">this</span> == color);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
+</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_r_g_b_color.html#a3b761e106a764b1bda23346e19a0bbc3">   48</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_function" href="class_r_g_b_color.html#a3b761e106a764b1bda23346e19a0bbc3">rojo</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_r_g_b_color.html#a60d4e7624380517c8b7993e1fbb602c8">r</a>; }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_r_g_b_color.html#abef01e4683e922e6d8162362ee5c9ba7">   50</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_function" href="class_r_g_b_color.html#abef01e4683e922e6d8162362ee5c9ba7">verde</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_r_g_b_color.html#a44111dbc8e22536a46b3581d556eaab9">g</a>; }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_r_g_b_color.html#ad50662da54d703647e9bd7b944d730e3">   52</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_function" href="class_r_g_b_color.html#ad50662da54d703647e9bd7b944d730e3">azul</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_r_g_b_color.html#af24a8ebcd90343a2fd226ef53b3f5e69">b</a>; }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
+</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>ostream&amp; operator&lt;&lt;(ostream&amp; os, <span class="keyword">const</span> <a class="code hl_class" href="class_r_g_b_color.html">RGBColor</a>&amp; color);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="foldopen" id="foldopen00059" data-start="{" data-end="};">
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_img.html">   59</a></span><span class="keyword">class </span><a class="code hl_class" href="class_img.html">Img</a> {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_img.html#af81abaf2d0c9078cefadb6f3457c8712">   61</a></span>    <a class="code hl_class" href="class_r_g_b_color.html">RGBColor</a>* <a class="code hl_variable" href="class_img.html#af81abaf2d0c9078cefadb6f3457c8712">pixels</a>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="class_img.html#a48c39536bf59588297dc94730cc77ff3">   63</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_img.html#a79ca4853c0c296372cdcc38c77a63fdd">filas</a>, <a class="code hl_variable" href="class_img.html#a48c39536bf59588297dc94730cc77ff3">columnas</a>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <a class="code hl_function" href="class_img.html#a987bd588dbd05bb39272e00846cdb9c0">Img</a>(<span class="keywordtype">int</span> <a class="code hl_variable" href="class_img.html#a79ca4853c0c296372cdcc38c77a63fdd">filas</a>, <span class="keywordtype">int</span> <a class="code hl_variable" href="class_img.html#a48c39536bf59588297dc94730cc77ff3">columnas</a>);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <a class="code hl_function" href="class_img.html#a987bd588dbd05bb39272e00846cdb9c0">Img</a>(<span class="keywordtype">int</span> <a class="code hl_variable" href="class_img.html#a79ca4853c0c296372cdcc38c77a63fdd">filas</a>, <span class="keywordtype">int</span> <a class="code hl_variable" href="class_img.html#a48c39536bf59588297dc94730cc77ff3">columnas</a>, <a class="code hl_class" href="class_r_g_b_color.html">RGBColor</a>&amp; color);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_function" href="class_img.html#a987bd588dbd05bb39272e00846cdb9c0">Img</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; fileName);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="class_img.html#a312d0682342bfbb3e2fdb7099ae02739">   76</a></span>    <a class="code hl_class" href="class_r_g_b_color.html">RGBColor</a>&amp; <a class="code hl_function" href="class_img.html#a312d0682342bfbb3e2fdb7099ae02739">pixel</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y) { <span class="keywordflow">return</span> <a class="code hl_variable" href="class_img.html#af81abaf2d0c9078cefadb6f3457c8712">pixels</a>[y * <a class="code hl_variable" href="class_img.html#a48c39536bf59588297dc94730cc77ff3">columnas</a> + x]; }</div>
+<div class="foldopen" id="foldopen00077" data-start="{" data-end="}">
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="class_img.html#ad2a4d4b20883d77240e565b23a1238e6">   77</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_img.html#ad2a4d4b20883d77240e565b23a1238e6">pintarPixel</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">char</span> r, <span class="keywordtype">char</span> g, <span class="keywordtype">char</span> b) {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <a class="code hl_class" href="class_r_g_b_color.html">RGBColor</a> color(r, g, b);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <a class="code hl_variable" href="class_img.html#af81abaf2d0c9078cefadb6f3457c8712">pixels</a>[y * <a class="code hl_variable" href="class_img.html#a48c39536bf59588297dc94730cc77ff3">columnas</a> + x] = color;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
+</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="foldopen" id="foldopen00083" data-start="{" data-end="}">
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="class_img.html#ae0db29879516a57343bb1033565477d8">   83</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_img.html#ae0db29879516a57343bb1033565477d8">pintarPixelGrande</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">char</span> r, <span class="keywordtype">char</span> g, <span class="keywordtype">char</span> b) {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <a class="code hl_function" href="class_img.html#ad2a4d4b20883d77240e565b23a1238e6">pintarPixel</a>(x, y, r, g, b);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <a class="code hl_function" href="class_img.html#ad2a4d4b20883d77240e565b23a1238e6">pintarPixel</a>(x, y + 1, r, g, b);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <a class="code hl_function" href="class_img.html#ad2a4d4b20883d77240e565b23a1238e6">pintarPixel</a>(x + 1, y, r, g, b);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <a class="code hl_function" href="class_img.html#ad2a4d4b20883d77240e565b23a1238e6">pintarPixel</a>(x + 1, y + 1, r, g, b);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    }</div>
+</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_img.html#a92fca57792bf4af4bfd98734d5ce7799">pintarRecuadro</a>(<span class="keywordtype">int</span> xmin, <span class="keywordtype">int</span> ymin, <span class="keywordtype">int</span> xmax, <span class="keywordtype">int</span> ymax, <span class="keywordtype">int</span> r, <span class="keywordtype">int</span> g, <span class="keywordtype">int</span> b);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_img.html#af77bf31c149b6ffb8708b0a29c783662">guardar</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; fileName);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="class_img.html#ad0988469177bb616a8175a4cfacfbfaa">   97</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_img.html#ad0988469177bb616a8175a4cfacfbfaa">numFilas</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="class_img.html#a79ca4853c0c296372cdcc38c77a63fdd">filas</a>; }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="class_img.html#ae36d7ad9a48c1c148ad12bb7e2224015">   99</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_img.html#ae36d7ad9a48c1c148ad12bb7e2224015">numColumnas</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="class_img.html#a48c39536bf59588297dc94730cc77ff3">columnas</a>; }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>};</div>
+</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="ttc" id="aclass_error_escritura_fichero_html"><div class="ttname"><a href="class_error_escritura_fichero.html">ErrorEscrituraFichero</a></div><div class="ttdef"><b>Definition</b> img.h:20</div></div>
+<div class="ttc" id="aclass_error_formato_fichero_html"><div class="ttname"><a href="class_error_formato_fichero.html">ErrorFormatoFichero</a></div><div class="ttdef"><b>Definition</b> img.h:18</div></div>
+<div class="ttc" id="aclass_error_lectura_fichero_html"><div class="ttname"><a href="class_error_lectura_fichero.html">ErrorLecturaFichero</a></div><div class="ttdef"><b>Definition</b> img.h:16</div></div>
+<div class="ttc" id="aclass_img_html"><div class="ttname"><a href="class_img.html">Img</a></div><div class="ttdef"><b>Definition</b> img.h:59</div></div>
+<div class="ttc" id="aclass_img_html_a312d0682342bfbb3e2fdb7099ae02739"><div class="ttname"><a href="class_img.html#a312d0682342bfbb3e2fdb7099ae02739">Img::pixel</a></div><div class="ttdeci">RGBColor &amp; pixel(int x, int y)</div><div class="ttdef"><b>Definition</b> img.h:76</div></div>
+<div class="ttc" id="aclass_img_html_a48c39536bf59588297dc94730cc77ff3"><div class="ttname"><a href="class_img.html#a48c39536bf59588297dc94730cc77ff3">Img::columnas</a></div><div class="ttdeci">int columnas</div><div class="ttdef"><b>Definition</b> img.h:63</div></div>
+<div class="ttc" id="aclass_img_html_a79ca4853c0c296372cdcc38c77a63fdd"><div class="ttname"><a href="class_img.html#a79ca4853c0c296372cdcc38c77a63fdd">Img::filas</a></div><div class="ttdeci">int filas</div><div class="ttdef"><b>Definition</b> img.h:63</div></div>
+<div class="ttc" id="aclass_img_html_a92fca57792bf4af4bfd98734d5ce7799"><div class="ttname"><a href="class_img.html#a92fca57792bf4af4bfd98734d5ce7799">Img::pintarRecuadro</a></div><div class="ttdeci">void pintarRecuadro(int xmin, int ymin, int xmax, int ymax, int r, int g, int b)</div><div class="ttdef"><b>Definition</b> img.cpp:102</div></div>
+<div class="ttc" id="aclass_img_html_a987bd588dbd05bb39272e00846cdb9c0"><div class="ttname"><a href="class_img.html#a987bd588dbd05bb39272e00846cdb9c0">Img::Img</a></div><div class="ttdeci">Img(int filas, int columnas)</div><div class="ttdef"><b>Definition</b> img.cpp:18</div></div>
+<div class="ttc" id="aclass_img_html_ad0988469177bb616a8175a4cfacfbfaa"><div class="ttname"><a href="class_img.html#ad0988469177bb616a8175a4cfacfbfaa">Img::numFilas</a></div><div class="ttdeci">int numFilas()</div><div class="ttdef"><b>Definition</b> img.h:97</div></div>
+<div class="ttc" id="aclass_img_html_ad2a4d4b20883d77240e565b23a1238e6"><div class="ttname"><a href="class_img.html#ad2a4d4b20883d77240e565b23a1238e6">Img::pintarPixel</a></div><div class="ttdeci">void pintarPixel(int x, int y, char r, char g, char b)</div><div class="ttdef"><b>Definition</b> img.h:77</div></div>
+<div class="ttc" id="aclass_img_html_ae0db29879516a57343bb1033565477d8"><div class="ttname"><a href="class_img.html#ae0db29879516a57343bb1033565477d8">Img::pintarPixelGrande</a></div><div class="ttdeci">void pintarPixelGrande(int x, int y, char r, char g, char b)</div><div class="ttdef"><b>Definition</b> img.h:83</div></div>
+<div class="ttc" id="aclass_img_html_ae36d7ad9a48c1c148ad12bb7e2224015"><div class="ttname"><a href="class_img.html#ae36d7ad9a48c1c148ad12bb7e2224015">Img::numColumnas</a></div><div class="ttdeci">int numColumnas()</div><div class="ttdef"><b>Definition</b> img.h:99</div></div>
+<div class="ttc" id="aclass_img_html_af77bf31c149b6ffb8708b0a29c783662"><div class="ttname"><a href="class_img.html#af77bf31c149b6ffb8708b0a29c783662">Img::guardar</a></div><div class="ttdeci">void guardar(const string &amp;fileName)</div><div class="ttdef"><b>Definition</b> img.cpp:79</div></div>
+<div class="ttc" id="aclass_img_html_af81abaf2d0c9078cefadb6f3457c8712"><div class="ttname"><a href="class_img.html#af81abaf2d0c9078cefadb6f3457c8712">Img::pixels</a></div><div class="ttdeci">RGBColor * pixels</div><div class="ttdef"><b>Definition</b> img.h:61</div></div>
+<div class="ttc" id="aclass_r_g_b_color_html"><div class="ttname"><a href="class_r_g_b_color.html">RGBColor</a></div><div class="ttdef"><b>Definition</b> img.h:23</div></div>
+<div class="ttc" id="aclass_r_g_b_color_html_a33b89e40a6c7d4d6c61615b53b9d532c"><div class="ttname"><a href="class_r_g_b_color.html#a33b89e40a6c7d4d6c61615b53b9d532c">RGBColor::operator==</a></div><div class="ttdeci">bool operator==(RGBColor &amp;color)</div><div class="ttdef"><b>Definition</b> img.h:38</div></div>
+<div class="ttc" id="aclass_r_g_b_color_html_a3b761e106a764b1bda23346e19a0bbc3"><div class="ttname"><a href="class_r_g_b_color.html#a3b761e106a764b1bda23346e19a0bbc3">RGBColor::rojo</a></div><div class="ttdeci">unsigned char rojo() const</div><div class="ttdef"><b>Definition</b> img.h:48</div></div>
+<div class="ttc" id="aclass_r_g_b_color_html_a44111dbc8e22536a46b3581d556eaab9"><div class="ttname"><a href="class_r_g_b_color.html#a44111dbc8e22536a46b3581d556eaab9">RGBColor::g</a></div><div class="ttdeci">unsigned char g</div><div class="ttdef"><b>Definition</b> img.h:24</div></div>
+<div class="ttc" id="aclass_r_g_b_color_html_a60d4e7624380517c8b7993e1fbb602c8"><div class="ttname"><a href="class_r_g_b_color.html#a60d4e7624380517c8b7993e1fbb602c8">RGBColor::r</a></div><div class="ttdeci">unsigned char r</div><div class="ttdef"><b>Definition</b> img.h:24</div></div>
+<div class="ttc" id="aclass_r_g_b_color_html_a73b3f87c0dc095bc72ea01d5ab8f4667"><div class="ttname"><a href="class_r_g_b_color.html#a73b3f87c0dc095bc72ea01d5ab8f4667">RGBColor::RGBColor</a></div><div class="ttdeci">RGBColor(unsigned char r, unsigned char g, unsigned char b)</div><div class="ttdef"><b>Definition</b> img.h:31</div></div>
+<div class="ttc" id="aclass_r_g_b_color_html_a9383ce7b63b0a6ada5d4e54e16adf733"><div class="ttname"><a href="class_r_g_b_color.html#a9383ce7b63b0a6ada5d4e54e16adf733">RGBColor::RGBColor</a></div><div class="ttdeci">RGBColor()</div><div class="ttdef"><b>Definition</b> img.h:28</div></div>
+<div class="ttc" id="aclass_r_g_b_color_html_a9c0ae552ff9bee5b87d7383999584869"><div class="ttname"><a href="class_r_g_b_color.html#a9c0ae552ff9bee5b87d7383999584869">RGBColor::operator!=</a></div><div class="ttdeci">bool operator!=(RGBColor &amp;color)</div><div class="ttdef"><b>Definition</b> img.h:43</div></div>
+<div class="ttc" id="aclass_r_g_b_color_html_abef01e4683e922e6d8162362ee5c9ba7"><div class="ttname"><a href="class_r_g_b_color.html#abef01e4683e922e6d8162362ee5c9ba7">RGBColor::verde</a></div><div class="ttdeci">unsigned char verde() const</div><div class="ttdef"><b>Definition</b> img.h:50</div></div>
+<div class="ttc" id="aclass_r_g_b_color_html_ad50662da54d703647e9bd7b944d730e3"><div class="ttname"><a href="class_r_g_b_color.html#ad50662da54d703647e9bd7b944d730e3">RGBColor::azul</a></div><div class="ttdeci">unsigned char azul() const</div><div class="ttdef"><b>Definition</b> img.h:52</div></div>
+<div class="ttc" id="aclass_r_g_b_color_html_af24a8ebcd90343a2fd226ef53b3f5e69"><div class="ttname"><a href="class_r_g_b_color.html#af24a8ebcd90343a2fd226ef53b3f5e69">RGBColor::b</a></div><div class="ttdeci">unsigned char b</div><div class="ttdef"><b>Definition</b> img.h:24</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_f8f2bdc141cef8ea69f3d804f0166806.html">Practica6</a></li><li class="navelem"><b>img.h</b></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>
