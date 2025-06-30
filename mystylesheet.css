@@ -55,7 +55,8 @@ ul.navBar li h1{
     text-align: center;
     margin-left:10px;
     color:aliceblue;
-    font-weight: 100
+    font-weight: 100;
+    font-size: 3em;
 
 }
 
@@ -78,6 +79,11 @@ ul.navBar ul li a:hover{
     color: rgb(255,225,0);
     background-color: maroon;
 }
+
+li.navBarItem{
+    font-size: 1.5em;
+}
+
 #active {
     color: maroon;
     background-color: rgb(255,225,0);
