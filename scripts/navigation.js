@@ -51,6 +51,18 @@ async function renderNavigationItems() {
 
 }
 
+function createTitleBar() {
+    const titleBar = document.createElement('div');
+    titleBar.className = 'titleBar';
+
+    titleBar.innerHTML = `
+        <h1 class="title">Juan Carrasco Vico</h1>
+        <div id="navigation" data-active="false"></div>
+    `;
+
+    document.body.prepend(titleBar);
+}
+
 async function Navigation() {
     const navDiv = document.getElementById('navigation');
 
@@ -94,4 +106,5 @@ async function Navigation() {
 
 
 // Renderizado inicial
+createTitleBar();
 Navigation();
