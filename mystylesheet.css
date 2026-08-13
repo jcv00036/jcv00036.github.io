@@ -24,6 +24,12 @@ h1.title {
     color: white;
 }
 
+div.navigation .navigation-list li a{
+        color: black;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+
 @media (orientation: landscape) and (min-width: 800px) {
 
     div.titleBar {
@@ -95,12 +101,6 @@ h1.title {
         margin: 0.25em;
         padding: 0.25em;
     }
-
-    div.navigation .navigation-list li a{
-        color: black;
-        font-weight: bold;
-        font-size: 1.5em;
-    }
 }
 
 @media not all and (orientation: landscape) and (min-width: 800px) {
@@ -128,7 +128,7 @@ h1.title {
     }
 
     div.navigation .navigation-separator {
-        background-color: white;
+        border-color: black;
         width: 100%;
         padding: 0;
         list-style-type: none;
