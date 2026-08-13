@@ -12,8 +12,46 @@ function toggleNavigation() {
     Navigation();
 }
 
+async function renderNavigationItems() {
+    // Cargamos los items desde resources/navigation.json
+    const fichero = '/resources/navigation.json';
+    
+    try {
+        const response = await fetch(fichero);
 
-function Navigation() {
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+        }
+
+        const items = await response.json();
+
+        const navigationList = document.querySelector('.navigation-list');
+
+        if (!navigationList) {
+            return;
+        }
+
+        navigationList.innerHTML = '';
+
+        for (const item of items) {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+
+            a.href = item.url;
+            a.textContent = item.title;
+
+            li.appendChild(a);
+            navigationList.appendChild(li);
+        }
+
+    } catch (error) {
+        console.error('No se pudo cargar la navegación:', error);
+    }
+
+
+}
+
+async function Navigation() {
     const navDiv = document.getElementById('navigation');
 
     // Si no existe el div, no hacemos nada
@@ -33,12 +71,13 @@ function Navigation() {
                 <hr class="navigation-separator">
                 <nav class="navigation-menu">
                     <ul class="navigation-list">
-                        <li><a href="/">Inicio</a></li>
-                        <li><a href="/about">Acerca de</a></li>
                     </ul>
                 </nav>
             </div>
         `;
+
+        await renderNavigationItems();
+
     } else {
         navDiv.innerHTML = `
             <div class="navigation navigation-icon">
