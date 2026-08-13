@@ -29,7 +29,7 @@ h1.title {
     div.titleBar {
         display: flex;
         align-items: center;
-        position:absolute;
+        position: absolute;
         left: 0;
         padding: 0.5em;
     }
@@ -45,6 +45,11 @@ h1.title {
         flex-shrink: 0;
     }
 
+    /* Contenedor del botón */
+    div.navigation {
+        position: relative;
+    }
+
     div.navigation .navigation-button {
         width: 3em;
         height: 3em;
@@ -57,23 +62,44 @@ h1.title {
         align-items: center;
         justify-content: center;
 
-        /* Evitamos float */
         float: none;
     }
 
-    div.navigation .navigation-list {
+    /* Línea separadora */
+    div.navigation .navigation-separator {
+        display: none;
+    }
+
+    /* Contenedor del menú */
+    div.navigation .navigation-menu {
         position: absolute;
-        top: 4em;
+        top: calc(100% + 0.5em);
         left: 0;
 
+        z-index: 1;
+    }
+
+    div.navigation .navigation-list {
         background-color: rgb(175, 128, 0);
+
+        margin: 0;
         padding: 0.5em;
 
         width: max-content;
+
         line-break: anywhere;
         list-style-type: none;
+    }
 
-        z-index: 1;
+    div.navigation .navigation-list li{
+        margin: 0.25em;
+        padding: 0.25em;
+    }
+
+    div.navigation .navigation-list li a{
+        color: black;
+        font-weight: bold;
+        font-size: 1.5em;
     }
 }
 
