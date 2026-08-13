@@ -1,8 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
 body{
     background-color: rgb(20,20,20);
+    color: aliceblue;
     font-family: courier;
 
-    margin-top: 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 2em;
 }
 
 p{
@@ -11,17 +20,40 @@ p{
 }
 
 div.titleBar {
-    position: absolute;
+    position: fixed;
     top: 0;
+    left:0;
+
     align-items: center;
     align-content: center;
+
     width: 100%;
 
     background-color: maroon;
+
+    z-index: 100000;
+}
+
+div.content-box {
+    background-color: rgb(40,40,40);
+    color: aliceblue;
+    font-family: courier;
+
+    width: 90%;
+
+    margin: 20px;
+    padding: 20px;
+
+    line-break: normal;
 }
 
 h1.title {
     color: white;
+}
+
+h2#page-title {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 div.navigation .navigation-list li a{
@@ -32,11 +64,13 @@ div.navigation .navigation-list li a{
 
 @media (orientation: landscape) and (min-width: 800px) {
 
+    body {
+        margin-top: 5em;
+    }
+
     div.titleBar {
         display: flex;
         align-items: center;
-        position: absolute;
-        left: 0;
         padding: 0.5em;
     }
 
@@ -104,6 +138,10 @@ div.navigation .navigation-list li a{
 }
 
 @media not all and (orientation: landscape) and (min-width: 800px) {
+    body {
+        margin-top: 9em;
+    }
+
     div.titleBar {
         display: flex;
         flex-direction: column;
